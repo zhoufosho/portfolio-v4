@@ -1,0 +1,99 @@
+// MAIN COLORS
+
+$light-grey: #F7F7F7;
+$medium-grey: #aaa; // #ccc
+$dark-grey: #696969;
+$carbon: #3D3D3D;
+$blue: #00C9D0;
+
+
+
+body {
+	color: $carbon;
+	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+h3, h4 {
+	font-family: 'Abel', 'Courier New', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	display: inline-block;
+	line-height: 1.8;
+}
+
+p {
+	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+	font-size: 1.125em;
+	line-height: 1.8;
+}
+
+hr.indent{
+	display: inline-block;
+	width: 1.5em;
+	height: 0px;
+	margin: 5px 0 5px 0;
+	margin-right: 20px;
+	border-width: 1.75px;
+	color: $carbon;
+	background-color: $carbon;
+	border-color: $carbon;
+}
+
+.back {
+	margin-top: 30px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+ 
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#smartcart-page {
+	background-image: url("../images/smartcart.png");	
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 680px;
+}
+
+.intro {
+	text-align: right;
+	padding-left: 15px;
+
+	h1 {
+		font-family: 'Playfair Display', serif;
+	}
+
+	h2 {
+		font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+		font-size: 18px;
+	}
+
+	h3 {
+		font-size: 14px;
+		margin-right: -8px;
+	}
+}
+
+.intro-text {
+	margin-top: 350px;
+}

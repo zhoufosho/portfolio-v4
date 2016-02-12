@@ -2,8 +2,8 @@
 <html>
 
 <% include templates/head %>
-<div>
-	<section class='hero' id='smartcart-page'>
+<body class='case-study' id="smartcart-case">
+	<div class='hero' id='smartcart'>
 		<div class='intro row'>
 			<div class='large-12 large-centered columns'>
 				<div class="back"><a href="http://elainezhou.me"><h3>&lt; back</h3></a></div>
@@ -14,15 +14,15 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<div class='row case-study'>
+	</div>
+	<div class='row'>
 		<div class='large-12 large-centered columns'>
 			<div class='row'>
 				<div class='case-content large-12 columns'>
 					<section id='overview'>
 						<div class="large-10 large-centered columns">
 							<hr class='indent' /><h3>Shop Smarter</h3>
-							<p>Why does a weekly trip to the grocery store feel like a necessary evil? Stores are difficult to navigate, items are hard to find or forgotten, and waiting to check out is a pain. SmartCart attempted to tackle two major pain points in the grocery shopping experience: finding items and checking out.  </p>
+							<p>Why does a trip to Safeway feel like a necessary evil? Stores are maze-like, items are elusive or forgotten, and waiting to check out is a pain. SmartCart tackled two major pain points in the grocery shopping experience: finding items and checking out.  </p>
 						</div>
 
 						<div class='video-wrapper'>
@@ -32,27 +32,32 @@
 					</section>
 
 					<section id='prototyping'>
-						<hr class='indent' /><h3>Prototyping</h3>
-						<p>Needfinding in this project began with talking with shoppers about supermarket frustrations, following their shopping habits, and talking with employees about self-checkout hassles and inefficiencies. After considering a number of prototypes, <a href='http://smartcart247.weebly.com/prototyping.html'>from Kinect to Leap Motion to capacitive sensing handlebars</a>, we decided on a tablet app. 
-						</p>
+						<div class="large-10 large-centered columns">
+							<hr class='indent' /><h3>Prototyping</h3>
+							<p>Needfinding in this project began with talking with shoppers about supermarket frustrations, following their shopping habits, and talking with employees about self-checkout hassles and inefficiencies. After considering a number of prototypes, <a href='http://smartcart247.weebly.com/prototyping.html'>from Kinect to Leap Motion to capacitive sensing handlebars</a>, we decided on a tablet app. 
+							</p>
+						</div>
 
 						<figure>
 							<img src='images/smartcart/007.png' />
 							<figcaption>initial mockup of adding items (Photoshop)</figcaption>
 						</figure>
-
 					</section>
 
 					<section id='user-testing'>
-						<hr class='indent' /><h3>User Testing</h3>
-						<p> For user testing, we highlighted two main goals: <em>does SmartCart help users find what they need in grocery stores more efficiently?</em> and <em>does SmartCart make shopping less frustrating?</em> We invited participants to <a href='http://smartcart247.weebly.com/user-testing.html'>interact with SmartCart as if they were shopping regularly</a>. From tests, several interface issues were highlighted, but most prominent was the ambiguity found in checking out. Shoppers were reminded of an online experience, instead of a physical store. We added additional dialogues and more obvious actions to simplify the checkout process. </p>
+						<div class="large-10 large-centered columns">
+							<hr class='indent' /><h3>User Testing</h3>
+							<p> For user testing, we highlighted two main goals: <em>does SmartCart help users find what they need in grocery stores more efficiently?</em> and <em>does SmartCart make shopping less frustrating?</em> We invited participants to <a href='http://smartcart247.weebly.com/user-testing.html'>interact with SmartCart as if they were shopping regularly</a>. From tests, several interface issues were highlighted, but most prominent was the ambiguity found in checking out. Shoppers were reminded of an online experience, instead of a physical store. We added additional dialogues and more obvious actions to simplify the checkout process. </p>
+						</div>
 
 						<figure>
 							<img src='images/smartcart/smartcartHiDef.jpg'>
 							<figcaption>high-fidelity mockup of list &amp; map view</figcaption>
 						</figure>
 
-						<p>Users highlighted a number of problems, ranging from cryptic system statuses to mismatches between the system and the real world. The next iteration included a number of features, such as <a href='http://smartcart247.weebly.com/functional-2.html'>adding autocomplete, resolving ambiguous items, and detailing checkout instructions</a>. Perhaps the biggest issue shoppers found was how difficult it was to use the SmartCart in coordination with a physical cart. The tablet seemed more like a peripheral accessory than an integrated component, so we designed a hardware enclosure to ease use and accessibility of the touchscreen.</p>
+						<div class="large-10 large-centered columns">
+							<p>Users highlighted a number of problems, ranging from cryptic system statuses to mismatches between the system and the real world. The next iteration included a number of features, such as <a href='http://smartcart247.weebly.com/functional-2.html'>adding autocomplete, resolving ambiguous items, and detailing checkout instructions</a>. Perhaps the biggest issue shoppers found was how difficult it was to use the SmartCart in coordination with a physical cart. The tablet seemed more like a peripheral accessory than an integrated component, so we designed a hardware enclosure to ease use and accessibility of the touchscreen.</p>
+						</div>
 
 						<figure>
 							<img src='images/smartcart/test2.jpg'>
@@ -65,14 +70,13 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<footer class='row'>
-	<div class='large-12 large-centered columns light center'>
-		<hr class='center'></hr>
-		 <p>Elaine Zhou • 2015</p>
-	</div>
-</footer>
+	<footer class='row'>
+		<div class='large-12 large-centered columns'>
+			<hr></hr>
+			<p class="center">Elaine Zhou • 2016</p>
+		</div>
+	</footer>
 
 <% include templates/scripts %>
 

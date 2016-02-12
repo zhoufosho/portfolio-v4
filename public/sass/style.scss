@@ -6,7 +6,11 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
-
+@mixin center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 body {
 	color: $carbon;
@@ -30,6 +34,17 @@ p {
 	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
 	font-size: 1.125em;
 	line-height: 1.8;
+	color: #777;
+}
+
+footer {
+	p {
+		margin-top: 30px;
+	}
+}
+
+.center {
+	@include center;
 }
 
 hr.indent{
@@ -51,10 +66,10 @@ hr.indent{
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; 
     height: 0; 
     overflow: hidden;
     margin-bottom: 30px;
+    margin-top: 45px;
 }
  
 .video-wrapper iframe,
@@ -67,12 +82,31 @@ hr.indent{
     height: 100%;
 }
 
-#smartcart-page {
-	background-image: url("../images/smartcart.png");	
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 680px;
+.case-study {
+
+	margin-bottom: 30px;
+
+	figure{
+		@include center;
+		margin: 3em 5em;
+
+		img{
+			margin-bottom: 0.5em;
+		}
+
+		figcaption{
+			color: #696969;
+			font-size: 0.8em;
+			font-style: italic;
+		}
+	}
+
+	section {
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+
 }
 
 .intro {
@@ -96,4 +130,13 @@ hr.indent{
 
 .intro-text {
 	margin-top: 350px;
+}
+
+
+.hero#smartcart {
+	background-image: url("../images/smartcart.png");	
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 680px;
 }

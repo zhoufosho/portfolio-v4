@@ -1,16 +1,16 @@
-/* line 11, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 body {
   color: #3D3D3D;
   font-family: 'Nunito', 'Helvetica Neue', sans-serif;
   font-size: 16px;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 h3, h4 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
@@ -19,14 +19,27 @@ h3, h4 {
   line-height: 1.8;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 p {
   font-family: 'Nunito', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
   line-height: 1.8;
+  color: #777;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
+footer p {
+  margin-top: 30px;
+}
+
+/* line 46, ../sass/style.scss */
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 50, ../sass/style.scss */
 hr.indent {
   display: inline-block;
   width: 1.5em;
@@ -39,22 +52,22 @@ hr.indent {
   border-color: #3D3D3D;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .back {
   margin-top: 30px;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
   height: 0;
   overflow: hidden;
   margin-bottom: 30px;
+  margin-top: 45px;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .video-wrapper iframe,
 .video-wrapper object,
 .video-wrapper embed {
@@ -65,36 +78,63 @@ hr.indent {
   height: 100%;
 }
 
-/* line 70, ../sass/style.scss */
-#smartcart-page {
-  background-image: url("../images/smartcart.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 680px;
+/* line 85, ../sass/style.scss */
+.case-study {
+  margin-bottom: 30px;
+}
+/* line 89, ../sass/style.scss */
+.case-study figure {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3em 5em;
+}
+/* line 93, ../sass/style.scss */
+.case-study figure img {
+  margin-bottom: 0.5em;
+}
+/* line 97, ../sass/style.scss */
+.case-study figure figcaption {
+  color: #696969;
+  font-size: 0.8em;
+  font-style: italic;
+}
+/* line 104, ../sass/style.scss */
+.case-study section {
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .intro {
   text-align: right;
   padding-left: 15px;
 }
-/* line 82, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
 }
-/* line 86, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .intro h2 {
   font-family: 'Nunito', 'Helvetica Neue', sans-serif;
   font-size: 18px;
 }
-/* line 91, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .intro h3 {
   font-size: 14px;
   margin-right: -8px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .intro-text {
   margin-top: 350px;
+}
+
+/* line 136, ../sass/style.scss */
+.hero#smartcart {
+  background-image: url("../images/smartcart.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 680px;
 }

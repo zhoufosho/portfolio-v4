@@ -6,6 +6,9 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
+// OTHER VARIABLES
+$content-line: 580px;
+
 
 // MIXINS 
 
@@ -111,7 +114,7 @@ blockquote {
     overflow: hidden;
     margin-bottom: 30px;
     margin-top: 45px;
-    width: 580px;
+    max-width: $content-line;
 }
  
 .video-wrapper iframe,
@@ -146,7 +149,7 @@ blockquote {
     }
 
     figure{
-        width: 580px;
+        max-width: $content-line;
         margin-top: 2rem;
         margin-bottom: 2.5rem;
 

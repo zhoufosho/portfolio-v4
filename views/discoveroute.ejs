@@ -80,16 +80,26 @@
 					</section>
 					<section id='prototyping2'>
 						<div class="large-10 large-centered columns">
-							<p>Using the feedback from the first round of user testing, we iterated on potential flows with medium fidelity UI mockups. Some ideas involved progressive unveiling and a hamburger slide-out menu. </p>
+							<p>Using the feedback from the first round of user testing, we iterated on the navigation. Some ideas involved progressive unveiling and a hamburger slide-out menu. We also began to develop a visual identity. </p>
 
 							<figure>
-								<img src='images/discoveroute/drIterations.png'>
-								<figcaption>We went through a few iterations of navigation styles: progressive unveiling, persistent menu, slide-out nav.</figcaption>
+								<div class="slideshow" id="nav-iterations">
+									<div>
+										<img src='images/discoveroute/nav1.png'>
+									</div>
+									<div>
+										<img src='images/discoveroute/nav2.png'>
+									</div>
+									<div>
+										<img src='images/discoveroute/nav3.png'>
+									</div>
+								</div>
+								<figcaption>We went through a few iterations of navigation styles. These show different takes on progressive unveiling, a persistent menu, and a slide out nav.</figcaption>
 							</figure>
 
 							<figure>
 								<img src='images/discoveroute/drHiFi.png'>
-								<figcaption>high fidelity mockups</figcaption>
+								<figcaption>After figuring out a navigation that worked, we fleshed out the other interactions.</figcaption>
 							</figure>
 
 						</div>
@@ -146,11 +156,25 @@
 	<footer class='row'>
 		<div class='large-12 large-centered columns light center'>
 			<hr class='center'></hr>
-			 <p>Elaine Zhou • 2015</p>
+			 <p>Elaine Zhou • 2016</p>
 		</div>
 	</footer>
 
 <% include templates/scripts %>
+
+<script>
+$("#nav-iterations > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#nav-iterations > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#nav-iterations');
+},  3000);
+
+</script>
 
 </body>
 </html>

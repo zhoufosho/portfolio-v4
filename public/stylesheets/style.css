@@ -114,14 +114,29 @@ blockquote p {
 
 /* line 127, ../sass/style.scss */
 .case-study {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
-/* line 131, ../sass/style.scss */
-.case-study h4 {
+
+/* line 132, ../sass/style.scss */
+.case-content {
+  /* TO DO: COME BACK TO THIS */
+}
+/* line 133, ../sass/style.scss */
+.case-content h4 {
   font-size: 1.35rem;
 }
-/* line 135, ../sass/style.scss */
-.case-study figure {
+/* line 138, ../sass/style.scss */
+.case-content a {
+  color: #3D3D3D;
+  border-bottom: 1px solid #ccc;
+}
+/* line 143, ../sass/style.scss */
+.case-content a:hover {
+  color: #696969;
+  border-bottom: none;
+}
+/* line 148, ../sass/style.scss */
+.case-content figure {
   width: 580px;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
@@ -129,12 +144,12 @@ blockquote p {
   margin-right: auto;
   text-align: center;
 }
-/* line 143, ../sass/style.scss */
-.case-study figure img {
+/* line 156, ../sass/style.scss */
+.case-content figure img {
   margin-bottom: 0.5em;
 }
-/* line 147, ../sass/style.scss */
-.case-study figure figcaption {
+/* line 160, ../sass/style.scss */
+.case-content figure figcaption {
   margin-left: auto;
   margin-right: auto;
   color: #696969;
@@ -142,39 +157,56 @@ blockquote p {
   font-style: italic;
   width: 90%;
 }
-/* line 156, ../sass/style.scss */
-.case-study section {
+/* line 169, ../sass/style.scss */
+.case-content section {
   margin-top: 4em;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .intro {
   text-align: left;
   padding-left: 15px;
 }
-/* line 167, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5em;
 }
-/* line 172, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .intro h2 {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
 }
-/* line 178, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .intro h3 {
   font-size: 16px;
   margin-right: -8px;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .intro-text {
   margin-top: 18em;
 }
 
+/* line 202, ../sass/style.scss */
+.slideshow {
+  height: 450px;
+  background-color: white;
+}
+
+/* line 207, ../sass/style.scss */
+.slideshow > div {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+/* line 211, ../sass/style.scss */
+.slideshow > div img {
+  height: 450px;
+}
+
 /* PAGE-SPECIFIC */
-/* line 190, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .hero#smartcart {
   background-image: url("../images/smartcart2.png");
   background-position: right top;
@@ -183,7 +215,7 @@ blockquote p {
   height: 42em;
 }
 
-/* line 198, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .hero#discoveroute {
   background-image: url("../images/discoveroute.png");
   background-position: right top;

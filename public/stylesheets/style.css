@@ -1,73 +1,107 @@
-/* line 15, ../sass/style.scss */
+/* ELEMENTS */
+/* line 19, ../sass/style.scss */
 body {
   color: #3D3D3D;
-  font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 25, ../sass/style.scss */
-h3, h4 {
+/* line 30, ../sass/style.scss */
+h3 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   display: inline-block;
   line-height: 1.8;
 }
 
-/* line 33, ../sass/style.scss */
-p {
-  font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-  font-size: 1.125em;
-  line-height: 1.8;
-  color: #777;
+/* line 38, ../sass/style.scss */
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #666;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
+p {
+  font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.125em;
+  line-height: 1.8;
+  color: #696969;
+}
+
+/* line 54, ../sass/style.scss */
 footer p {
   margin-top: 30px;
 }
 
-/* line 46, ../sass/style.scss */
-.center {
-  text-align: center;
+/* line 59, ../sass/style.scss */
+blockquote {
+  border-left: 0;
+  width: 66.7%;
+  color: #aaa;
+  font-family: 'Playfair Display';
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 3.5rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
+}
+/* line 74, ../sass/style.scss */
+blockquote footer {
+  text-align: right;
+  font-size: .85rem;
+  color: #aaa;
+  margin: 0;
+}
+/* line 81, ../sass/style.scss */
+blockquote p {
+  display: inline;
 }
 
-/* line 50, ../sass/style.scss */
-hr.indent {
-  display: inline-block;
-  width: 1.5em;
-  height: 0px;
-  margin: 5px 0 5px 0;
-  margin-right: 20px;
-  border-width: 1.75px;
-  color: #3D3D3D;
-  background-color: #3D3D3D;
-  border-color: #3D3D3D;
+/* UTILITIES */
+/* line 88, ../sass/style.scss */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-/* line 62, ../sass/style.scss */
+/* GENERAL */
+/* line 95, ../sass/style.scss */
 .back {
   margin-top: 30px;
 }
+/* line 97, ../sass/style.scss */
+.back a:hover {
+  opacity: 0.6;
+}
+/* line 101, ../sass/style.scss */
+.back img {
+  width: 35px;
+}
 
-/* line 66, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 40.5%;
   height: 0;
   overflow: hidden;
   margin-bottom: 30px;
   margin-top: 45px;
+  width: 580px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .video-wrapper iframe,
 .video-wrapper object,
 .video-wrapper embed {
@@ -78,63 +112,83 @@ hr.indent {
   height: 100%;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .case-study {
   margin-bottom: 30px;
 }
-/* line 89, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
+.case-study h4 {
+  font-size: 1.35rem;
+}
+/* line 135, ../sass/style.scss */
 .case-study figure {
-  text-align: center;
+  width: 580px;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin: 3em 5em;
+  text-align: center;
 }
-/* line 93, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .case-study figure img {
   margin-bottom: 0.5em;
 }
-/* line 97, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .case-study figure figcaption {
+  margin-left: auto;
+  margin-right: auto;
   color: #696969;
   font-size: 0.8em;
   font-style: italic;
+  width: 90%;
 }
-/* line 104, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .case-study section {
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin-top: 4em;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .intro {
-  text-align: right;
+  text-align: left;
   padding-left: 15px;
 }
-/* line 116, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
+  font-size: 3.5em;
 }
-/* line 120, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .intro h2 {
-  font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
 }
-/* line 125, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .intro h3 {
-  font-size: 14px;
+  font-size: 16px;
   margin-right: -8px;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .intro-text {
-  margin-top: 350px;
+  margin-top: 18em;
 }
 
-/* line 136, ../sass/style.scss */
+/* PAGE-SPECIFIC */
+/* line 190, ../sass/style.scss */
 .hero#smartcart {
-  background-image: url("../images/smartcart.png");
-  background-position: left top;
+  background-image: url("../images/smartcart2.png");
+  background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 680px;
+  height: 42em;
+}
+
+/* line 198, ../sass/style.scss */
+.hero#discoveroute {
+  background-image: url("../images/discoveroute.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32em;
+  margin-bottom: 5em;
 }

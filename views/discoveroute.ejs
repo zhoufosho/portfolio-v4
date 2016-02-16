@@ -3,143 +3,152 @@
 
 <% include templates/head %>
 
-<body id='discoveroute' class='case-page'>
-
-<nav class='nav-roundslide'>
-
-	<% include templates/navback %>  
-	<ul class='hide-for-touch dot-nav'>
-		<li>
-			<a class='dotstyle current' href='#overview'>
-				<h1>Overview</h1>
-			</a>
-		</li>
-		<li>
-			<a class='dotstyle' href='#needfinding'>
-				<h1>Needfinding</h1>
-			</a>
-		</li>
-		<li>
-			<a class='dotstyle' href='#prototyping'>
-				<h1>Prototyping</h1>
-			</a>
-		</li>
-		<li>
-			<a class='dotstyle' href='#user-testing'>
-				<h1>User Testing</h1>
-			</a>
-		</li>		
-	</ul>
-</nav>
-
-<div class='row case-study' id='discoveroute-page'>
-	<div class='large-11 large-centered columns'>
-		<div class='row'>
-			<section id='smartcart-brief'>
-				<div class='small-12 medium-8 columns'>
-					<div class='row'>
-						<div class='small-8 medium-12 columns'>
-							<h3 class='title-underline'>discoveroute</h3>
-						</div>
-						<div class='small-4 show-for-small-only columns case-title-img-small' style='background-image: url("images/discoveroute/drlogo.png")'>
-						</div>
-					</div>
-					<div class='row'>
-						<div class='small-12 columns'>
-							<p>Winter 2014<br />
-							<em>Technologies</em> : node.js, MongoDB, Bootstrap <br />
-							<em>Website</em> : <a href='http://discoveroute.com/'>http://discoveroute.com/</a> &nbsp;
-							<span class='social-media'><a href='https://github.com/hwray/discoveroute' target='_blank'>
-								<i class='fa fa-github'></i></a></span>
-							</p>
-						</div>
-					</div>
-					<div class='row'>
-						<div class='medium-12 columns'>
-							<span class='radius label'><p><i class='fa fa-star'></i>&nbsp;&nbsp; CS147 Best Interaction Design</p></span>
-							<span class='radius label'><p><i class='fa fa-star'></i>&nbsp;&nbsp; CS147 Best Poster Design</p></span>
-							<br /><br />
-						<p>
-							As citizens of the smartphone era, we use our mobile maps to get everywhere. However, traveling from point A to point B doesn't take in account the needs of busy people with multiple stops or adventurers with time to spare. We set out to help people with two goals: find new, interesting <em>places along a path</em> and with <em>time efficiency</em>.
-						</p>
-						</div>
-					</div>
+<body class='case-study' id="discoveroute-case">
+	<div class='hero' id='discoveroute'>
+		<div class='intro row'>
+			<div class='large-12 large-centered columns'>
+				<div class="back"><a href="http://elainezhou.me"><img src="images/logo.png"></a></div>
+				<div class="intro-text">
+					<h1>Discoveroute</h1>
+					<h2>Path-based local business discovery.</h2>
+					<h3>nodejs, bootstrap | 2014</h3>
 				</div>
-				<div class='medium-4 hide-for-small-only columns'>
-					<div class='case-title-img'>
-						<img src='images/discoveroute/drlogo.png' />
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class='row'>
-			<div class='case-content large-12 columns'>
-				<section id='overview'>
-					<hr class='indent' /><h5>Find new places by old spaces. </h5>
-					<p>Discoveroute provides time- and route-constrainted local business search. Whether you need a coffee rush while on your way to work, or you and a friend want to meet halfway at a bar or restaurant, the mobile web app shows the visual mapping of these places and ensures you make your final destination on time.
-					</p>
-
-					<figure>
-						<img src='images/discoveroute/discoverouteDisplays.png'>
-					</figure>
-
-				</section>
-				<section id='needfinding'>
-					<hr class='indent' /><h5>Needfinding </h5>
-					<p>Oftentimes, traveling ends up more about getting to the final destination than about the actual journey. While observing people planning trips, we learned that finding new or convenient places is a major hassle. Current maps don't take into account areas between routes or extraneous travel time.
-					</p>
-
-					<blockquote cite='https://www.facebook.com/discoveroute'>To plan my outings, [I want to find] cool things to check out or places to eat on my way to an event to make the most of my travel time. <footer>- Vivian Lam</footer></blockquote>
-
-				</section>
-
-				<section id='prototyping'>
-					<hr class='indent' /><h5>Prototyping</h5>
-					<p>The process began with a <a href='images/discoveroute/storyboard3.png'>few</a> <a href='images/discoveroute/PaperProto2.png'>different</a> <a href='images/discoveroute/storyboard1.png'>storyboards</a> and <a href='images/discoveroute/drPaperProto.png'>interactions</a> prototyped in parallel. By starting with paper prototypes, we were able to conduct '<a href='http://en.wikipedia.org/wiki/Wizard_of_Oz_experiment'>wizard of oz experiments</a>' to see which components met the users' needs and which didn't.
-					</p>
-
-					<figure>
-						<img src='images/discoveroute/drPaperProto.png'>
-						<figcaption>one of the heuristic walkthrough prototypes</figcaption>
-					</figure>
-
-					<p>One of the main takeaways from the heuristic walkthroughs was that the navigation needed much more refinement. We iterated on potential flows with rough UI mockups. Throughout, our focus was for the interaction to be straightforward but also allow for non-linearity. We tested these models, and once we finalized the navigation, created high-fidelity mockups.</p>
-
-					<figure>
-						<img src='images/discoveroute/drIterations.png'>
-						<figcaption>various iterations of navigation and interaction</figcaption>
-					</figure>
-
-					<figure>
-						<img src='images/discoveroute/drHiFi.png'>
-						<figcaption>high fidelity mockups</figcaption>
-					</figure>
-
-				</section>
-
-				<section id='user-testing'>
-					<hr class='indent' /><h5>User Testing</h5>
-					<p>After multiple iterations of a functional product, we began user testing with a combination of cognitive walkthroughs and online tests. We started off by following a <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#bookmark=id.rizcytbtr6h'>usability script</a> we wrote, but listed a number of activities and actions to look out for.</p>
-
-					<p>One major issue we investigated was in selecting categories. It was unclear that multiple categories could be selected, and very few people attempted to. We <a href='images/discoveroute/categoriesRedesign.png'>redesigned the categories interface</a> (and tried a few iterations on the <a href='images/discoveroute/sidebarRedesign.png'>sidebar</a> too). After running an online A/B test , we confirmed our <!-- <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#'> -->test results<!-- </a> --> with cognitive walkthroughs. The monochrome version was incorporated into the final design, since it had clearer actions and resulted in less button mashing.
-					</p>
-
-					<figure>
-						<img src='images/discoveroute/drABTest.png'>
-						<figcaption>A/B testing with original (left) and monochrome redesign (right)</figcaption>
-					</figure>
-
-				</section>
 			</div>
 		</div>
 	</div>
-</div>
-<footer class='row'>
-	<div class='large-12 large-centered columns light center'>
-		<hr class='center'></hr>
-		 <p>Elaine Zhou • 2015</p>
+	<div class='row'>
+		<div class='large-12 large-centered columns'>
+			<div class='row'>
+				<div class='case-content large-12 columns'>
+
+					<section id='overview'>
+						<div class="large-10 large-centered columns">
+							<h3>Find new places by old spaces. </h3>
+							<p>Traveling from point A to point B doesn't take into account busy people with a thirst for adventure, but with little time to spare. Discoveroute’s time- and route-constrainted local business search set out to help people with two goals: find places along a path and with time efficiency. </p>
+						</div>
+
+						<figure>
+							<img src='images/discoveroute/discoverouteDisplays.png'>
+						</figure>
+
+					</section>
+					<section id='needfinding'>
+						<div class="large-10 large-centered columns">
+							<h3>Needfinding </h3>
+							<p>Oftentimes, traveling ends up being less about the actual journey and more about just getting there. While observing people planning trips, we found that people tended to look for areas close to where they start or where they might end up. If you want to meet up with a friend for coffee, it's a conversation of "near your place or mine."  We learned that finding convenient places is a major hassle. 
+							</p>
+
+							<blockquote cite='https://www.facebook.com/discoveroute'>To plan my outings, [I want to find] cool things to check out or places to eat on my way to an event to make the most of my travel time. <footer>- Vivian Lam</footer></blockquote>
+						</div>
+					</section>
+
+					<section id='prototyping1'>
+						<div class="large-10 large-centered columns">
+
+							<h3>Prototyping, Part I</h3>
+							<p>The process began with a <a href='images/discoveroute/storyboard3.png'>few</a> <a href='images/discoveroute/PaperProto2.png'>different</a> <a href='images/discoveroute/storyboard1.png'>storyboards</a> and <a href='images/discoveroute/drPaperProto.png'>interactions</a> prototyped in parallel. </p>
+
+
+							<blockquote>Our prototypes took two approaches: time-centric and route-centric.</blockquote>
+
+							<p>We took different perspectives with our prototypes: time-centric and route-centric. The time-centric interaction included a timer to alert the user to get back on the road. The route-centric interaction focused on allowing the user to rate, evaluate, and revisit detours.</p>
+
+
+							<figure>
+								<img src='images/discoveroute/drPaperProto.png'>
+								<figcaption>The time-centric prototype featured a timer to tell users to get back on the road.</figcaption>
+							</figure>
+
+							<p>
+							By starting with paper prototypes, we were able to conduct heuristic walkthroughs to see which components met the users' needs and which didn't. 
+
+							</p>
+						</div>
+					</section>
+					<section id='testing1'>
+						<div class="large-10 large-centered columns">
+
+							<h3>User Testing, Part I</h3>
+							<p>First, our user testing found that navigation needed more refinement. Users found it difficult and confusing to go back more than one layer of the process. This happened often, and people were indecisive about the amount of time they had or the activities they wanted to do. Our interaction needed to accommodate non-linearity.
+
+							Second, we found that users tended towards the time-centric prototype. Users were delighted by the timer. Since we were taking people out of their comfort zone, places they knew, the timer acted as a security blanket to make sure they got to their final destination on time. The route-centric prototype didn't seem to fit the needs of our users. The insight away from a route-based prototype was that once people found a new route, they would rarely come back to find the same place again – they would just remember.</p>
+
+
+							<blockquote>
+							Since we were intentionally routing people out of their comfort zones, we needed a guarantee that the final destination would be successful.</blockquote>
+						</div>
+					</section>
+					<section id='prototyping2'>
+						<div class="large-10 large-centered columns">
+							<p>Using the feedback from the first round of user testing, we iterated on potential flows with medium fidelity UI mockups. Some ideas involved progressive unveiling and a hamburger slide-out menu. </p>
+
+							<figure>
+								<img src='images/discoveroute/drIterations.png'>
+								<figcaption>We went through a few iterations of navigation styles: progressive unveiling, persistent menu, slide-out nav.</figcaption>
+							</figure>
+
+							<figure>
+								<img src='images/discoveroute/drHiFi.png'>
+								<figcaption>high fidelity mockups</figcaption>
+							</figure>
+
+						</div>
+					</section>
+
+					<section id='testing2'>
+						<div class="large-10 large-centered columns">
+
+							<h3>User Testing, Part I</h3>
+
+							<p>After implementing a functional product, we began user testing with a combination of qualitative and quantitative tests. We started off by writing and following a <a href='https://docs.google.com/document/d/1a1L0jkwwLmKdiEOPClTPE6Aj004j0z8gdkn3lhZjFXA/edit#bookmark=id.rizcytbtr6h'>usability script</a> to maintain consistency across our interviews. We also listed activities and actions to make sure we didn't miss any major flows and learn why they might have been discovered by our users. It set the scenario as "You're at Stanford, trying to meet some friends in Mountain View at {now + 2 hours}. Let's drive out now to avoid traffic and kill some time," then we watched and listened. 
+							</p>
+
+							<blockquote>
+							You’re at Stanford, trying to meet some friends in Mountain View at {now + 2 hours}. Let's drive out now to avoid traffic and kill some time.
+							</blockquote>
+
+							<p>One major issue we investigated was in selecting categories. It was unclear that multiple categories could be selected, and very few people attempted to. We <a href='images/discoveroute/categoriesRedesign.png'>redesigned the categories interface</a>, trying to make the state changes more visually prominent. We redesigned the <a href='images/discoveroute/sidebarRedesign.png'>sidebar</a> as another exercise, but did not test them.
+
+							<figure>
+								<img src='images/discoveroute/drABTest.png'>
+								<figcaption>A/B showed the original (left) resulted in more clicks. We thought this meant more categories were selected, but interviews showed this behavior was button mashing. </figcaption>
+							</figure>
+
+
+							<p>After running an online A/B test, we found that the chromatic screen tested with number of clicks. We thought this meant that more categories were selected (hence more clicks). However, after doing user interviews, we found that the extra clicking was a sign of confusion and frustration. Thus, the way to interpret our results was that fewer clicks was more ideal.</p>
+
+
+							<blockquote>
+							A/B testing alone cannot tell you how to interpret your data.</blockquote>
+
+							<p>
+							The monochrome version was incorporated into the final design, since it had clearer actions and resulted in less button mashing.</p>
+							
+						</div>
+
+					</section>
+
+					<section id='takeaways'>
+						<div class="large-10 large-centered columns">
+
+							<h3>Key Takeaways</h3>
+							<h4>Data is good, but context is better. </h4>
+
+							<p>In our A/B testing, we found that a chromatic version of an options screen yielded more clicks than a monochromatic version. However, after conducting in-person usability studies, we found that this was actually a result of button mashing. Our quantitative data only showed what we thought we were looking for, but taking the time to understand how people used our app showed us what we should be looking for.
+
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
 	</div>
-</footer>
+	<footer class='row'>
+		<div class='large-12 large-centered columns light center'>
+			<hr class='center'></hr>
+			 <p>Elaine Zhou • 2015</p>
+		</div>
+	</footer>
 
 <% include templates/scripts %>
 

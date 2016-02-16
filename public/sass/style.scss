@@ -6,70 +6,112 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
-@mixin center{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+
+// MIXINS 
+
+@mixin center-position{
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* ELEMENTS */
+
 body {
-	color: $carbon;
-	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-	font-size: 16px;
+    color: $carbon;
+    // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
 }
 
 h1, h2 {
-	font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
-h3, h4 {
-	font-family: 'Abel', 'Courier New', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	display: inline-block;
-	line-height: 1.8;
+h3 {
+    font-family: 'Abel', 'Courier New', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: inline-block;
+    line-height: 1.8;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;  
+    font-weight: 100;
+    font-style: italic; 
+    color: #666;
 }
 
 p {
-	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-	font-size: 1.125em;
-	line-height: 1.8;
-	color: #777;
+    // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.8;
+    color: $dark-grey;
 }
 
 footer {
-	p {
-		margin-top: 30px;
-	}
+    p {
+        margin-top: 30px;
+    }
 }
+
+blockquote {
+    border-left: 0;
+    width: 66.7%;
+    color: $medium-grey;
+    font-family: 'Playfair Display';
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 2.75rem;
+    margin-bottom: 3.5rem;
+
+    @include center-position;
+    text-align: left;
+    
+
+    footer{
+        text-align: right;
+        font-size: .85rem;
+        color: $medium-grey;
+        margin: 0;
+    }
+
+    p {
+      display: inline;
+    }
+}
+
+/* UTILITIES */
 
 .center {
-	@include center;
+    @include center-position;
+    text-align: center;
 }
 
-hr.indent{
-	display: inline-block;
-	width: 1.5em;
-	height: 0px;
-	margin: 5px 0 5px 0;
-	margin-right: 20px;
-	border-width: 1.75px;
-	color: $carbon;
-	background-color: $carbon;
-	border-color: $carbon;
-}
+/* GENERAL */
 
 .back {
-	margin-top: 30px;
+    margin-top: 30px;
+    a:hover {
+        opacity: 0.6;
+    }
+
+    img {
+        width: 35px;
+    }
 }
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
+    // padding-bottom: 56.25%;
+    padding-bottom: 40.5%;
     height: 0; 
     overflow: hidden;
     margin-bottom: 30px;
     margin-top: 45px;
+    width: 580px;
 }
  
 .video-wrapper iframe,
@@ -84,59 +126,80 @@ hr.indent{
 
 .case-study {
 
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 
-	figure{
-		@include center;
-		margin: 3em 5em;
+    h4 {
+        font-size: 1.35rem;
+    }
 
-		img{
-			margin-bottom: 0.5em;
-		}
+    figure{
+        width: 580px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
 
-		figcaption{
-			color: #696969;
-			font-size: 0.8em;
-			font-style: italic;
-		}
-	}
+        @include center-position;
+        text-align: center;
 
-	section {
-		margin-top: 45px;
-		margin-bottom: 45px;
-	}
+        img{
+            margin-bottom: 0.5em;
+        }
+
+        figcaption{
+            @include center-position;
+            color: $dark-grey;
+            font-size: 0.8em;
+            font-style: italic;
+            width: 90%;
+        }
+    }
+
+    section {
+        margin-top: 4em;
+    }
 
 
 }
 
 .intro {
-	text-align: right;
-	padding-left: 15px;
+    text-align: left;
+    padding-left: 15px;
 
-	h1 {
-		font-family: 'Playfair Display', serif;
-	}
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5em;
+    }
 
-	h2 {
-		font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-		font-size: 18px;
-	}
+    h2 {
+        // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+        font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+        font-size: 24px;
+    }
 
-	h3 {
-		font-size: 14px;
-		margin-right: -8px;
-	}
+    h3 {
+        font-size: 16px;
+        margin-right: -8px;
+    }
 }
 
 .intro-text {
-	margin-top: 350px;
+    margin-top: 18em;
 }
 
+/* PAGE-SPECIFIC */
 
 .hero#smartcart {
-	background-image: url("../images/smartcart.png");	
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 680px;
+    background-image: url("../images/smartcart2.png");  
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 42em;
+}
+
+.hero#discoveroute {
+    background-image: url("../images/discoveroute.png");    
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32em;
+    margin-bottom: 5em;
 }

@@ -1,17 +1,17 @@
 /* ELEMENTS */
-/* line 22, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body {
   color: #3D3D3D;
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 h1, h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 h3 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
@@ -20,7 +20,7 @@ h3 {
   line-height: 1.8;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 100;
@@ -28,7 +28,7 @@ h4 {
   color: #666;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 p {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
@@ -36,12 +36,12 @@ p {
   color: #696969;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 footer p {
   margin-top: 30px;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 blockquote {
   border-left: 0;
   width: 66.7%;
@@ -56,20 +56,20 @@ blockquote {
   margin-right: auto;
   text-align: left;
 }
-/* line 77, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 blockquote footer {
   text-align: right;
   font-size: .85rem;
   color: #aaa;
   margin: 0;
 }
-/* line 84, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 blockquote p {
   display: inline;
 }
 
 /* UTILITIES */
-/* line 91, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -77,20 +77,20 @@ blockquote p {
 }
 
 /* GENERAL */
-/* line 98, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .back {
   margin-top: 30px;
 }
-/* line 100, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .back a:hover {
   opacity: 0.6;
 }
-/* line 104, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .back img {
   width: 35px;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 40.5%;
@@ -101,7 +101,7 @@ blockquote p {
   max-width: 580px;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .video-wrapper iframe,
 .video-wrapper object,
 .video-wrapper embed {
@@ -112,101 +112,123 @@ blockquote p {
   height: 100%;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .case-study {
   margin-bottom: 60px;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .case-content {
   /* TO DO: COME BACK TO THIS */
 }
-/* line 136, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .case-content h4 {
   font-size: 1.35rem;
 }
-/* line 141, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .case-content a {
   color: #3D3D3D;
   border-bottom: 1px solid #ccc;
 }
-/* line 146, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .case-content a:hover {
   color: #696969;
   border-bottom: none;
 }
-/* line 151, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .case-content figure {
   max-width: 580px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 159, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .case-content figure img {
   margin-bottom: 0.5em;
 }
-/* line 163, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .case-content figure figcaption {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
   color: #696969;
   font-size: 0.8em;
   font-style: italic;
   width: 90%;
 }
-/* line 172, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .case-content section {
   margin-top: 4em;
 }
+/* line 200, ../sass/style.scss */
+.case-content ul {
+  color: #696969;
+  line-height: 1.8;
+  margin-left: 100px;
+}
 
-/* line 178, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .intro {
   text-align: left;
   padding-left: 15px;
 }
-/* line 182, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5em;
 }
-/* line 187, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .intro h2 {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
 }
-/* line 193, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .intro h3 {
   font-size: 16px;
   margin-right: -8px;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .intro-text {
   margin-top: 18em;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .slideshow {
   height: 450px;
   background-color: white;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .slideshow > div {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
 }
-/* line 214, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .slideshow > div img {
   height: 450px;
 }
 
+@media (max-width: 750px) {
+  /* line 249, ../sass/style.scss */
+  .slideshow {
+    width: 100%;
+    min-height: 250px;
+    max-height: 450px;
+    height: auto;
+  }
+
+  /* line 255, ../sass/style.scss */
+  .slideshow > div img {
+    width: 100%;
+    height: auto;
+  }
+}
 /* PAGE-SPECIFIC */
-/* line 221, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .hero#smartcart {
   background-image: url("../images/smartcart2.png");
   background-position: right top;
@@ -215,7 +237,7 @@ blockquote p {
   height: 42em;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .hero#discoveroute {
   background-image: url("../images/discoveroute.png");
   background-position: right top;

@@ -17,6 +17,29 @@ $content-line: 580px;
     margin-right: auto;
 }
 
+
+// Breakpoints for each query
+$tiny: 380px;
+$smartphone: 640px;
+$tabletPortrait: 750px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1440px;
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == smallScreen {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}
+
 /* ELEMENTS */
 
 body {
@@ -150,7 +173,7 @@ blockquote {
 
     figure{
         max-width: $content-line;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         margin-bottom: 2.5rem;
 
         @include center-position;
@@ -162,6 +185,7 @@ blockquote {
 
         figcaption{
             @include center-position;
+            margin-top: 1em;
             color: $dark-grey;
             font-size: 0.8em;
             font-style: italic;
@@ -171,6 +195,12 @@ blockquote {
 
     section {
         margin-top: 4em;
+    }
+
+    ul {
+        color: $dark-grey;
+        line-height: 1.8;
+        margin-left: 100px;
     }
 
 }
@@ -201,8 +231,7 @@ blockquote {
 }
 
 
-
-.slideshow { 
+.slideshow {
     height: 450px; 
     background-color: white;  
 }
@@ -212,7 +241,20 @@ blockquote {
     position: absolute;
 
     img {
-        height: 450px;        
+        height: 450px;
+    }
+}
+
+@media (max-width: $tabletPortrait) {
+    .slideshow {
+        width: 100%;
+        min-height: 250px; 
+        max-height: 450px; 
+        height: auto;
+    }
+    .slideshow > div img {
+        width: 100%;
+        height: auto;
     }
 }
 

@@ -124,18 +124,19 @@ blockquote p {
 /* line 159, ../sass/style.scss */
 .case-content h4 {
   font-size: 1.35rem;
+  margin-top: 1.35rem;
 }
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .case-content a {
   color: #3D3D3D;
   border-bottom: 1px solid #ccc;
 }
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .case-content a:hover {
   color: #696969;
   border-bottom: none;
 }
-/* line 174, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .case-content figure {
   max-width: 580px;
   margin-top: 2.5rem;
@@ -144,11 +145,11 @@ blockquote p {
   margin-right: auto;
   text-align: center;
 }
-/* line 182, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .case-content figure img {
   margin-bottom: 0.5em;
 }
-/* line 186, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .case-content figure figcaption {
   margin-left: auto;
   margin-right: auto;
@@ -158,62 +159,62 @@ blockquote p {
   font-style: italic;
   width: 90%;
 }
-/* line 196, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .case-content section {
   margin-top: 4em;
 }
-/* line 200, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .case-content ul {
   color: #696969;
   line-height: 1.8;
   margin-left: 100px;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .intro {
   text-align: left;
   padding-left: 15px;
 }
-/* line 212, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5em;
 }
-/* line 217, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .intro h2 {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
 }
-/* line 223, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .intro h3 {
   font-size: 16px;
   margin-right: -8px;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .intro-text {
   margin-top: 18em;
 }
 
-/* line 234, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .slideshow {
   height: 450px;
   background-color: white;
 }
 
-/* line 239, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .slideshow > div {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
 }
-/* line 243, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .slideshow > div img {
   height: 450px;
 }
 
 @media (max-width: 750px) {
-  /* line 249, ../sass/style.scss */
+  /* line 250, ../sass/style.scss */
   .slideshow {
     width: 100%;
     min-height: 250px;
@@ -221,23 +222,24 @@ blockquote p {
     height: auto;
   }
 
-  /* line 255, ../sass/style.scss */
+  /* line 256, ../sass/style.scss */
   .slideshow > div img {
     width: 100%;
     height: auto;
   }
 }
 /* PAGE-SPECIFIC */
-/* line 263, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .hero#smartcart {
   background-image: url("../images/smartcart2.png");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 42em;
+  height: 32em;
+  margin-bottom: 5em;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .hero#discoveroute {
   background-image: url("../images/discoveroute.png");
   background-position: right top;

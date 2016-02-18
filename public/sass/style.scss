@@ -6,8 +6,10 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
-$intro-light-grey: #ddd;
-$intro-dark-grey: #6E6E6E;
+$teal: #00C9D0;
+
+$intro-light-grey: #eee;
+$intro-dark-grey: #999; //#6E6E6E;
 
 
 $discoveroute: #FEC201;
@@ -59,8 +61,9 @@ body {
     font-size: 16px;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 h3 {
@@ -78,6 +81,10 @@ p {
     font-size: 1.125em;
     line-height: 1.8;
     color: $dark-grey;
+}
+
+a {
+    color: $teal;
 }
 
 blockquote {
@@ -160,7 +167,7 @@ footer {
 
     h4 {
         font-family: 'Playfair Display', serif;  
-        font-weight: 100;
+        font-weight: 400;
         font-style: italic; 
         color: #666;
     }
@@ -257,7 +264,7 @@ footer {
         font-size: 3.5em;
 
         color: white;
-        text-shadow: $carbon 3px 2px;
+        text-shadow: $carbon 2px 1px;
     }
 
     h2 {
@@ -271,6 +278,12 @@ footer {
         font-size: 1em;
         margin-right: -8px;
         color: $intro-light-grey;
+    }
+}
+
+#discoveroute .intro {
+    h1 {
+        text-shadow: #888 2px 1px;
     }
 }
 
@@ -320,8 +333,8 @@ footer {
 }
 
 .hero#discoveroute {
-    background-image: linear-gradient(to bottom, transparent 1%, rgba(255, 255, 255, 0.1) 90%), 
-                        url("../images/discoveroute3.png");
+
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/discoveroute3.png");
     background-position: 80% 25%;
     background-size: cover, auto 28em;
     background-color: $discoveroute;

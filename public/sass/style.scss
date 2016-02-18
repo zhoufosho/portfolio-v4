@@ -6,8 +6,14 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
-$intro-light-grey: #C5C5C5;
+$intro-light-grey: #ddd;
 $intro-dark-grey: #6E6E6E;
+
+
+$discoveroute: #FEC201;
+$dais: #007E7F;
+$smartcart: #2565AA;
+
 
 // OTHER VARIABLES
 $content-line: 580px;
@@ -266,6 +272,24 @@ footer {
     margin-top: 18em;
 }
 
+@media (max-width: $smartphone) {
+    .back {
+        width: 30px;
+    }
+
+    .intro {
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+        }
+        h3 {
+            font-size: 0.8em;
+        }
+    }
+}
+
 /* PAGE-SPECIFIC */
 
 .hero {
@@ -283,7 +307,7 @@ footer {
     // margin-bottom: 5em;
     background-position: 80% 0%;
     background-size: cover, auto 26em;
-    background-color: #2565AA;
+    background-color: $smartcart;
 
 
     h2, h3 {
@@ -297,31 +321,31 @@ footer {
                         url("../images/discoveroute3.png");
     background-position: 80% 25%;
     background-size: cover, auto 28em;
-    background-color: #FEC201;
+    background-color: $discoveroute;
+}
+
+.hero#dais {
+    background-image: linear-gradient(to bottom, transparent 1%, rgba(255, 255, 255, 0.1) 90%), 
+                        url("../images/dais.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 20em;
+    background-color: $dais;
+
+    h2, h3 {
+        color: $intro-light-grey;
+    }
 }
 
 
-
 @media (max-width: $smartphone) {
-    .back {
-        width: 30px;
-    }
-
-    .intro {
-        h1 {
-            font-size: 2.5em;
-        }
-        h2 {
-            font-size: 1.25em;
-        }
-        h3 {
-            font-size: 0.8em;
-        }
-    }
-
     .hero#discoveroute,
     .hero#smartcart { 
         background-size: cover, 90% auto;
         background-position: 10% 100px;
+    }
+
+    .hero#dais {
+        background-size: cover, 90% auto;
+        background-position: 50% 130px;
     }
 }

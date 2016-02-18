@@ -574,3 +574,11 @@ li#sixdegree {
   margin-top: 10em;
   margin-bottom: 10em;
 }
+
+@media only screen and (max-width: 640px) {
+  /* line 606, ../sass/style.scss */
+  #home {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}

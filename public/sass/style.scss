@@ -13,6 +13,7 @@ $intro-dark-grey: #6E6E6E;
 $discoveroute: #FEC201;
 $dais: #007E7F;
 $smartcart: #2565AA;
+$dconstraints: #184E11;
 
 
 // OTHER VARIABLES
@@ -257,13 +258,13 @@ footer {
         // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
         font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.5em;
-        color: $intro-dark-grey;
+        color: $intro-light-grey;
     }
 
     h3 {
         font-size: 1em;
         margin-right: -8px;
-        color: $intro-dark-grey;
+        color: $intro-light-grey;
     }
 }
 
@@ -308,11 +309,6 @@ footer {
     background-position: 80% 0%;
     background-size: cover, auto 26em;
     background-color: $smartcart;
-
-
-    h2, h3 {
-        color: $intro-light-grey;
-    }
     
 }
 
@@ -322,18 +318,26 @@ footer {
     background-position: 80% 25%;
     background-size: cover, auto 28em;
     background-color: $discoveroute;
+
+    h2, h3 {
+        color: $intro-dark-grey;
+    }
 }
 
 .hero#dais {
-    background-image: linear-gradient(to bottom, transparent 1%, rgba(255, 255, 255, 0.1) 90%), 
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), 
                         url("../images/dais.png");
     background-position: 80% 40%;
     background-size: cover, auto 20em;
     background-color: $dais;
+}
 
-    h2, h3 {
-        color: $intro-light-grey;
-    }
+.hero#dconstraints {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), 
+                        url("../images/dconstraints.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 15em;
+    background-color: $dconstraints;
 }
 
 
@@ -344,6 +348,7 @@ footer {
         background-position: 10% 100px;
     }
 
+    .hero#dconstraints,
     .hero#dais {
         background-size: cover, 90% auto;
         background-position: 50% 130px;

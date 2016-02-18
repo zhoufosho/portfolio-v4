@@ -6,6 +6,9 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
+$intro-light-grey: #C5C5C5;
+$intro-dark-grey: #6E6E6E;
+
 // OTHER VARIABLES
 $content-line: 580px;
 
@@ -76,12 +79,6 @@ p {
     color: $dark-grey;
 }
 
-footer {
-    p {
-        margin-top: 30px;
-    }
-}
-
 blockquote {
     border-left: 0;
     width: 66.7%;
@@ -106,6 +103,14 @@ blockquote {
 
     p {
       display: inline;
+    }
+}
+
+
+footer {
+    margin-bottom: 30px;
+    p {
+        margin-top: 30px;
     }
 }
 
@@ -149,11 +154,6 @@ blockquote {
     width: 100%;
     height: 100%;
 }
-
-.case-study {
-    margin-bottom: 60px;
-}
-
 
 .case-content {
     h4 {
@@ -206,31 +206,6 @@ blockquote {
 
 }
 
-.intro {
-    text-align: left;
-    padding-left: 15px;
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 3.5em;
-    }
-
-    h2 {
-        // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
-        font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 16px;
-        margin-right: -8px;
-    }
-}
-
-.intro-text {
-    margin-top: 18em;
-}
-
 
 .slideshow {
     height: 450px; 
@@ -259,22 +234,94 @@ blockquote {
     }
 }
 
+
+.intro {
+    text-align: left;
+    padding-left: 15px;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5em;
+
+        color: white;
+        text-shadow: $carbon 3px 2px;
+    }
+
+    h2 {
+        // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+        font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5em;
+        color: $intro-dark-grey;
+    }
+
+    h3 {
+        font-size: 1em;
+        margin-right: -8px;
+        color: $intro-dark-grey;
+    }
+}
+
+
+.intro-text {
+    margin-top: 18em;
+}
+
 /* PAGE-SPECIFIC */
 
-.hero#smartcart {
-    background-image: url("../images/smartcart2.png");  
-    background-position: right top;
+.hero {
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 32em;
-    margin-bottom: 5em;
+    height: 36em;
+    margin-bottom: 2em; 
+}
+
+.hero#smartcart {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
+    // FOR GREY BACKGROUND
+    // background-position: right top;
+    // background-size: contain;
+    // height: 32em;
+    // margin-bottom: 5em;
+    background-position: 80% 0%;
+    background-size: cover, auto 26em;
+    background-color: #2565AA;
+
+
+    h2, h3 {
+        color: $intro-light-grey;
+    }
+    
 }
 
 .hero#discoveroute {
-    background-image: url("../images/discoveroute.png");    
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 32em;
-    margin-bottom: 5em;
+    background-image: linear-gradient(to bottom, transparent 1%, rgba(255, 255, 255, 0.1) 90%), 
+                        url("../images/discoveroute3.png");
+    background-position: 80% 25%;
+    background-size: cover, auto 28em;
+    background-color: #FEC201;
+}
+
+
+
+@media (max-width: $smartphone) {
+    .back {
+        width: 30px;
+    }
+
+    .intro {
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+        }
+        h3 {
+            font-size: 0.8em;
+        }
+    }
+
+    .hero#discoveroute,
+    .hero#smartcart { 
+        background-size: cover, 90% auto;
+        background-position: 10% 100px;
+    }
 }

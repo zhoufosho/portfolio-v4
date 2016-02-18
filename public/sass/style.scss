@@ -207,6 +207,10 @@ footer {
         margin-top: 4em;
     }
 
+    section:first-of-type {
+        margin-top: 1.5em;
+    }
+
     ul {
         color: $dark-grey;
         line-height: 1.8;
@@ -298,7 +302,8 @@ footer {
 .hero {
     background-repeat: no-repeat;
     height: 36em;
-    margin-bottom: 2em; 
+    margin-bottom: 1em; 
+    // margin-bottom: 2em; 
 }
 
 .hero#smartcart {

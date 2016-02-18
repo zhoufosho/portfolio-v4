@@ -1,90 +1,110 @@
 /* 
  * BASE
  */
-
-body{
-	font-family : 'Fira Sans', sans-serif; 
-	font-weight: 300; 
-	background-color: white;
-	height: 100%;
-	width: 100%;
+/* line 5, ../sass/blog-style.scss */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
-h1, h2, h3, h4, h5 { 
-	font-family: 'Playfair Display', serif; 
-	font-weight: 400; 
+/* line 13, ../sass/blog-style.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
-h1{
-	text-align: center;
-	line-height: 2em;
-	font-weight: 700;
-	letter-spacing: 0.008em;
+/* line 18, ../sass/blog-style.scss */
+h1 {
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+  letter-spacing: 0.008em;
 }
 
-p{
-	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1.85em;
+/* line 25, ../sass/blog-style.scss */
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.85em;
 }
 
-strong{
-	font-weight: 700;
+/* line 31, ../sass/blog-style.scss */
+strong {
+  font-weight: 700;
 }
 
-ul li{
-	margin-left: 30px;
-	margin-right: 30px;
+/* line 35, ../sass/blog-style.scss */
+ul li {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-
-footer p{
-	color: #696969;
-	margin-bottom: 45px;
+/* line 41, ../sass/blog-style.scss */
+footer p {
+  color: #696969;
+  margin-bottom: 45px;
 }
 
+/* line 46, ../sass/blog-style.scss */
 figure {
-	margin: 0 -80px 40px;
-    text-align: center; 
+  margin: 0 -80px 40px;
+  text-align: center;
 }
 
-figure figcaption{
-	color: #aaa;
-	margin-top: 10px;
-	font-size: 0.8rem;
+/* line 51, ../sass/blog-style.scss */
+figure figcaption {
+  color: #aaa;
+  margin-top: 10px;
+  font-size: 0.8rem;
 }
 
-
+/* line 58, ../sass/blog-style.scss */
 .content {
-	padding-top: 100px;
-	padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
+/* line 63, ../sass/blog-style.scss */
 .center {
-	text-align: center;
+  text-align: center;
 }
 
+/* line 67, ../sass/blog-style.scss */
 blockquote {
-	font-family: 'Playfair Display', serif; 
-	font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   border-left: 0;
   margin: 1.8em 4em 2em;
   padding: 1.5em 10px;
   text-align: center;
   color: #aaa;
-  	line-height: 1.85em;
-  	font-size: 1.2em;
-
+  line-height: 1.85em;
+  font-size: 1.2em;
 }
 
+/* line 80, ../sass/blog-style.scss */
 blockquote::before {
-	color: #aaa;
-	content: "\201C";
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	margin-left: -0.7em;
-	vertical-align: -0.4em;
+  color: #aaa;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  margin-left: -0.7em;
+  vertical-align: -0.4em;
 }
 
-
+/* line 91, ../sass/blog-style.scss */
+.back {
+  margin-top: 30px;
+}
+/* line 93, ../sass/blog-style.scss */
+.back a:hover {
+  opacity: 0.6;
+}
+/* line 97, ../sass/blog-style.scss */
+.back img {
+  width: 35px;
+}

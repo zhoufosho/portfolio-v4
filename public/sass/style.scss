@@ -417,6 +417,7 @@ ul.tiles{
 
 .tile-text{
     padding: 1.5em 2.2em 2.2em; 
+    margin-top: -2px;
     // margin: 0 15px;
     background-color: white;
     p{
@@ -452,6 +453,20 @@ ul.tiles{
         .tile-img{
             height: 67%;
         }
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .minor {
+        margin-top: 5px;
+    }
+
+    .major:first-of-type{
+        margin-bottom: 55px;
+    }
+    .major:last-of-type{
+        margin-top: -5px;
     }
 
 }
@@ -506,7 +521,8 @@ ul.tiles{
     box-shadow: 2px 2px #ddd, -1px 0px #ddd;
 }
 #projects .tile-img {
-    box-shadow: 2px 0px #ddd;
+    box-shadow: 2px 0px #DDD, -1px 0px #DDD;
+
 }
 
 
@@ -552,17 +568,17 @@ ul.centered-inline-list{
 }
 
 .tile-row:first-of-type {
-    margin-bottom: 22px !important;
+    margin-bottom: 22px;
 }
 
 
 li#dais {
-    margin-bottom: 22px !important;
+    margin-bottom: 22px;
 }
 
 
 li#sixdegree {
-    margin-bottom: 22px !important;
+    margin-bottom: 22px;
 }
 
 .tile-img {

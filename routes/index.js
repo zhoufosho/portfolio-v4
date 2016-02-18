@@ -19,6 +19,10 @@ router.get('/productchallenge', function(req, res) {
   res.render('productchallenge', { title: 'KPCB Product Challenge: Crazy for Crockpot' });
 });
 
+router.get('/googlechallenge', function(req, res) {
+  res.render('googlechallenge', { title: 'Google Interview Challenge' });
+});
+
 for (var i=0; i<projects.length; i++){
 	var project = projects[i];
 	var endpoint = '/' + project.slug;

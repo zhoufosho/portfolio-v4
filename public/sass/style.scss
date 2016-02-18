@@ -71,12 +71,6 @@ h3 {
     line-height: 1.8;
 }
 
-h4 {
-    font-family: 'Playfair Display', serif;  
-    font-weight: 100;
-    font-style: italic; 
-    color: #666;
-}
 
 p {
     // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
@@ -163,6 +157,14 @@ footer {
 }
 
 .case-content {
+
+    h4 {
+        font-family: 'Playfair Display', serif;  
+        font-weight: 100;
+        font-style: italic; 
+        color: #666;
+    }
+
     h4 {
         font-size: 1.35rem;
         margin-top: 1.35rem;
@@ -353,4 +355,249 @@ footer {
         background-size: cover, 90% auto;
         background-position: 50% 130px;
     }
+}
+
+
+
+
+
+
+/* HOMEPAGE */
+
+#landing h4, h5 {
+    font-family: 'Abel', 'Courier New', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: inline-block;
+}
+
+.more-triangle {
+    display: none;
+}
+
+#projects .tiles .tile:hover{
+    cursor: pointer;
+}
+
+
+.bio-img{
+    height: 230px;
+}
+
+ul.tiles{
+    list-style: none;
+    margin-left: 0px;
+}
+
+.tile-row:nth-child(2n+1) .major{
+    float: right;
+}
+
+@media only screen and (min-width: $tabletPortrait) {
+    .tile{
+        -webkit-transition: width 0.8s, height 0.8s;
+        transition: width 0.8s, height 0.8s;
+    }
+} 
+
+.tile{
+    margin: 1rem 0;
+}
+
+.tile-img{
+    //background-color: $medium-grey;
+    height: auto;
+}
+
+
+.tile-img-light{
+    background-color: white;
+    margin: 1em 0 1.7em;
+}
+
+.tile-text{
+    padding: 1.5em 2.2em 2.2em; 
+    // margin: 0 15px;
+    background-color: white;
+    p{
+        margin-bottom: 0;   
+    }   
+}
+
+.minor{
+    font-size: 80%;
+    height: 25em;
+    .tile-img{
+        height: 52% // ~11.45em;
+    }
+}
+
+.major{
+    height: 40.4em; 
+    .tile-img{
+        height: 75% // ~28em;
+    }
+}
+
+@media only screen and (max-width: $smartphone) {
+    .minor{
+        height: 25em;
+        .tile-img{
+            height: 60%;
+        }
+    }
+
+    .major{
+        height: 30em; 
+        .tile-img{
+            height: 67%;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: $tiny) {
+    .minor .tile-img{
+        height: 52%;
+    }
+
+    .major .tile-img{
+        height: 65%;
+    }
+}
+
+/* project specifics */
+
+.tile-img{
+    overflow: hidden;
+}
+
+.tile-img .inner{
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#smartcart .tile-img:after,
+#smartcart .tile-img{
+    background-color: $smartcart;
+}
+
+#research .tile-img:after,
+#research .tile-img{
+    background-color: $dconstraints;
+}
+
+#discoveroute .tile-img:after,
+#discoveroute .tile-img{
+    background-color: $discoveroute;
+}
+
+#dais .tile-img:after,
+#dais .tile-img{
+    background-color: $dais;
+}
+
+
+#projects .tile-text {
+    box-shadow: 2px 2px #ddd, -1px 0px #ddd;
+}
+#projects .tile-img {
+    box-shadow: 2px 0px #ddd;
+}
+
+
+
+
+.no-margin{
+    margin: 0;
+}
+
+ul.centered-list{
+    margin-left: 0;
+    margin-top: 0.5rem;
+    list-style-type: none; 
+    text-align: center;
+
+    li{
+        display: block;
+        margin: 0 10px;
+
+        p{
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+ul.centered-inline-list{
+    list-style-type: none; 
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 0.5rem;
+
+    li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+.title-underline {
+    margin-bottom: 1em;
+    border-bottom: 3px solid #ddd;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.tile-row:first-of-type {
+    margin-bottom: 22px !important;
+}
+
+
+li#dais {
+    margin-bottom: 22px !important;
+}
+
+
+li#sixdegree {
+    margin-bottom: 22px !important;
+}
+
+.tile-img {
+  position: relative;
+}
+
+.tile-img:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+}
+
+#projects .tile:hover .tile-img:after  {
+  opacity: .7;
+}
+
+.tile-img:hover:after  {
+  opacity: .7;
+}
+
+.tile-img:after {
+  background-color: red;
+}
+
+#landing footer {
+    margin-top: 60px;
+}
+
+#home {
+    margin-top: 10em;
+    margin-bottom: 10em;
 }

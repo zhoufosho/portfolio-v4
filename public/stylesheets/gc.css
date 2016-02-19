@@ -1,0 +1,62 @@
+/* line 14, ../sass/gc.scss */
+h3 {
+  margin-top: 1em;
+}
+
+/* line 18, ../sass/gc.scss */
+figure:not(.full-width) {
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 25, ../sass/gc.scss */
+figure.full-width figcaption {
+  width: 55%;
+}
+
+/* line 30, ../sass/gc.scss */
+figure {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* line 34, ../sass/gc.scss */
+figure img {
+  margin-bottom: 0.5em;
+}
+/* line 38, ../sass/gc.scss */
+figure figcaption {
+  margin-top: 1em;
+  font-size: 0.8em;
+  font-style: italic;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 48, ../sass/gc.scss */
+a:not(.back) {
+  color: #696969;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 53, ../sass/gc.scss */
+a:not(.back):hover {
+  color: #aaa;
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 60, ../sass/gc.scss */
+  figure.full-width,
+  figure.full-width img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 68, ../sass/gc.scss */
+.content {
+  padding-top: 0px;
+  margin-top: 4em;
+}

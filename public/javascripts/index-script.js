@@ -1,12 +1,19 @@
 $(document).on('ready', function(){
+
   $('#projects .tiles .tile').click(function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     var slug = this.id;
-    $('body').fadeOut(2000, newpage(slug));
+
+    var unfinished = ['uber', 'remind', 'frog'];
+    if(unfinished.indexOf(slug) > 0)
+    	return;
+
+
+    newpage(slug);
   });
 
   function newpage(slug) {
-    window.location = slug;
+    location = slug;
   }
 
 });

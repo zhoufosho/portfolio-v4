@@ -6,21 +6,21 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
-$remind: #4a89dc;
-$uber: #000;
-$frog: #46bc01;
-
 $teal: #00C9D0;
 
-$intro-light-grey: #fafafa; //#eee;
+$intro-light-grey: #f4f4f4; //#fafafa;
 $intro-dark-grey: #999; //#6E6E6E;
 
 
 $discoveroute: #FFA215; //#FEC201;
 $dais: #007E7F;
 $smartcart: #2565AA;
-$dconstraints: #184E11;
+$dconstraints: #184E11; //#4E1133;
+$sixdegree: #010425;
 
+$remind: #4a89dc;
+$uber: #000;
+$frog: #46bc01;
 
 // OTHER VARIABLES
 $content-line: 580px;
@@ -60,7 +60,6 @@ $largeScreen: 1440px;
 
 body {
     color: $carbon;
-    // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
     font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
 }
@@ -80,7 +79,6 @@ h3 {
 
 
 p {
-    // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
     font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.125em;
     line-height: 1.8;
@@ -147,6 +145,7 @@ footer {
 }
 
 .video-wrapper {
+    @include center-position;
     position: relative;
     // padding-bottom: 56.25%;
     padding-bottom: 40.5%;
@@ -268,7 +267,7 @@ footer {
         font-size: 3.5em;
 
         color: white;
-        text-shadow: $carbon 2px 1px;
+        // text-shadow: $carbon 2px 1px;
     }
 
     h2 {
@@ -287,7 +286,7 @@ footer {
 
 #discoveroute .intro {
     h1 {
-        text-shadow: #888 2px 1px;
+        // text-shadow: #888 2px 1px;
     }
 }
 
@@ -358,6 +357,14 @@ footer {
     background-position: 80% 40%;
     background-size: cover, auto 15em;
     background-color: $dconstraints;
+}
+
+.hero#sixdegree {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), 
+                        url("../images/sixdegree.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 22em;
+    background-color: $sixdegree;
 }
 
 
@@ -515,6 +522,8 @@ ul.tiles{
 }
 
 
+/* project specific colors */
+
 #smartcart .tile-img:after,
 #smartcart .tile-img{
     background-color: $smartcart;
@@ -563,6 +572,14 @@ ul.tiles{
     background-color: $dais;
 }
 
+#sixdegree .tile-img:after,
+#sixdegree .tile-img{
+    background-color: $sixdegree;
+}
+
+#sixdegree .tile-img {
+    padding: 0 18%;
+}
 
 #projects .tile-text {
     box-shadow: 2px 2px #ddd, -1px 0px #ddd;
@@ -572,6 +589,12 @@ ul.tiles{
 
 }
 
+// #projects .tile-text {
+//     box-shadow: 2px 2px #ddd, -1px 0px #ddd, 0px 3px #ddd;
+// }
+// #projects .tile-img {
+//     box-shadow: 2px 0px #cfcfcf, -1px 0px #DDD;
+// }
 
 
 
@@ -664,4 +687,14 @@ li#dais {
         margin-top: 5em;
         margin-bottom: 5em;
     }
+}
+
+
+#frog .tile-img:hover,
+#frog .tile-text:hover,
+#remind .tile-img:hover,
+#remind .tile-text:hover,
+#uber .tile-img:hover,
+#uber .tile-text:hover  {
+  cursor: not-allowed;
 }

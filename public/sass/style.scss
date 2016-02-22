@@ -273,7 +273,6 @@ footer {
     }
 
     h2 {
-        // font-family: 'Nunito', 'Helvetica Neue', sans-serif;
         font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.5em;
         color: $intro-light-grey;
@@ -326,11 +325,6 @@ footer {
 
 .hero#smartcart {
     background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
-    // FOR GREY BACKGROUND
-    // background-position: right top;
-    // background-size: contain;
-    // height: 32em;
-    // margin-bottom: 5em;
     background-position: 80% 0%;
     background-size: cover, auto 26em;
     background-color: $smartcart;
@@ -388,7 +382,6 @@ footer {
 
 
 
-
 /* HOMEPAGE */
 
 #landing h4, h5 {
@@ -398,17 +391,8 @@ footer {
     display: inline-block;
 }
 
-.more-triangle {
-    display: none;
-}
-
 #projects .tiles .tile:hover{
     cursor: pointer;
-}
-
-
-.bio-img{
-    height: 230px;
 }
 
 ul.tiles{
@@ -426,6 +410,21 @@ ul.tiles{
         transition: width 0.8s, height 0.8s;
     }
 } 
+.minor .tile{
+    font-size: 80%;
+    height: 25em;
+    margin-bottom: 1.4em;
+    .tile-img{
+        height: 52% // ~11.45em;
+    }
+}
+
+.major .tile{
+    height: 40em; 
+    .tile-img{
+        height: 75% // ~28em;
+    }
+}
 
 .tile{
     margin: 1rem 0;
@@ -441,43 +440,37 @@ ul.tiles{
     margin: 1em 0 1.7em;
 }
 
+
+.title-underline {
+    margin-bottom: 1em;
+    border-bottom: 3px solid #ddd;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
 .tile-text{
     padding: 1.75em 2.2em 2em;
-    margin-top: -2px;
-    // margin: 0 15px;
+    border: 1px solid #ddd;
+    margin-top: -1px;
     background-color: white;
     p{
         margin-bottom: 0;   
     }   
 }
 
-.minor{
-    font-size: 80%;
-    height: 25em;
-    .tile-img{
-        height: 52% // ~11.45em;
-    }
-}
-
-.major{
-    height: 40em; 
-    .tile-img{
-        height: 75% // ~28em;
-    }
-}
-
-
-/* FIX RESPONSIVE */
+/* Responsive stuff */
 @media only screen and (max-width: $smartphone) {
-    .minor{
+    .minor .tile{
         height: 25em;
+        margin: 2em 0;
         .tile-img{
             height: 60%;
         }
     }
 
-    .major{
+    .major .tile{
         height: 30em; 
+        margin: 1.5em 0 2.5em;
         .tile-img{
             height: 67%;
         }
@@ -485,28 +478,12 @@ ul.tiles{
             font-size: 1em;
         }
     }
-
-    .minor {
-        margin-top: 5px;
-    }
-
-    .major:first-of-type{
-        margin-bottom: 55px;
-    }
-    .major:last-of-type{
-        margin-top: -5px;
-    }
-
 }
 
 
 @media only screen and (max-width: $tiny) {
-    .minor .tile-img{
-        height: 52%;
-    }
-
-    .major .tile-img{
-        height: 65%;
+    .major .tile .tile-img{
+        height: 60%;
     }
 }
 
@@ -524,7 +501,52 @@ ul.tiles{
 }
 
 
-/* project specific colors */
+.tile-img {
+  position: relative;
+}
+
+.tile-img:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+}
+
+#projects .tile:hover .tile-img:after  {
+  opacity: .7;
+}
+
+.tile-img:hover:after  {
+  opacity: .7;
+}
+
+.tile-img:after {
+  background-color: red;
+}
+
+#landing footer {
+    margin-top: 60px;
+}
+
+#home {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+@media only screen and (max-width: $smartphone) {
+    #home {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+}
+
+
+/* homepage project specific  */
 
 #smartcart .tile-img:after,
 #smartcart .tile-img{
@@ -574,6 +596,12 @@ ul.tiles{
     background-color: $dais;
 }
 
+@media only screen and (max-width: $smartphone) {
+    #dais .tile-img{
+        padding: 0 8%;
+    }
+}
+
 #sixdegree .tile-img:after,
 #sixdegree .tile-img{
     background-color: $sixdegree;
@@ -591,115 +619,6 @@ ul.tiles{
 #etc .tile-img {
     padding: 0% 12%;
 }
-
-#projects .tile-text {
-    box-shadow: 2px 2px #ddd, -1px 0px #ddd;
-}
-#projects .tile-img {
-    box-shadow: 2px 0px #DDD, -1px 0px #DDD;
-
-}
-
-// #projects .tile-text {
-//     box-shadow: 2px 2px #ddd, -1px 0px #ddd, 0px 3px #ddd;
-// }
-// #projects .tile-img {
-//     box-shadow: 2px 0px #cfcfcf, -1px 0px #DDD;
-// }
-
-
-
-.no-margin{
-    margin: 0;
-}
-
-ul.centered-list{
-    margin-left: 0;
-    margin-top: 0.5rem;
-    list-style-type: none; 
-    text-align: center;
-
-    li{
-        display: block;
-        margin: 0 10px;
-
-        p{
-            margin-bottom: 0.25rem;
-        }
-    }
-}
-
-ul.centered-inline-list{
-    list-style-type: none; 
-    text-align: center;
-    margin-left: 0px;
-    padding-top: 0.5rem;
-
-    li{
-        display: inline-block;
-        margin: 0 10px;
-    }
-}
-
-.title-underline {
-    margin-bottom: 1em;
-    border-bottom: 3px solid #ddd;
-    display: inline-block;
-    padding-bottom: 0.5em;
-}
-
-
-
-li#frog,
-li#potpourri,
-li#dais {
-    margin-bottom: 17px;
-}
-
-.tile-img {
-  position: relative;
-}
-
-.tile-img:after {
-  position: absolute;
-  content:"";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  opacity:0;
-  -webkit-transition: opacity .7s ease;
-  -moz-transition: opacity .7s ease;
-}
-
-#projects .tile:hover .tile-img:after  {
-  opacity: .7;
-}
-
-.tile-img:hover:after  {
-  opacity: .7;
-}
-
-.tile-img:after {
-  background-color: red;
-}
-
-#landing footer {
-    margin-top: 60px;
-}
-
-#home {
-    margin-top: 10em;
-    margin-bottom: 10em;
-}
-
-@media only screen and (max-width: $smartphone) {
-    #home {
-        margin-top: 5em;
-        margin-bottom: 5em;
-    }
-}
-
 
 #frog .tile-img:hover,
 #frog .tile-text:hover,

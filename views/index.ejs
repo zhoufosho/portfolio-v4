@@ -32,24 +32,28 @@
 					<% var project = projects[i] %>
 					<% if (i % 3 == 0) { %>
 					<div class='row tile-row'>
-						<li class='medium-7 large-8 columns tile major' id='<%- project.slug %>' >
+						<li class='medium-7 large-8 columns major'>
+							<div class='tile' id='<%- project.slug %>' >
 					<% } else {  %>
-						<li class='medium-5 large-4 columns tile minor' id='<%- project.slug %>' >
+						<li class='medium-5 large-4 columns minor'>
+							<div class='tile' id='<%- project.slug %>' >
 					<% } %>
-							<div class='tile-img'>
-								<div class='inner' style='background-image: url("<%- project.img %>")'></div>
-							</div>
-							<div class='tile-text pull-down'>
-								<div class='row'>
-									<% if(i % 3 == 0) { %>
-									<div class='medium-11 large-10 columns'>
-										<h4 class='title-underline'><%- project.name %></h4>
-										<div class='proj-content'><p><%- project.content %></p></div>
-									<% } else { %>
-									<div class='medium-11 large-11 columns'>
-										<h5 class='title-underline'><%- project.name %></h5>
-										<div class='proj-content'><p><%- project.content %></p></div>
-									<% } %>
+							
+								<div class='tile-img'>
+									<div class='inner' style='background-image: url("<%- project.img %>")'></div>
+								</div>
+								<div class='tile-text'>
+									<div class='row'>
+										<% if(i % 3 == 0) { %>
+										<div class='medium-11 large-10 columns'>
+											<h4 class='title-underline'><%- project.name %></h4>
+											<div class='proj-content'><p><%- project.content %></p></div>
+										<% } else { %>
+										<div class='medium-11 large-11 columns'>
+											<h5 class='title-underline'><%- project.name %></h5>
+											<div class='proj-content'><p><%- project.content %></p></div>
+										<% } %>
+										</div>
 									</div>
 								</div>
 							</div>

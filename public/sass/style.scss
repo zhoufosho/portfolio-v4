@@ -18,6 +18,8 @@ $smartcart: #2565AA;
 $dconstraints: #184E11; //#4E1133;
 $sixdegree: #010425;
 
+$etc: #7B041C;
+
 $remind: #4a89dc;
 $uber: #000;
 $frog: #46bc01;
@@ -579,6 +581,15 @@ ul.tiles{
 
 #sixdegree .tile-img {
     padding: 0 18%;
+}
+
+#etc .tile-img:after,
+#etc .tile-img{
+    background-color: $etc;
+}
+
+#etc .tile-img {
+    padding: 0% 12%;
 }
 
 #projects .tile-text {

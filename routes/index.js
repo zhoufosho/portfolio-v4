@@ -8,7 +8,7 @@ var projects = [{name: "discoveroute", slug:"discoveroute", img:"images/discover
 				{name: "Frog", slug:"frog", img:"images/frog.png", content: "Enabling employees to author and customize original content."},
 				{name: "Uber", slug:"uber", img:"images/uber.png", content: "Streamlining conflict resolution between drivers and driver ops."},
 				{name: "d.constraints", slug:"research", img: "images/dconstraints.png", content: "My thesis researched and experimented on external design constraints and internal design fixation."},
-				{name: "Potpourri", slug:"potpourri", img:"images/respiration2.png", content: "An assortment of physical products, visual designs, and art."},
+				{name: "Etcetera", slug:"etc", img:"images/etc.png", content: "An assortment of physical products, visual designs, and art."},
 				{name: "Remind", slug:"remind", img:"images/remind.png", content: "Accelerating teacher growth during back-to-school season."}
 				];
 

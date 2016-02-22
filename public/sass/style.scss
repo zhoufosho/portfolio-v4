@@ -6,13 +6,17 @@ $dark-grey: #696969;
 $carbon: #3D3D3D;
 $blue: #00C9D0;
 
+$remind: #4a89dc;
+$uber: #000;
+$frog: #46bc01;
+
 $teal: #00C9D0;
 
-$intro-light-grey: #eee;
+$intro-light-grey: #fafafa; //#eee;
 $intro-dark-grey: #999; //#6E6E6E;
 
 
-$discoveroute: #FEC201;
+$discoveroute: #FFA215; //#FEC201;
 $dais: #007E7F;
 $smartcart: #2565AA;
 $dconstraints: #184E11;
@@ -338,10 +342,6 @@ footer {
     background-position: 80% 25%;
     background-size: cover, auto 28em;
     background-color: $discoveroute;
-
-    h2, h3 {
-        color: $intro-dark-grey;
-    }
 }
 
 .hero#dais {
@@ -528,6 +528,31 @@ ul.tiles{
 #discoveroute .tile-img{
     background-color: $discoveroute;
 }
+
+#remind .tile-img:after,
+#remind .tile-img{
+    background-color: $remind;
+}
+
+#remind .tile-img{
+    padding: 0% 20%;
+}
+
+#frog .tile-img:after,
+#frog .tile-img{
+    background-color: $frog;
+}
+
+#frog .tile-img{
+    padding: 0% 25%;
+}
+
+
+#uber .tile-img:after,
+#uber .tile-img{
+    background-color: $uber;
+}
+
 
 #dais .tile-img:after,
 #dais .tile-img{

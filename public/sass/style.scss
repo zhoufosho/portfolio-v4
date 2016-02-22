@@ -423,7 +423,6 @@ ul.tiles{
 }
 
 .tile-img{
-    //background-color: $medium-grey;
     height: auto;
 }
 
@@ -434,7 +433,7 @@ ul.tiles{
 }
 
 .tile-text{
-    padding: 1.5em 2.2em 2.2em; 
+    padding: 1.75em 2.2em 2em;
     margin-top: -2px;
     // margin: 0 15px;
     background-color: white;
@@ -452,12 +451,14 @@ ul.tiles{
 }
 
 .major{
-    height: 40.4em; 
+    height: 40em; 
     .tile-img{
         height: 75% // ~28em;
     }
 }
 
+
+/* FIX RESPONSIVE */
 @media only screen and (max-width: $smartphone) {
     .minor{
         height: 25em;
@@ -535,7 +536,7 @@ ul.tiles{
 }
 
 #remind .tile-img{
-    padding: 0% 20%;
+    padding: 0% 22%;
 }
 
 #frog .tile-img:after,
@@ -553,6 +554,9 @@ ul.tiles{
     background-color: $uber;
 }
 
+#uber .tile-img {
+    padding: 0 15%;
+}
 
 #dais .tile-img:after,
 #dais .tile-img{
@@ -610,18 +614,12 @@ ul.centered-inline-list{
     padding-bottom: 0.5em;
 }
 
-.tile-row:first-of-type {
-    margin-bottom: 22px;
-}
 
 
+li#frog,
+li#potpourri,
 li#dais {
-    margin-bottom: 22px;
-}
-
-
-li#sixdegree {
-    margin-bottom: 22px;
+    margin-bottom: 17px;
 }
 
 .tile-img {

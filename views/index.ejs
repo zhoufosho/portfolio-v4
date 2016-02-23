@@ -11,7 +11,18 @@
 			<div class='large-8 large-centered medium-10 medium-centered columns'>
 				<h1>Hi, I'm Elaine</h1>
 				<p>I'm fascinated by how modern products, technologies, and creative processes affect people, and vice versa. I'm a Masters student at Stanford studying Human-Computer Interaction.</p>
-				<p>Say hello at <a href="mailto:ezhou@stanford.edu">ezhou@stanford.edu</a></p>
+
+				<p>Sometimes, I social media. Say hello!</a></p>
+				<p><a href=""></p>
+				<ul class='social-media inline-list'>
+					<li><a href='http://instagram.com/zhoufosho' target='_blank'><i class='fa fa-lg fa-instagram'></i></a></li>
+					<li><a href='http://twitter.com/zhoufosho' target='_blank'><i class='fa fa-lg fa-twitter'></i></a></li>
+					<li><a href='http://facebook.com/zhoufosho' target='_blank'><i class='fa fa-lg fa-facebook'></i></a></li>
+					<!-- <li><a href='https://www.linkedin.com/in/elainexzhou' target='_blank'><i class='fa fa-lg fa-linkedin'></i></a></li> -->
+					<li><a href='http://codepen.io/zhoufosho/' target='_blank'><i class='fa fa-lg fa-codepen'></i></a></li>
+<!-- 					<li><a href='http://github.com/zhoufosho/' target='_blank'><i class='fa fa-lg fa-github'></i></a></li>
+ -->					<li><a href='mailto:ezhou@stanford.edu' target='_blank'><i class='fa fa-lg fa-send'></i></a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="row">
@@ -27,6 +38,9 @@
 <section id='projects'>
 	<div class='row'>
 		<div class='large-12 large-centered columns'>
+
+			<h1>Projects</h1>
+
 			<ul class='tiles'>
 				<% for(var i=0; i<projects.length; i++) { %>
 					<% var project = projects[i] %>
@@ -62,6 +76,42 @@
 					</div>
 					<% } %>
 				<% } %>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- WORK SECTION -->
+<section id='work'>
+	<div class='row'>
+		<div class='large-12 large-centered columns'>
+
+			<h1>Experience</h1>
+
+			<ul class='tiles'>
+				<div class='row tile-row'>
+					<% for(var i=0; i<works.length; i++) { %>
+						<% var work = works[i] %>
+							<li class='medium-4 columns minor'>
+								<div class='tile' id='<%- work.slug %>' >
+									<div class='tile-img'>
+										<div class='inner' style='background-image: url("<%- work.img %>")'></div>
+									</div>
+									<div class='tile-text'>
+										<div class='row'>
+											<div class='medium-11 large-10 columns'>
+												<h4 class='title-underline'><%- work.name %></h4>
+												<div class='proj-content'><p><%- work.content %></p></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						<% if (i % 3 == 2) { %>
+						</div>
+						<% } %>
+					<% } %>
+				</div>
 			</ul>
 		</div>
 	</div>

@@ -88,7 +88,10 @@ p {
 }
 
 a {
-    color: $teal;
+    // color: $teal;
+    color: $medium-grey;
+    transition: color .25s;
+    -webkit-transition: color .25s;
 }
 
 blockquote {
@@ -529,13 +532,15 @@ ul.tiles{
   background-color: red;
 }
 
+#landing section:not(:first-of-type),
 #landing footer {
     margin-top: 60px;
 }
 
 #home {
     margin-top: 10em;
-    margin-bottom: 10em;
+    // margin-bottom: 10em;
+    margin-bottom: 7em;
 }
 
 @media only screen and (max-width: $smartphone) {
@@ -545,6 +550,19 @@ ul.tiles{
     }
 }
 
+ul.inline-list{
+    list-style-type: none; 
+    margin-left: 0px;
+    padding-top: 0.5rem;
+
+    li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+    li:first-of-type{
+        margin-left: 1px;
+    }
+}
 
 /* homepage project specific  */
 
@@ -628,3 +646,41 @@ ul.tiles{
 #uber .tile-text:hover  {
   cursor: not-allowed;
 }
+
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$instagram: #517fa4;
+$github: #000;
+$codepen: #191919;
+$sendo: $teal;
+
+.fa-twitter:hover{
+    color: $twitter
+}
+
+.fa-facebook:hover{
+    color: $facebook
+}
+
+.fa-linkedin:hover{
+    color: $linkedin
+}
+.fa-instagram:hover{
+    color: $instagram
+}
+
+.fa-github:hover{
+    color: $github
+}
+
+.fa-codepen:hover{
+    color: $codepen
+}
+
+.fa-send:hover{
+    color: $sendo;
+}
+
+

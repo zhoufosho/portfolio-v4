@@ -912,6 +912,16 @@ ul.inline-list li:first-of-type {
   padding: 0% 12%;
 }
 
+/* line 714, ../sass/style.scss */
+#frog .tile-img:hover,
+#frog .tile-text:hover,
+#remind .tile-img:hover,
+#remind .tile-text:hover,
+#uber .tile-img:hover,
+#uber .tile-text:hover {
+  cursor: not-allowed;
+}
+
 /* line 732, ../sass/style.scss */
 li a:hover {
   color: #aaa;

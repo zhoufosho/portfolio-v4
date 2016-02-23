@@ -711,14 +711,14 @@ ul.inline-list{
     padding: 0% 12%;
 }
 
-// #frog .tile-img:hover,
-// #frog .tile-text:hover,
-// #remind .tile-img:hover,
-// #remind .tile-text:hover,
-// #uber .tile-img:hover,
-// #uber .tile-text:hover  {
-  // cursor: not-allowed;
-// }
+#frog .tile-img:hover,
+#frog .tile-text:hover,
+#remind .tile-img:hover,
+#remind .tile-text:hover,
+#uber .tile-img:hover,
+#uber .tile-text:hover  {
+  cursor: not-allowed;
+}
 
 
 $twitter: #00aced;

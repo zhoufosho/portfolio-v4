@@ -20,9 +20,9 @@ var projects = [{name: "discoveroute", slug:"discoveroute", img:"images/discover
 				{name: "SixDegree", slug:"sixdegree", img:"images/sixdegree.png", content: "SixDegree is a conceptual tool that weights your relationships."},
 				];
 
-var works = [{name: "Uber", slug:"uber", img:"images/uber.png", content: "Facilitating conflict resolution between drivers and ops."},
-			{name: "Frog", slug:"frog", img:"images/frog.png", content: "Enabling authoring and customizing original content."},
-			{name: "Remind", slug:"remind", img:"images/remind.png", content: "Accelerating teacher growth during back-to-school season."}
+var works = [{name: "Uber", slug:"uber", img:"images/uber.png", content: "Facilitating conflict resolution between drivers and ops.", url: 'https://uber.com'},
+			{name: "Frog", slug:"frog", img:"images/frog.png", content: "Enabling authoring and customizing original content.", url: 'http://frogdesign.com'},
+			{name: "Remind", slug:"remind", img:"images/remind.png", content: "Accelerating teacher signup during back-to-school season.", url: 'http://remind.com'}
 			];
 
 /* GET home page. */

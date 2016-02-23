@@ -90,7 +90,7 @@
 					<% for(var i=0; i<works.length; i++) { %>
 						<% var work = works[i] %>
 							<li class='medium-4 columns minor'>
-								<div class='tile' id='<%- work.slug %>' >
+								<div class='tile' id='<%- work.slug %>' data-url='<%- work.url %>'>
 									<div class='tile-img'>
 										<div class='inner' style='background-image: url("<%- work.img %>")'></div>
 									</div>

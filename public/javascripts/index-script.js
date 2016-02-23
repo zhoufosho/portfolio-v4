@@ -1,19 +1,26 @@
 $(document).on('ready', function(){
 
+  $('#work .tiles .tile').click(function(e) {
+    e.preventDefault();
+    var element = document.getElementById(this.id);
+	var url = element.dataset.url;
+	newPage(url);
+
+  });
+
+
   $('#projects .tiles .tile').click(function(e) {
     e.preventDefault();
     var slug = this.id;
-
-    var unfinished = ['uber', 'remind', 'frog'];
-    if(unfinished.indexOf(slug) > 0)
-    	return;
-
-
-    newpage(slug);
+    goToPage(slug);
   });
 
-  function newpage(slug) {
-    location = slug;
+  function goToPage(slug) {
+    location = '/' + slug;
+  }
+
+  function newPage(url) {
+  	window.open(url, '_blank');
   }
 
 });

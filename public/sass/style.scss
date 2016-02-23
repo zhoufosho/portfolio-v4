@@ -396,7 +396,8 @@ footer {
 
 .hero#discoveroute {
 
-    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/discoveroute3.png");
+    // background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/discoveroute3.png");
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
     background-position: 80% 25%;
     background-size: cover, auto 28em;
     background-color: $discoveroute;
@@ -424,6 +425,14 @@ footer {
     background-position: 80% 40%;
     background-size: cover, auto 22em;
     background-color: $sixdegree;
+}
+
+.hero#etc {
+
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 20em;
+    background-color: $etc;
 }
 
 

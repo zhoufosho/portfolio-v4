@@ -567,13 +567,13 @@ footer p {
 
 /* line 397, ../sass/style.scss */
 .hero#discoveroute {
-  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/discoveroute3.png");
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
   background-position: 80% 25%;
   background-size: cover, auto 28em;
   background-color: #FFA215;
 }
 
-/* line 405, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .hero#dais {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), url("../images/dais.png");
   background-position: 80% 40%;
@@ -581,7 +581,7 @@ footer p {
   background-color: #007E7F;
 }
 
-/* line 413, ../sass/style.scss */
+/* line 414, ../sass/style.scss */
 .hero#dconstraints {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/dconstraints.png");
   background-position: 80% 40%;
@@ -589,7 +589,7 @@ footer p {
   background-color: #184E11;
 }
 
-/* line 421, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .hero#sixdegree {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/sixdegree.png");
   background-position: 80% 40%;
@@ -597,15 +597,23 @@ footer p {
   background-color: #010425;
 }
 
+/* line 430, ../sass/style.scss */
+.hero#etc {
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 20em;
+  background-color: #7B041C;
+}
+
 @media (max-width: 640px) {
-  /* line 431, ../sass/style.scss */
+  /* line 440, ../sass/style.scss */
   .hero#discoveroute,
   .hero#smartcart {
     background-size: cover, 90% auto;
     background-position: 10% 100px;
   }
 
-  /* line 437, ../sass/style.scss */
+  /* line 446, ../sass/style.scss */
   .hero#dconstraints,
   .hero#dais {
     background-size: cover, 90% auto;
@@ -613,7 +621,7 @@ footer p {
   }
 }
 /* HOMEPAGE */
-/* line 450, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 #landing h4, h5 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
@@ -621,66 +629,66 @@ footer p {
   display: inline-block;
 }
 
-/* line 457, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 #projects .tiles .tile:hover {
   cursor: pointer;
 }
 
-/* line 461, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 ul.tiles {
   list-style: none;
   margin-left: 0px;
 }
 
-/* line 466, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 .tile-row:nth-child(2n+1) .major {
   float: right;
 }
 
 @media only screen and (min-width: 750px) {
-  /* line 471, ../sass/style.scss */
+  /* line 480, ../sass/style.scss */
   .tile {
     -webkit-transition: width 0.8s, height 0.8s;
     transition: width 0.8s, height 0.8s;
   }
 }
-/* line 476, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .minor .tile {
   font-size: 80%;
   height: 25em;
   margin-bottom: 1.4em;
 }
-/* line 480, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 .minor .tile .tile-img {
   height: 52%;
 }
 
-/* line 485, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 .major .tile {
   height: 40em;
 }
-/* line 487, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .major .tile .tile-img {
   height: 75%;
 }
 
-/* line 492, ../sass/style.scss */
+/* line 501, ../sass/style.scss */
 .tile {
   margin: 1rem 0;
 }
 
-/* line 496, ../sass/style.scss */
+/* line 505, ../sass/style.scss */
 .tile-img {
   height: auto;
 }
 
-/* line 501, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 .tile-img-light {
   background-color: white;
   margin: 1em 0 1.7em;
 }
 
-/* line 507, ../sass/style.scss */
+/* line 516, ../sass/style.scss */
 .title-underline {
   margin-bottom: 1em;
   border-bottom: 3px solid #ddd;
@@ -688,57 +696,57 @@ ul.tiles {
   padding-bottom: 0.5em;
 }
 
-/* line 514, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 .tile-text {
   padding: 1.75em 2.2em 2em;
   border: 1px solid #ddd;
   margin-top: -1px;
   background-color: white;
 }
-/* line 519, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .tile-text p {
   margin-bottom: 0;
 }
 
 /* Responsive stuff */
 @media only screen and (max-width: 640px) {
-  /* line 526, ../sass/style.scss */
+  /* line 535, ../sass/style.scss */
   .minor .tile {
     height: 25em;
     margin: 2em 0;
   }
-  /* line 529, ../sass/style.scss */
+  /* line 538, ../sass/style.scss */
   .minor .tile .tile-img {
     height: 60%;
   }
 
-  /* line 534, ../sass/style.scss */
+  /* line 543, ../sass/style.scss */
   .major .tile {
     height: 30em;
     margin: 1.5em 0 2.5em;
   }
-  /* line 537, ../sass/style.scss */
+  /* line 546, ../sass/style.scss */
   .major .tile .tile-img {
     height: 67%;
   }
-  /* line 540, ../sass/style.scss */
+  /* line 549, ../sass/style.scss */
   .major .tile p {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 380px) {
-  /* line 548, ../sass/style.scss */
+  /* line 557, ../sass/style.scss */
   .major .tile .tile-img {
     height: 60%;
   }
 }
 /* project specifics */
-/* line 555, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 .tile-img {
   overflow: hidden;
 }
 
-/* line 559, ../sass/style.scss */
+/* line 568, ../sass/style.scss */
 .tile-img .inner {
   height: 100%;
   background-size: 80%;
@@ -746,12 +754,12 @@ ul.tiles {
   background-position: center;
 }
 
-/* line 567, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .tile-img {
   position: relative;
 }
 
-/* line 571, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .tile-img:after {
   position: absolute;
   content: "";
@@ -764,143 +772,143 @@ ul.tiles {
   -moz-transition: opacity .7s ease;
 }
 
-/* line 583, ../sass/style.scss */
+/* line 592, ../sass/style.scss */
 #projects .tile:hover .tile-img:after {
   opacity: .7;
 }
 
-/* line 587, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .tile-img:hover:after {
   opacity: .7;
 }
 
-/* line 591, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .tile-img:after {
   background-color: red;
 }
 
-/* line 595, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 #landing section:not(:first-of-type),
 #landing footer {
   margin-top: 60px;
 }
 
-/* line 600, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 #home {
   margin-top: 10em;
   margin-bottom: 7em;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 607, ../sass/style.scss */
+  /* line 616, ../sass/style.scss */
   #home {
     margin-top: 5em;
     margin-bottom: 5em;
   }
 }
-/* line 613, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 618, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 622, ../sass/style.scss */
+/* line 631, ../sass/style.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
 }
 
 /* homepage project specific  */
-/* line 629, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 #smartcart .tile-img:after,
 #smartcart .tile-img {
   background-color: #2565AA;
 }
 
-/* line 634, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 #research .tile-img:after,
 #research .tile-img {
   background-color: #184E11;
 }
 
-/* line 639, ../sass/style.scss */
+/* line 648, ../sass/style.scss */
 #discoveroute .tile-img:after,
 #discoveroute .tile-img {
   background-color: #FFA215;
 }
 
-/* line 644, ../sass/style.scss */
+/* line 653, ../sass/style.scss */
 #remind .tile-img:after,
 #remind .tile-img {
   background-color: #4a89dc;
 }
 
-/* line 649, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 #remind .tile-img {
   padding: 0% 22%;
 }
 
-/* line 653, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 #frog .tile-img:after,
 #frog .tile-img {
   background-color: #46bc01;
 }
 
-/* line 658, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 #frog .tile-img {
   padding: 0% 25%;
 }
 
-/* line 663, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 #uber .tile-img:after,
 #uber .tile-img {
   background-color: #000;
 }
 
-/* line 668, ../sass/style.scss */
+/* line 677, ../sass/style.scss */
 #uber .tile-img {
   padding: 0 15%;
 }
 
-/* line 672, ../sass/style.scss */
+/* line 681, ../sass/style.scss */
 #dais .tile-img:after,
 #dais .tile-img {
   background-color: #007E7F;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 678, ../sass/style.scss */
+  /* line 687, ../sass/style.scss */
   #dais .tile-img {
     padding: 0 8%;
   }
 }
-/* line 683, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 #sixdegree .tile-img:after,
 #sixdegree .tile-img {
   background-color: #010425;
 }
 
-/* line 688, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 #sixdegree .tile-img {
   padding: 0 18%;
 }
 
-/* line 692, ../sass/style.scss */
+/* line 701, ../sass/style.scss */
 #etc .tile-img:after,
 #etc .tile-img {
   background-color: #7B041C;
 }
 
-/* line 697, ../sass/style.scss */
+/* line 706, ../sass/style.scss */
 #etc .tile-img {
   padding: 0% 12%;
 }
 
-/* line 701, ../sass/style.scss */
+/* line 710, ../sass/style.scss */
 #frog .tile-img:hover,
 #frog .tile-text:hover,
 #remind .tile-img:hover,
@@ -910,37 +918,37 @@ ul.inline-list li:first-of-type {
   cursor: not-allowed;
 }
 
-/* line 719, ../sass/style.scss */
+/* line 728, ../sass/style.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 723, ../sass/style.scss */
+/* line 732, ../sass/style.scss */
 .fa-facebook:hover {
   color: #3b5998;
 }
 
-/* line 727, ../sass/style.scss */
+/* line 736, ../sass/style.scss */
 .fa-linkedin:hover {
   color: #007bb6;
 }
 
-/* line 730, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 .fa-instagram:hover {
   color: #517fa4;
 }
 
-/* line 734, ../sass/style.scss */
+/* line 743, ../sass/style.scss */
 .fa-github:hover {
   color: #000;
 }
 
-/* line 738, ../sass/style.scss */
+/* line 747, ../sass/style.scss */
 .fa-codepen:hover {
   color: #191919;
 }
 
-/* line 742, ../sass/style.scss */
+/* line 751, ../sass/style.scss */
 .fa-send:hover {
   color: #00C9D0;
 }

@@ -4,7 +4,7 @@ $(document).on('ready', function(){
     e.preventDefault();
     var slug = this.id;
 
-    var unfinished = ['uber', 'remind', 'frog', 'etc'];
+    var unfinished = ['uber', 'remind', 'frog'];
     if(unfinished.indexOf(slug) > 0)
     	return;
 

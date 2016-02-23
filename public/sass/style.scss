@@ -75,7 +75,6 @@ body {
     color: $carbon;
     font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
-    text-rendering: optimizeLegibility;
 }
 
 *::-moz-selection {
@@ -213,6 +212,10 @@ footer {
     h4 {
         font-size: 1.35rem;
         margin-top: 1.35rem;
+    }
+
+    figure + h4 {
+        margin-top: 70px;
     }
 
     a {
@@ -761,5 +764,3 @@ i.fa:hover {
 .fa-send:hover{
     color: $sendo;
 }
-
-

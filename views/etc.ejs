@@ -10,54 +10,137 @@
 				<div class="back"><a href="http://elainezhou.me"><img src="images/logoWhite.png"></a></div>
 				<div class="intro-text">
 					<h1>Etcetera</h1>
-					<h2>Exercises in making</h2>
-					<h3>2012-present</h3>
+					<h2>An assortment of exercises in making</h2>
+					<h3>2011-present</h3>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class='row case-content'>
 		<div class='large-12 large-centered columns'>
-<!-- 
+
 			<section id='stats'>
 				<div class="large-10 small-12 large-centered columns">
 					<div class="row">
-						<div class="large-7 columns">
-							<h4>Roles</h4>
-							<p>Interaction design, Web Analytics A/B Testing, User Testing, Product Concept, Prototyping, Front-End Development, Storyboarding, UI Design</p>
-						</div>
-						<div class="large-5 columns">
-							<h4>Context</h4>
-							<p>
-							Coursework <br />
-							Freelance <br />
-							For Kicks <br />
-						</div>
+						<h4>Categories</h4>
+						<ul class='social-media inline-list hide-for-small'>
+							<li>
+							<a href="#field-research">Field Research</a></li>
+							<li>
+							<a href="#art">Installation Art</a></li>
+							<li>
+							<a href="#product-design">Product Design</a></li>
+							<li>
+							<a href="#graphic-design">Graphic Design</a></li>
+							<li>
+						</ul>
 					</div>
 
 				</div>
-			</section> -->
+			</section>
 
-
-			<section id='overview'>
+			<section id='field-research'>
 				<div class="large-10 small-12 large-centered columns">
+					<h3>Field Research</h3>
+					<h4>Bicycle Livelihoods </h4>
+					<p>In China, despite rapid urbanization, many livelhoods are powered by bicycles and provide many serivces to the city. We interviewed a dozen people that use bicycles for their work, from garbage collection, to water tank deliveries, to making and selling breakfast. [Summer 2014, Beijing] </p>
+					
+					<figure>
+						<img src='images/etc/wudaokou.gif'>
+					</figure>
 
-					<p>Coming Soon</p>
+					<h4>Bicycle Urbanism</h4>
+					<p>In a cross-cultural collaboration between Stanford and Tsinghua, we sought to understand the use of bicycles on university campuses. What are the barriers? How might we extending the lifecycle of these bikes? <a href="http://www.internationalurbanization.org/bicycle-urbanism.html">Check out the process</a>. [Fall 2014]</p>
+					
+					<figure>
+						<img src='http://rshowbicycles.weebly.com/uploads/1/8/5/8/18589996/1417910518.png'>
+					</figure>
+
 				</div>
 			</section>
 
-			<section id='overview'>
+			<section id='art'>
 				<div class="large-10 small-12 large-centered columns">
-
-					<p>Coming Soon</p>
+					<h3>Installation Art</h3>
+					<h4>Respiration</h4>
+					<p>We hoped to show that the light and energy of the city will always be a reflection of the individuals living in it. Quite literally, people breathe life into cities. <a href="respiration.elainezhou.me">Check out the process</a>.</p>
+					<div class='video-wrapper'>
+						<iframe src="https://player.vimeo.com/video/98304156" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class='video-wrapper'>
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/5fHqWQB-RuA" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</section>
+
+			<section id='product-design'>
+				<div class="large-10 small-12 large-centered columns">
+					<h3>Product Design</h3>
+					<h4>Laser Cut Journal </h4>
+					<p>Wood is typically inflexible, but by removing surface area and adding points of freedom, it suddenly becomes much more pliable. [Winter 2013] </p>
+					
+					<figure>
+						<img src='images/etc/bookFront.jpg'>
+						<img src='images/etc/bookZoom.jpg'>
+						<img src='images/etc/spine.jpg'>
+					</figure>
+
+					<h4>Nautilus </h4>
+					<p>Nautilus is a container whose purpose is to only fit one thing – this particular seafoam rock, given to me at random. Otherwise, it is entirely purposeless. [Winter 2013] </p>
+					
+					<figure>
+						<img src='images/etc/topview.jpg'>
+						<img src='images/etc/titlephoto.jpg'>
+					</figure>
+
+				</div>
+			</section>
+
+			<section id='graphic-design'>
+				<div class="large-10 small-12 large-centered columns">
+					<h3>Graphic Design</h3>
+					<h4>Shoe Land Graphic Design</h4>
+					<p>During summers in Florida, I worked with a local small business to design marketing material. I curated the shoe selection from their bestsellers, took photos, and developed campaigns for three seasons. [Summers 2011, 2012]</p>
+					<figure>
+						<img src='images/etc/posters/posterA.jpg'>
+						<img src='images/etc/posters/posterB.png'>
+					</figure>
+					<figure>
+						<img src='images/etc/posters/posterC.jpg'>
+						<img src='images/etc/posters/posterD.jpg'>
+					</figure>
+					<figure>
+						<img src='images/etc/posters/posterF.png'>
+					</figure>
+				</div>
+			</section>
+
 
 		</div>
 	</div>
 
 <% include templates/footer %>
 <% include templates/scripts %>
+
+<script>
+
+/* smooth scrolling to sections */
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top - 50
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+
+</script>
 
 </body>
 </html>

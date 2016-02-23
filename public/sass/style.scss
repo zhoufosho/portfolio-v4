@@ -112,8 +112,8 @@ p {
 
 a, a:visited {
     color: $medium-grey;
-    transition: color .25s;
-    -webkit-transition: color .25s;
+    transition: color .5s;
+    -webkit-transition: color .5s;
     -webkit-transition:border-bottom .5s;
     -moz-transition:border-bottom .5s;
     -ms-transition:border-bottom .5s;
@@ -725,6 +725,15 @@ $instagram: #517fa4;
 $github: #000;
 $codepen: #191919;
 $sendo: $teal;
+
+li a:hover {
+    color: $medium-grey;
+}
+
+i.fa:hover {
+    transition: color .7s;
+    -webkit-transition: color .7s;
+}
 
 .fa-twitter:hover{
     color: $twitter

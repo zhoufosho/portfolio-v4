@@ -276,8 +276,8 @@ p {
 /* line 113, ../sass/style.scss */
 a, a:visited {
   color: #aaa;
-  transition: color .25s;
-  -webkit-transition: color .25s;
+  transition: color .5s;
+  -webkit-transition: color .5s;
   -webkit-transition: border-bottom .5s;
   -moz-transition: border-bottom .5s;
   -ms-transition: border-bottom .5s;
@@ -910,36 +910,47 @@ ul.inline-list li:first-of-type {
 }
 
 /* line 729, ../sass/style.scss */
+li a:hover {
+  color: #aaa;
+}
+
+/* line 733, ../sass/style.scss */
+i.fa:hover {
+  transition: color .7s;
+  -webkit-transition: color .7s;
+}
+
+/* line 738, ../sass/style.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 733, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 .fa-facebook:hover {
   color: #3b5998;
 }
 
-/* line 737, ../sass/style.scss */
+/* line 746, ../sass/style.scss */
 .fa-linkedin:hover {
   color: #007bb6;
 }
 
-/* line 740, ../sass/style.scss */
+/* line 749, ../sass/style.scss */
 .fa-instagram:hover {
   color: #517fa4;
 }
 
-/* line 744, ../sass/style.scss */
+/* line 753, ../sass/style.scss */
 .fa-github:hover {
   color: #000;
 }
 
-/* line 748, ../sass/style.scss */
+/* line 757, ../sass/style.scss */
 .fa-codepen:hover {
   color: #191919;
 }
 
-/* line 752, ../sass/style.scss */
+/* line 761, ../sass/style.scss */
 .fa-send:hover {
   color: #00C9D0;
 }

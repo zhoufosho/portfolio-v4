@@ -296,9 +296,16 @@ footer {
 
     ul {
         color: $dark-grey;
-        line-height: 1.8;
+        line-height: 2;
         margin-left: 100px;
     }
+
+    #stats ul{
+        list-style-type: none; 
+        margin-left: 0px;
+        padding-top: 0.5rem; 
+    }
+
 
 }
 
@@ -446,6 +453,8 @@ footer {
         background-position: 10% 100px;
     }
 
+    .hero#etc,
+    .hero#sixdegree,
     .hero#dconstraints,
     .hero#dais {
         background-size: cover, 90% auto;

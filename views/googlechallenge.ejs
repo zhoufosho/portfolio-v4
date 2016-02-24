@@ -3,10 +3,10 @@
 
 <head>
 
-<script language="javascript">
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 0(){6 1=5("4 3 7 d","");8(1==\'b\'){a}9{c="/"}}(2(){0()})();',14,14,'checkPassword|word|function|enter|Please|prompt|var|the|if|else|return|muggles|location|password'.split('|'),0,{}))
+// <script language="javascript">
+// eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 0(){6 1=5("4 3 7 d","");8(1==\'b\'){a}9{c="/"}}(2(){0()})();',14,14,'checkPassword|word|function|enter|Please|prompt|var|the|if|else|return|muggles|location|password'.split('|'),0,{}))
 
-</script>
+// </script>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -79,22 +79,23 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 
 
 				<p>
-					My design solution is a marketplace app, where buyers and sellers are connected through their exchanged goods. For sellers, this keeps track of all your item inventory using picture of what they are. This information is then released to an open pool of potential buyers, one of whom may find that one man's trash is her own treasure. View the final <a href="images/google/BuyerUXFlow.png">Buyer UX flow</a> and <a href="SellerUXFlow">Seller UX flow</a>.
+					My design solution is a marketplace app, where buyers and sellers are connected through their exchanged goods. For sellers, this keeps track of all your item inventory using picture of what they are. This information is then released to an open pool of potential buyers, one of whom may find that one man's trash is her own treasure. View the final <a href="images/google/BuyerUXFlow.png">Buyer UX flow</a>, the <a href="images/google/SellerUXFlow">Seller UX flow</a>, and how <a href="images/google/usageChart.png">the two might interact with each other</a>.
 				</p>
-
-				<p>Buyers can: 
-				<ul>
-					<li>browse potential items</li>
-					<li>search specific wants</li>
-					<li>interact with sellers easily</li>
-				</ul></p>
 
 				<p>Sellers can:
 				<ul>
-					<li>add and maintain their item inventory</li>
+					<li>compile their inventory by taking photos</li>
+					<li>set prices and broadcast their items</li>
 					<li>handle customer checkout and inventory update</li>
-					<li>make informed decisions about their sales</li>
 				</ul></p>
+
+				<p>Buyers can: 
+				<ul>
+					<li>browse potentially buyable items</li>
+					<li>deliberate by interacting with the item or the seller</li>
+					<li>buy exactly what they are looking for </li>
+				</ul></p>
+
 				<br />
 
 			</div>
@@ -102,6 +103,9 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 				<img src="images/google/searchPhone.png">
 			</div>
 	</div>
+
+
+
 
 		<h3>Understanding the Problem</h3>
 		<p>Having never had a garage sale myself, I wanted to first understand what it was like to be a seller. I found WikiHow's <a href="http://www.wikihow.com/Have-a-Garage-Sale">How to Have a Garage Sale</a>. The article shares some insights about taking inventory. It recommends recording all the items and prices on a sheet of paper. In the heat of the moment, you may be talking to a number of customers and unable to give a fair price or keep an eye on all of your things. From the buyer's side, the barriers to finding a good bargain is the amount of information. Garage sales are so ad hoc, there is no way to know when they'll happen, what will be there, and how the items are in real life.
@@ -120,19 +124,19 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 
 		<p>The first formative idea was to create a marketplace smartphone app where garage sale sellers upload their items so they can peronally keep track of them, but all interested buyers have transparency and know what they may want to buy. </p>
 
-		<p>I particularly liked the idea of QR codes. They're low-fidelity, so anyone with access to a printer can make them. They also serve as a unique identifier to share information about items, since you can read<a href="http://www.webtoolkitonline.com/qrcode-generator.html"> any extra information straight from the QR code</a>.</p>
+		<p>I particularly liked the idea of QR codes. They're low-fidelity, so anyone with access to a printer can make them. They also serve as a unique identifier to share information about items, since you can read<a href="http://www.webtoolkitonline.com/qrcode-generator.html"> any extra information straight from the QR code</a>. I also considered other services that might get information quickly with low friction, like RFID or barcode scanners. For the purposes of a suburbanite trying to sell their things, those seemed like more of a hassle than was necessary.</p>
 
 		<figure>
 			<img src="images/google/flowstorm.jpg" />
 			<figcaption>Mapping out the flows revealed the main goals of the buyer and the seller in the interactions of this system.</figcaption>
 		</figure>
 
-		<p>Mapping out these interactions actually showed me that the QR codes don't make up a significant part of the system. I tidied up the flows, and didn't add the QR portion until the very end, and in orange ink (see seller parts <a href="images/google/sellerflows.jpg">one</a>, <a href="images/google/sellerflows2.jpg">two</a>, <a href="images/google/sellerflows3.jpg">three</a> and the <a href="images/google/buyerflow.jpg">buyer flow</a>). </p>
-
+		<p>Mapping out these interactions actually showed me that the QR codes don't make up a significant part of the system. I tidied up the flows, and didn't add the QR portion until the very end, and in orange ink (see <a href="images/google/sellerflows.jpg">some</a> <a href="images/google/sellerflows2.jpg">previews</a> of <a href="images/google/sellerflows3.jpg">flow</a> <a href="images/google/buyerflow.jpg">redraws</a>). </p>
+<!-- 
 		<figure>
 			<img src="images/google/buyerflow.jpg" />
 			<figcaption>The orange pen signifies where one might use a QR code.</figcaption>
-		</figure>
+		</figure> -->
 
 		<h3>Paper Prototypes</h3>
 
@@ -154,10 +158,15 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 		<p>View the final <a href="images/google/BuyerUXFlow.png">Buyer UX flow</a> and <a href="SellerUXFlow">Seller UX flow</a>.
 
 		</p>
-		
-		<figure>
-			<img src="images/google/search.png" />
-		</figure>
+
+			<div class="row">
+				<div class="large-8 columns">
+					<img src="images/google/usageChart.png">
+				</div>
+				<div class="large-4 columns">
+					<img src="images/google/search.png" />
+				</div>
+			</div>
 
 	</div>
 </div>

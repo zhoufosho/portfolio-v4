@@ -570,6 +570,10 @@ ul.tiles{
             font-size: 1em;
         }
     }
+
+    .minor:first-of-type .tile:first-of-type{
+        margin-top: -30px;
+    }
 }
 
 
@@ -634,8 +638,8 @@ ul.tiles{
 
 @media only screen and (max-width: $smartphone) {
     #home {
-        margin-top: 5em;
-        margin-bottom: 5em;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 }
 

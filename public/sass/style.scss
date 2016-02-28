@@ -46,7 +46,7 @@ $content-line: 580px;
 // Breakpoints for each query
 $tiny: 380px;
 $smartphone: 640px;
-$tabletPortrait: 750px;
+$tabletPortrait: 800px;
 $tabletLandscape: 1024px;
 $desktop: 1174px;
 $largeScreen: 1440px;
@@ -547,6 +547,17 @@ ul.tiles{
     }   
 }
 
+
+@media (min-width: $smartphone) and (max-width: $tabletPortrait) {
+
+    .major .tile{
+        .tile-img{
+            height: 70%;
+        }
+    }
+
+}
+
 /* Responsive stuff */
 @media only screen and (max-width: $smartphone) {
     .minor .tile{
@@ -704,12 +715,6 @@ ul.inline-list{
     background-color: $dais;
 }
 
-@media only screen and (max-width: $smartphone) {
-    #dais .tile-img{
-        padding: 0 8%;
-    }
-}
-
 #sixdegree .tile-img:after,
 #sixdegree .tile-img{
     background-color: $sixdegree;
@@ -735,6 +740,18 @@ ul.inline-list{
 #uber .tile-img:hover,
 #uber .tile-text:hover  {
   cursor: not-allowed;
+}
+
+
+@media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) {
+    #etc .tile-img,
+    #sixdegree .tile-img{
+        padding: 0 20%;
+    }
+    #dconstraints .tile-img,
+    #dais .tile-img{
+        padding: 0 8%;
+    }
 }
 
 

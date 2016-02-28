@@ -1,0 +1,288 @@
+@import 'variables';
+
+.video-wrapper {
+    @include center-position;
+    position: relative;
+    // padding-bottom: 56.25%;
+    padding-bottom: 40.5%;
+    height: 0; 
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    max-width: $content-line;
+}
+ 
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.error-page,
+.case-content {
+
+    h4 {
+        font-family: 'Playfair Display', serif;  
+        font-weight: 400;
+        font-style: italic; 
+        color: #666;
+    }
+
+    h4 {
+        font-size: 1.35rem;
+        margin-top: 1.35rem;
+    }
+
+    figure + h4 {
+        margin-top: 70px;
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+        padding-bottom: -1px;
+    }
+
+    a, a:visited {
+        color: $carbon;
+    }
+
+    a:hover {
+        color: #aaa;
+    }
+
+    a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        transition: width 0s ease;
+    }
+    a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background: #ccc;
+        transition: width .5s ease;
+    }
+    a:hover:before {
+        width: 0%;
+        background: #ccc;
+        transition: width .5s ease;
+    }
+    a:hover:after {
+        width: 0%;
+        background: transparent;
+        transition: width 0s ease;
+    }
+
+    figure{
+        max-width: $content-line;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        @include center-position;
+        text-align: center;
+
+        img{
+            margin-bottom: 0.5em;
+        }
+
+        figcaption{
+            @include center-position;
+            margin-top: 1em;
+            color: $dark-grey;
+            font-size: 0.8em;
+            font-style: italic;
+            width: 90%;
+        }
+    }
+
+    section {
+        margin-top: 4em;
+    }
+
+    section:first-of-type {
+        margin-top: 1.5em;
+    }
+
+    ul {
+        color: $dark-grey;
+        line-height: 2;
+        margin-left: 100px;
+    }
+
+    #stats ul{
+        list-style-type: none; 
+        margin-left: 0px;
+        padding-top: 0.5rem; 
+    }
+
+
+}
+
+
+.slideshow {
+    height: 450px; 
+    background-color: white;  
+}
+
+.slideshow > div { 
+    @include center-position;
+    position: absolute;
+
+    img {
+        height: 450px;
+    }
+}
+
+@media (max-width: $tabletPortrait) {
+    .slideshow {
+        width: 100%;
+        min-height: 250px; 
+        max-height: 450px; 
+        height: auto;
+    }
+    .slideshow > div img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.intro {
+    text-align: left;
+    padding-left: 15px;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3.5em;
+        margin-bottom: 8px;
+        color: white;
+        text-rendering: geometricPrecision;
+
+    }
+
+    h2 {
+        font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5em;
+        color: $intro-light-grey;
+    }
+
+    h3 {
+        font-size: 1em;
+        margin-right: -8px;
+        color: $intro-light-grey;
+    }
+}
+
+
+.intro-text {
+    margin-top: 18em;
+}
+
+@media (max-width: $smartphone) {
+    .back {
+        width: 30px;
+    }
+
+    .intro {
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.25em;
+        }
+        h3 {
+            font-size: 0.8em;
+        }
+    }
+}
+
+/* PAGE-SPECIFIC */
+
+.hero {
+    background-repeat: no-repeat;
+    height: 36em;
+    margin-bottom: 1em; 
+    // margin-bottom: 2em; 
+}
+
+.hero#smartcart {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
+    background-position: 80% 0%;
+    background-size: cover, auto 26em;
+    background-color: $smartcart;
+    
+}
+
+.hero#discoveroute {
+
+    // background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/discoveroute3.png");
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
+    background-position: 80% 25%;
+    background-size: cover, auto 28em;
+    background-color: $discoveroute;
+}
+
+.hero#dais {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), 
+                        url("../images/dais.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 20em;
+    background-color: $dais;
+}
+
+.hero#dconstraints {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), 
+                        url("../images/dconstraints.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 15em;
+    background-color: $dconstraints;
+}
+
+.hero#sixdegree {
+    background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), 
+                        url("../images/sixdegree.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 22em;
+    background-color: $sixdegree;
+}
+
+.hero#etc {
+
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 20em;
+    background-color: $etc;
+}
+
+
+@media (max-width: $smartphone) {
+    .hero#discoveroute,
+    .hero#smartcart { 
+        background-size: cover, 90% auto;
+        background-position: 10% 100px;
+    }
+
+    .hero#etc,
+    .hero#sixdegree,
+    .hero#dconstraints,
+    .hero#dais {
+        background-size: cover, 90% auto;
+        background-position: 50% 130px;
+    }
+}
+
+

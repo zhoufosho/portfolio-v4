@@ -1,0 +1,58 @@
+// MAIN COLORS
+
+$light-grey: #F7F7F7;
+$medium-grey: #aaa; // #ccc
+$dark-grey: #696969;
+$carbon: #3D3D3D;
+$blue: #00C9D0;
+
+$teal: #00C9D0;
+
+$intro-light-grey: #f4f4f4; //#fafafa;
+$intro-dark-grey: #999; //#6E6E6E;
+
+
+$discoveroute: #FFA215; //#FEC201;
+$dais: #007E7F;
+$smartcart: #2565AA;
+$dconstraints: #184E11; //#4E1133;
+$sixdegree: #010425;
+
+$etc: #7B041C;
+
+$remind: #4a89dc;
+$uber: #000;
+$frog: #46bc01;
+
+// OTHER VARIABLES
+$content-line: 580px;
+
+// Breakpoints for each query
+$tiny: 380px;
+$smartphone: 640px;
+$tabletPortrait: 800px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1440px;
+
+// MIXINS 
+
+@mixin center-position{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == smallScreen {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}

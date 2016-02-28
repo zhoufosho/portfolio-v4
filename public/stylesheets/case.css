@@ -1,0 +1,306 @@
+/* line 3, ../sass/case.scss */
+.video-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 40.5%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 45px;
+  max-width: 580px;
+}
+
+/* line 15, ../sass/case.scss */
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 28, ../sass/case.scss */
+.error-page h4,
+.case-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #666;
+}
+/* line 35, ../sass/case.scss */
+.error-page h4,
+.case-content h4 {
+  font-size: 1.35rem;
+  margin-top: 1.35rem;
+}
+/* line 40, ../sass/case.scss */
+.error-page figure + h4,
+.case-content figure + h4 {
+  margin-top: 70px;
+}
+/* line 44, ../sass/case.scss */
+.error-page a,
+.case-content a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: -1px;
+}
+/* line 50, ../sass/case.scss */
+.error-page a, .error-page a:visited,
+.case-content a,
+.case-content a:visited {
+  color: #3D3D3D;
+}
+/* line 54, ../sass/case.scss */
+.error-page a:hover,
+.case-content a:hover {
+  color: #aaa;
+}
+/* line 58, ../sass/case.scss */
+.error-page a:before,
+.case-content a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  transition: width 0s ease;
+}
+/* line 68, ../sass/case.scss */
+.error-page a:after,
+.case-content a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  transition: width .5s ease;
+}
+/* line 79, ../sass/case.scss */
+.error-page a:hover:before,
+.case-content a:hover:before {
+  width: 0%;
+  background: #ccc;
+  transition: width .5s ease;
+}
+/* line 84, ../sass/case.scss */
+.error-page a:hover:after,
+.case-content a:hover:after {
+  width: 0%;
+  background: transparent;
+  transition: width 0s ease;
+}
+/* line 90, ../sass/case.scss */
+.error-page figure,
+.case-content figure {
+  max-width: 580px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 98, ../sass/case.scss */
+.error-page figure img,
+.case-content figure img {
+  margin-bottom: 0.5em;
+}
+/* line 102, ../sass/case.scss */
+.error-page figure figcaption,
+.case-content figure figcaption {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  color: #696969;
+  font-size: 0.8em;
+  font-style: italic;
+  width: 90%;
+}
+/* line 112, ../sass/case.scss */
+.error-page section,
+.case-content section {
+  margin-top: 4em;
+}
+/* line 116, ../sass/case.scss */
+.error-page section:first-of-type,
+.case-content section:first-of-type {
+  margin-top: 1.5em;
+}
+/* line 120, ../sass/case.scss */
+.error-page ul,
+.case-content ul {
+  color: #696969;
+  line-height: 2;
+  margin-left: 100px;
+}
+/* line 126, ../sass/case.scss */
+.error-page #stats ul,
+.case-content #stats ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-top: 0.5rem;
+}
+
+/* line 136, ../sass/case.scss */
+.slideshow {
+  height: 450px;
+  background-color: white;
+}
+
+/* line 141, ../sass/case.scss */
+.slideshow > div {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+/* line 145, ../sass/case.scss */
+.slideshow > div img {
+  height: 450px;
+}
+
+@media (max-width: 800px) {
+  /* line 151, ../sass/case.scss */
+  .slideshow {
+    width: 100%;
+    min-height: 250px;
+    max-height: 450px;
+    height: auto;
+  }
+
+  /* line 157, ../sass/case.scss */
+  .slideshow > div img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 164, ../sass/case.scss */
+.intro {
+  text-align: left;
+  padding-left: 15px;
+}
+/* line 168, ../sass/case.scss */
+.intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em;
+  margin-bottom: 8px;
+  color: white;
+  text-rendering: geometricPrecision;
+}
+/* line 177, ../sass/case.scss */
+.intro h2 {
+  font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  color: #f4f4f4;
+}
+/* line 183, ../sass/case.scss */
+.intro h3 {
+  font-size: 1em;
+  margin-right: -8px;
+  color: #f4f4f4;
+}
+
+/* line 191, ../sass/case.scss */
+.intro-text {
+  margin-top: 18em;
+}
+
+@media (max-width: 640px) {
+  /* line 196, ../sass/case.scss */
+  .back {
+    width: 30px;
+  }
+
+  /* line 201, ../sass/case.scss */
+  .intro h1 {
+    font-size: 2em;
+  }
+  /* line 204, ../sass/case.scss */
+  .intro h2 {
+    font-size: 1.25em;
+  }
+  /* line 207, ../sass/case.scss */
+  .intro h3 {
+    font-size: 0.8em;
+  }
+}
+/* PAGE-SPECIFIC */
+/* line 215, ../sass/case.scss */
+.hero {
+  background-repeat: no-repeat;
+  height: 36em;
+  margin-bottom: 1em;
+}
+
+/* line 222, ../sass/case.scss */
+.hero#smartcart {
+  background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
+  background-position: 80% 0%;
+  background-size: cover, auto 26em;
+  background-color: #2565AA;
+}
+
+/* line 230, ../sass/case.scss */
+.hero#discoveroute {
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
+  background-position: 80% 25%;
+  background-size: cover, auto 28em;
+  background-color: #FFA215;
+}
+
+/* line 239, ../sass/case.scss */
+.hero#dais {
+  background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), url("../images/dais.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 20em;
+  background-color: #007E7F;
+}
+
+/* line 247, ../sass/case.scss */
+.hero#dconstraints {
+  background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/dconstraints.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 15em;
+  background-color: #184E11;
+}
+
+/* line 255, ../sass/case.scss */
+.hero#sixdegree {
+  background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/sixdegree.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 22em;
+  background-color: #010425;
+}
+
+/* line 263, ../sass/case.scss */
+.hero#etc {
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 20em;
+  background-color: #7B041C;
+}
+
+@media (max-width: 640px) {
+  /* line 273, ../sass/case.scss */
+  .hero#discoveroute,
+  .hero#smartcart {
+    background-size: cover, 90% auto;
+    background-position: 10% 100px;
+  }
+
+  /* line 279, ../sass/case.scss */
+  .hero#etc,
+  .hero#sixdegree,
+  .hero#dconstraints,
+  .hero#dais {
+    background-size: cover, 90% auto;
+    background-position: 50% 130px;
+  }
+}

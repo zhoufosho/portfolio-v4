@@ -1,0 +1,319 @@
+@import 'variables';
+
+
+/* HOMEPAGE */
+
+#landing h4, h5 {
+    font-family: 'Abel', 'Courier New', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: inline-block;
+}
+
+#work .tiles .tile:hover,
+#projects .tiles .tile:hover{
+    cursor: pointer;
+}
+
+ul.tiles{
+    list-style: none;
+    margin-left: 0px;
+}
+
+.tile-row:nth-child(2n+1) .major{
+    float: right;
+}
+
+@media only screen and (min-width: $tabletPortrait) {
+    .tile{
+        -webkit-transition: width 0.8s, height 0.8s;
+        transition: width 0.8s, height 0.8s;
+    }
+} 
+.minor .tile{
+    font-size: 80%;
+    height: 25em;
+    margin-bottom: 1.4em;
+    .tile-img{
+        height: 52% // ~11.45em;
+    }
+}
+
+.major .tile{
+    height: 40em; 
+    .tile-img{
+        height: 75% // ~28em;
+    }
+}
+
+.tile{
+    margin: 1rem 0;
+}
+
+.tile-img{
+    height: auto;
+}
+
+
+.tile-img-light{
+    background-color: white;
+    margin: 1em 0 1.7em;
+}
+
+
+.title-underline {
+    margin-bottom: 1em;
+    border-bottom: 3px solid #ddd;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.tile-text{
+    padding: 1.75em 2.2em 2em;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: white;
+    p{
+        margin-bottom: 0;   
+    }   
+}
+
+
+@media (min-width: $smartphone) and (max-width: $tabletPortrait) {
+
+    .major .tile{
+        .tile-img{
+            height: 70%;
+        }
+    }
+
+}
+
+/* Responsive stuff */
+@media only screen and (max-width: $smartphone) {
+    .minor .tile{
+        height: 25em;
+        margin: 2em 0;
+        .tile-img{
+            height: 60%;
+        }
+    }
+
+    .major .tile{
+        height: 30em; 
+        margin: 1.5em 0 2.5em;
+        .tile-img{
+            height: 67%;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .minor:first-of-type .tile:first-of-type{
+        margin-top: -30px;
+    }
+}
+
+
+@media only screen and (max-width: $tiny) {
+    .major .tile .tile-img{
+        height: 60%;
+    }
+}
+
+/* project specifics */
+
+.tile-img{
+    overflow: hidden;
+}
+
+.tile-img .inner{
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.tile-img {
+  position: relative;
+}
+
+.tile-img:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+}
+
+#projects .tile:hover .tile-img:after  {
+  opacity: .7;
+}
+
+.tile-img:hover:after  {
+  opacity: .7;
+}
+
+.tile-img:after {
+  background-color: red;
+}
+
+#landing section:not(:first-of-type),
+#landing footer {
+    margin-top: 60px;
+}
+
+#home {
+    margin-top: 10em;
+    // margin-bottom: 10em;
+    margin-bottom: 7em;
+}
+
+@media only screen and (max-width: $smartphone) {
+    #home {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+
+
+/* homepage project specific  */
+
+#smartcart .tile-img:after,
+#smartcart .tile-img{
+    background-color: $smartcart;
+}
+
+#research .tile-img:after,
+#research .tile-img{
+    background-color: $dconstraints;
+}
+
+#discoveroute .tile-img:after,
+#discoveroute .tile-img{
+    background-color: $discoveroute;
+}
+
+#remind .tile-img:after,
+#remind .tile-img{
+    background-color: $remind;
+}
+
+#remind .tile-img{
+    padding: 0% 22%;
+}
+
+#frog .tile-img:after,
+#frog .tile-img{
+    background-color: $frog;
+}
+
+#frog .tile-img{
+    padding: 0% 25%;
+}
+
+
+#uber .tile-img:after,
+#uber .tile-img{
+    background-color: $uber;
+}
+
+#uber .tile-img {
+    padding: 0 15%;
+}
+
+#dais .tile-img:after,
+#dais .tile-img{
+    background-color: $dais;
+}
+
+#sixdegree .tile-img:after,
+#sixdegree .tile-img{
+    background-color: $sixdegree;
+}
+
+#sixdegree .tile-img {
+    padding: 0 18%;
+}
+
+#etc .tile-img:after,
+#etc .tile-img{
+    background-color: $etc;
+}
+
+#etc .tile-img {
+    padding: 0% 12%;
+}
+
+#frog .tile-img:hover,
+#frog .tile-text:hover,
+#remind .tile-img:hover,
+#remind .tile-text:hover,
+#uber .tile-img:hover,
+#uber .tile-text:hover  {
+  cursor: not-allowed;
+}
+
+
+@media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) {
+    #etc .tile-img,
+    #sixdegree .tile-img{
+        padding: 0 20%;
+    }
+    #dconstraints .tile-img,
+    #dais .tile-img{
+        padding: 0 8%;
+    }
+}
+
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$instagram: #517fa4;
+$github: #000;
+$codepen: #191919;
+$sendo: $teal;
+
+li a:hover {
+    color: $medium-grey;
+}
+
+i.fa:hover {
+    transition: color .7s;
+    -webkit-transition: color .7s;
+}
+
+.fa-twitter:hover{
+    color: $twitter
+}
+
+.fa-facebook:hover{
+    color: $facebook
+}
+
+.fa-linkedin:hover{
+    color: $linkedin
+}
+.fa-instagram:hover{
+    color: $instagram
+}
+
+.fa-github:hover{
+    color: $github
+}
+
+.fa-codepen:hover{
+    color: $codepen
+}
+
+.fa-send:hover{
+    color: $sendo;
+}

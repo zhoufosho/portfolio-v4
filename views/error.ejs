@@ -1,3 +1,23 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html>
+
+<% include templates/head %>
+
+<body>
+<div class="row">
+	<div class='large-12 large-centered columns'>
+		<div class="back"><a href="http://elainezhou.me"><img src="images/logoDark.png"></a></div>
+	</div>
+	<div class='large-12 large-centered columns error-page'>
+		<div class="center">
+			<img src="images/404.png">
+			<h1>Whoops!</h1>
+			<p>Looks like something broke. Maybe try going back to <a href="http://elainezhou.me">home</a>?</p>
+		</div>
+	</div>
+</div>
+
+<% include templates/scripts %>
+</body>
+
+</html>

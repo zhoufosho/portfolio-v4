@@ -15,7 +15,7 @@
 				<h1>Hi, I'm Elaine</h1>
 				<p>I'm fascinated by how modern products, technologies, and creative processes affect people, and vice versa. I'm a Masters student at Stanford studying Human-Computer Interaction.</p>
 
-				<p>Sometimes, you can find me on the Internet. Say hello!</a></p>
+				<p>Sometimes, you can find me on the Internet. Say hello!</p>
 				<ul class='social-media inline-list hide-for-small'>
 					<li><a href='http://instagram.com/zhoufosho' target='_blank'><i class='fa fa-lg fa-instagram'></i></a></li>
 					<li><a href='http://twitter.com/zhoufosho' target='_blank'><i class='fa fa-lg fa-twitter'></i></a></li>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="row">
 			<div class='large-1 large-push-8 medium-2 medium-push-8 small-3 small-push-7 columns'>
-				<img src="images/logoDark.png">
+				<img src="images/logoDark.png" alt="personal logo">
 			</div>
 		</div>
 	</section>
@@ -43,15 +43,15 @@
 	<div class='row'>
 		<div class='large-12 large-centered columns'>
 
-			<ul class='tiles'>
+			<div class='tiles'>
 				<% for(var i=0; i<projects.length; i++) { %>
 					<% var project = projects[i] %>
 					<% if (i % 3 == 0) { %>
 					<div class='row tile-row'>
-						<li class='medium-7 large-8 columns major'>
+						<div class='medium-7 large-8 columns major'>
 							<div class='tile' id='<%- project.slug %>' >
 					<% } else {  %>
-						<li class='medium-5 large-4 columns minor'>
+						<div class='medium-5 large-4 columns minor'>
 							<div class='tile' id='<%- project.slug %>' >
 					<% } %>
 							
@@ -73,12 +73,12 @@
 									</div>
 								</div>
 							</div>
-						</li>
+						</div>
 					<% if (i % 3 == 2) { %>
 					</div>
 					<% } %>
 				<% } %>
-			</ul>
+			</div>
 		</div>
 	</div>
 </section>
@@ -88,31 +88,28 @@
 	<div class='row'>
 		<div class='large-12 large-centered columns'>
 
-			<ul class='tiles'>
+			<div class='tiles'>
 				<div class='row tile-row'>
 					<% for(var i=0; i<works.length; i++) { %>
 						<% var work = works[i] %>
-							<li class='medium-4 columns minor'>
-								<div class='tile' id='<%- work.slug %>' data-url='<%- work.url %>'>
-									<div class='tile-img'>
-										<div class='inner' style='background-image: url("<%- work.img %>")'></div>
-									</div>
-									<div class='tile-text'>
-										<div class='row'>
-											<div class='medium-11 large-10 columns'>
-												<h5 class='title-underline'><%- work.name %></h5>
-												<div class='proj-content'><p><%- work.content %></p></div>
-											</div>
+						<div class='medium-4 columns minor'>
+							<div class='tile' id='<%- work.slug %>' data-url='<%- work.url %>'>
+								<div class='tile-img'>
+									<div class='inner' style='background-image: url("<%- work.img %>")'></div>
+								</div>
+								<div class='tile-text'>
+									<div class='row'>
+										<div class='medium-11 large-10 columns'>
+											<h5 class='title-underline'><%- work.name %></h5>
+											<div class='proj-content'><p><%- work.content %></p></div>
 										</div>
 									</div>
 								</div>
-							</li>
-						<% if (i % 3 == 2) { %>
+							</div>
 						</div>
-						<% } %>
 					<% } %>
 				</div>
-			</ul>
+			</div>
 		</div>
 	</div>
 </section>

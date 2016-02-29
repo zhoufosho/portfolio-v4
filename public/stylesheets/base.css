@@ -3,6 +3,9 @@
  * =============================
  */
 /* GLOBAL */
+@import url("http://fonts.googleapis.com/css?family=Playfair+Display:400italic,700");
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300");
+@import url("http://fonts.googleapis.com/css?family=Abel");
 /* line 12, ../sass/base.scss */
 * {
   box-sizing: border-box;
@@ -25,7 +28,7 @@ body {
 }
 
 /* TYPOGRAPHY */
-/* line 33, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -33,7 +36,7 @@ h1 {
   text-rendering: geometricPrecision;
 }
 
-/* line 40, ../sass/base.scss */
+/* line 42, ../sass/base.scss */
 h3 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
@@ -42,15 +45,16 @@ h3 {
   line-height: 1.8;
 }
 
-/* line 49, ../sass/base.scss */
+/* line 51, ../sass/base.scss */
 p {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
   line-height: 1.8;
+  font-weight: 300;
   color: #696969;
 }
 
-/* line 56, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
 a, a:visited {
   color: #aaa;
   transition: color .5s;
@@ -62,7 +66,7 @@ a, a:visited {
   transition: border-bottom .5s;
 }
 
-/* line 68, ../sass/base.scss */
+/* line 71, ../sass/base.scss */
 blockquote {
   border-left: 0;
   width: 66.7%;
@@ -77,30 +81,30 @@ blockquote {
   margin-right: auto;
   text-align: left;
 }
-/* line 83, ../sass/base.scss */
+/* line 86, ../sass/base.scss */
 blockquote footer {
   text-align: right;
   font-size: .85rem;
   color: #aaa;
   margin: 0;
 }
-/* line 90, ../sass/base.scss */
+/* line 93, ../sass/base.scss */
 blockquote p {
   display: inline;
 }
 
 /* LAYOUT */
-/* line 98, ../sass/base.scss */
+/* line 101, ../sass/base.scss */
 footer {
   margin-bottom: 30px;
 }
-/* line 100, ../sass/base.scss */
+/* line 103, ../sass/base.scss */
 footer p {
   margin-top: 30px;
 }
 
 /* UTILITIES */
-/* line 107, ../sass/base.scss */
+/* line 110, ../sass/base.scss */
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -108,31 +112,31 @@ footer p {
 }
 
 /* ELEMENTS */
-/* line 114, ../sass/base.scss */
+/* line 117, ../sass/base.scss */
 .back {
   margin-top: 30px;
 }
-/* line 116, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .back a:hover {
   opacity: 0.6;
 }
-/* line 120, ../sass/base.scss */
+/* line 123, ../sass/base.scss */
 .back img {
   width: 35px;
 }
 
-/* line 125, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 130, ../sass/base.scss */
+/* line 133, ../sass/base.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 134, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
 }

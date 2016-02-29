@@ -10,7 +10,7 @@
 	<div class='hero' id='smartcart'>
 		<div class='intro row'>
 			<div class='large-12 large-centered columns'>
-				<div class="back"><a href="http://elainezhou.me"><img src="images/logoWhite.png"></a></div>
+				<div class="back"><a href="http://elainezhou.me"><img src="images/logoWhite.png" alt='Personal logo'></a></div>
 				<div class="intro-text">
 					<h1>SmartCart</h1>
 					<h2>Finding items and checking out in grocery stores. </h2>
@@ -46,7 +46,7 @@
 				</div>
 
 				<div class='video-wrapper center'>
-					<iframe src="https://www.youtube.com/embed/7QvktffdVp4" frameborder="0" width="560" height="200" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/7QvktffdVp4" width="560" height="200" allowfullscreen></iframe>
 				</div>
 
 			</section>
@@ -65,7 +65,7 @@
 
 					
 					<figure>
-						<img src='images/smartcart/papercart.png'>
+						<img src='images/smartcart/papercart.png' alt='Using paper to model a shopping cart and tablet'>
 						<figcaption>We created a paper version of a shopping cart and the tablet screen, but quickly learned that the screen should not be immediately vertical nor double the size of the actual cart.</figcaption>
 					</figure>
 
@@ -75,20 +75,20 @@
 					<p>I prototyped the item-purchasing experience. Processing bar-coded items intended to use the rear-view camera to indicate a complete purchase. Produce became tricky. One concept used computer vision to determine the color of produce, wifi to narrow the list to produce within range, and then prompted the user to select from a shortlist the correctly scanned item by swiping through.</p>
 
 					<figure>
-						<img src='images/smartcart/barcode.png' />
+						<img src='images/smartcart/barcode.png' alt='Visual feedback when scanning a barcoded item' />
 						<figcaption>Scanning a barcoded-item provides visual feedback once the scan is successful.</figcaption>
 					</figure>
 
 					<figure>
 						<div class="slideshow" id="barcode-scanning">
 							<div>
-								<img src='images/smartcart/007.png'>
+								<img src='images/smartcart/007.png' alt='Interface to choose from differen produce of the same color'>
 							</div>
 							<div>
-								<img src='images/smartcart/008.png'>
+								<img src='images/smartcart/008.png' alt='Interace to choose the correct produce'>
 							</div>
 							<div>
-								<img src='images/smartcart/009.png'>
+								<img src='images/smartcart/009.png' alt='Interface to confirm your selection'>
 							</div>
 						</div>
 						<figcaption>In this produce-buying concept, the camera determines  the color of the produce, then wifi narrows the list down to a few items in range. Finally, the user confirms from a short list.</figcaption>
@@ -103,7 +103,7 @@
 					<p> We Wizard-of-Oz'd two elements of SmartCart – the purchasing experience and the bookends of getting started with the cart and checking out. We held the Xoom tablet above a mock shopping cart (in this case, a laundry hamper) and observed participants interacting with our college groceries of ramen and oranges, the laundry basket, and our static mocks. </p>
 
 					<figure>
-						<img src='images/smartcart/woz2.jpg'>
+						<img src='images/smartcart/woz2.jpg' alt='Using a laundry hamper as a makeshift shopping cart'>
 						<figcaption>We used a laundry hamper as a makeshift shopping cart. </figcaption>
 					</figure>
 
@@ -131,7 +131,7 @@
 <!-- 					<p>We tried scanning barcodes with both front and back cameras. The back camera was an awkward gesture, but the front camera was not sensitive enough to pick up barcodes correctly. We decided to try a handheld laser scanner. We were unsure how the interaction might feel, but would give us more insight in testing other flows.</p> -->
 
 					<figure>
-						<img src='images/smartcart/scanner.jpg'>
+						<img src='images/smartcart/scanner.jpg' alt='Handheld laser scanner'>
 						<figcaption>Since the front and back cameras seemed accurate or awkward, we started prototyping with a handheld laser scanner.</figcaption>
 					</figure>
 
@@ -168,16 +168,16 @@
 					<p>One of the conversations that constantly arose was whether SmartCart should be fully prescriptive and create an optimized grocery store route or maintain a casual attitude to let users find their own way around the store. Based on our initial observations around trust, we decided to let users find their own way around the store with some guidance without being intrusive.</p>
 
 					<figure>
-						<img src='images/smartcart/smartcartHiDef.jpg'>
+						<img src='images/smartcart/smartcartHiDef.jpg' alt='Interface for showing directions and shopping list'>
 						<figcaption>Directions would start with the most important information: the aisle number. While going down the aisle, either the depth (early, middle, end) or left/right side are highlighted based on distance from the item. </figcaption>
 					</figure>
 
 					<p>Finally, we hoped to address was how difficult it was to use SmartCart with a physical cart. There was a lot of switching eye gaze down and up. The tablet seemed more like a peripheral accessory than an integrated component. We designed a hardware enclosure out of plexiglass to ease use and accessibility of the touchscreen. We laser cut and assembled the enclosure and added it to the cart.
 					</p>
 					<figure>
-						<img src='images/smartcart/test2.jpg'>
-						<img src='images/smartcart/case2.jpg'>
-						<figcaption>To make our SmartCart tablet and app feel more integrated with the shopping cart, we laser cut a hardware enclosure.</figcaption>
+						<img src='images/smartcart/test2.jpg' alt='Hardware enclosure for tablet, version 1'>
+						<img src='images/smartcart/case2.jpg' alt='Hardware enclosure for tablet, version 2'>
+						<figcaption>To make our SmartCart tablet and app feel more integrated with the shopping cart, we laser cut a hardware enclosure. We show two different versions above.</figcaption>
 					</figure>
 				</div>
 			</section>
@@ -192,13 +192,7 @@
 		</div>
 	</div>
 
-	<footer class='row'>
-		<div class='large-12 large-centered columns'>
-			<hr></hr>
-			<p class="center">Elaine Zhou • 2016</p>
-		</div>
-	</footer>
-
+<% include templates/footer %>
 <% include templates/scripts %>
 <script>
 $("#barcode-scanning > div:gt(0)").hide();

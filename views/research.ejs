@@ -6,6 +6,7 @@
 <link rel='stylesheet' href='stylesheets/case.css' type='text/css'>
 </head>
 
+
 <body class='case-study' id="dconstraints-case">
 	<div class='hero' id='dconstraints'>
 		<div class='intro row'>
@@ -32,7 +33,7 @@
 							<h4>Context</h4>
 							<p>
 							Undergraduate Honors Thesis<br />
-							2013 ACM UIST Presenter<br />
+							2013 <a href='http://uist.acm.org'>ACM UIST</a> Presenter<br />
 							2015 Stanford UAR Grant Recipient
 							</p>
 						</div>
@@ -59,7 +60,7 @@
 				<p>During my sophomore year, I helped a health startup brainstorm and define their next product with a team of Stanford students. Initially, their team told us to “Shoot for the stars!” with essentially no restrictions or requirements. However, our ideas were met with resistance and new specifications that we had to include. One day, it had to be a “social network”, and the next day it was “hyper-local.” My teammates were livid, because the startup didn’t define the problem at all! However, what they saw as a lack of communication and clarity of the end result, I saw as additional design constraints.</p>
 
 				<blockquote>
-					What exactly is the effect of delaying constraints in the creative process?
+					Often, constraints change during a project. Are we the most creative if constraints come early or late?
 				</blockquote>
 
 				<p>
@@ -72,12 +73,16 @@
 				<div class="large-10 small-12 large-centered columns">
 				<h3>Process</h3>
 
-				<p>The study manipulates the structure of the design process in creating a web ad, as shown below. Participants were separated into 3 groups, defined by whether a narrow constraint was introduced early, middle, or late in the process. In the initial prompt, the task was to design a static web ad for Stanford University. The narrowed constraint was: the ad must be 160 x 600 pixels (2.6 inches x 10 inches) and targeted towards those interested in medicine.
+				<p>In this experiment, participants were led through a design process modeled off the d.school. They were asked to create a web ad for Stanford. The process started by brainstorming many ideas, prototyping a few, getting feedback, and iterating on 1 final design. 
+
+				I tested three conditions to figure out when the best time to introduce a constraint was – either from the beginning, after brainstorming, or after prototyping. 
+
+				The constraint I added was that the images had to be tall banner ads targeted towards those interested in medicine. In the initial prompt, the task was to design a static web ad for Stanford University. The narrowed constraint was: the ad must be 160 x 600 pixels (2.6 inches x 10 inches) and targeted towards those interested in medicine. 
 				</p>
 
 				<figure>
 					<img src='images/studyOverview.png' alt='Graphic showing overview of creativity study'>
-					<figcaption>Study Overview</figcaption>
+					<figcaption>The experiment led participants through a four-step design process. I tested three conditions to see when the best time to introduce a constraint was – from the beginning, after brainstorming, or after prototyping. </figcaption>
 				</figure>
 				</div>
 			</section>
@@ -86,8 +91,33 @@
 				<div class="large-10 small-12 large-centered columns">
 				<h3>Results</h3>
 
-				<p>Results indicate that those who brainstormed and prototyped before receiving the narrow constraints yielded results that were both more novel and more appropriate than other groups. This research project at the 2013 <a href='http://uist.acm.org'>ACM Symposium on User Interface Software Technology (UIST)</a> in St. Andrews, Scotland. 
+				<p>Results indicate that those received the narrow constraints after prototyping yielded the most novel results, as rated by a panel of experts.
 				</p>
+				<figure>
+					<div class="slideshow" id="research-results">
+						<div>
+							<img src='images/dconstraints/app_nov.png' alt='Results of appropriateness and novelty scores'>
+						</div>
+						<div>
+							<img src='images/dconstraints/n.png' alt='Increase in novelty scores across groups was found to be significant'>
+						</div>
+					</div>
+					<figcaption>The group that received late constraints had highest novelty and appropriateness ratings, although only the increase in novelty was found to be significant (p &lt; 0.05).  
+					</figcaption>
+				</figure>
+
+				<p>
+					From the literature, we have a hypothesis for why this might be true.
+
+					When participants are given a high level of detail from the start, they ended up fixating on making an ad that was appropriate, rather than exploring a breadth of options. That exploration is what encourages novelty. 
+
+					Thus, late constraints allowed the participants to overcome fixation. This enabled them to adapt initial concepts to new constraints, which can be a source of creativity.
+				</p>
+
+				<blockquote>
+					Late constraints yield more novel results. Prototyping can be a way to explore new ideas and overcome fixation.
+				</blockquote>
+
 				</div>
 			</section>
 		</div>
@@ -95,6 +125,19 @@
 
 	<% include templates/footer %>
 	<% include templates/scripts %>
+	<script>
+		$("#research-results > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#research-results > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#research-results');
+		},  3000);
+
+	</script>
 
 </body>
 </html>

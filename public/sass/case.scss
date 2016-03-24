@@ -3,8 +3,8 @@
 .video-wrapper {
     @include center-position;
     position: relative;
-    // padding-bottom: 56.25%;
-    padding-bottom: 40.5%;
+    padding-bottom: 56.25%;
+    // padding-bottom: 40.5%;
     height: 0; 
     overflow: hidden;
     margin-bottom: 30px;
@@ -45,6 +45,7 @@
         display: inline-block;
         position: relative;
         padding-bottom: -1px;
+        font-weight: 300;
     }
 
     a, a:visited {
@@ -99,25 +100,31 @@
             margin-bottom: 0.5em;
         }
 
+        video {
+            width: 100%;
+            height: auto;
+        }
+
         figcaption{
             @include center-position;
             margin-top: 1em;
             color: $dark-grey;
             font-size: 0.8em;
             font-style: italic;
+            font-weight: 300;
             width: 90%;
         }
     }
 
     section {
-        margin-top: 4em;
+        margin-top: 6em;
     }
 
     section:first-of-type {
         margin-top: 1.5em;
     }
 
-    ul {
+    ul:not(.inline-list) {
         color: $dark-grey;
         line-height: 2;
         margin-left: 100px;
@@ -128,13 +135,11 @@
         margin-left: 0px;
         padding-top: 0.5rem; 
     }
-
-
 }
 
 
 .slideshow {
-    max-height: 450px; 
+    height: 450px; 
     width: 580px;
     background-color: white;  
 }
@@ -145,7 +150,6 @@
 
     img {
         width: 580px;
-        // height: 450px;
     }
 }
 
@@ -159,6 +163,11 @@
         height: auto;
     }
 }
+
+.video-list video:not(:first-child) {
+    display: none;
+}
+
 
 #dconstraints-case {
     .slideshow {
@@ -178,13 +187,37 @@
 }
 
 
+#discoveroute-case {
+    .slideshow {
+       height: 450px;  
+    }
+
+    @media (max-width: $tabletPortrait) {
+        .slideshow {
+            width: auto;
+            min-height: 200px;
+        }
+        .slideshow > div img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (min-width: $tiny) and (max-width: $smartphone) {
+        height: 200px;
+
+    }
+
+}
+
+
 .intro {
     text-align: left;
     padding-left: 15px;
 
     h1 {
         font-family: 'Playfair Display', serif;
-        font-size: 3.5em;
+        font-size: 3.5rem;
         margin-bottom: 8px;
         color: white;
         text-rendering: geometricPrecision;
@@ -193,12 +226,12 @@
 
     h2 {
         font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: $intro-light-grey;
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 1rem;
         margin-right: -8px;
         color: $intro-light-grey;
     }

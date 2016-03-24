@@ -4,7 +4,7 @@
  */
 /* GLOBAL */
 @import url("http://fonts.googleapis.com/css?family=Playfair+Display:400italic,700");
-@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300");
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300,400");
 @import url("http://fonts.googleapis.com/css?family=Abel");
 /* line 12, ../sass/base.scss */
 * {
@@ -17,10 +17,9 @@ html,
 body {
   color: #3D3D3D;
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
 }
 
-/* line 24, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 *::-moz-selection {
   background: #3D3D3D;
   color: white;
@@ -28,12 +27,13 @@ body {
 }
 
 /* TYPOGRAPHY */
-/* line 35, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2.5em;
   text-rendering: geometricPrecision;
+  margin-bottom: 0.5em;
 }
 
 /* line 42, ../sass/base.scss */
@@ -111,32 +111,46 @@ footer p {
   text-align: center;
 }
 
+/* line 115, ../sass/base.scss */
+.table {
+  display: table;
+}
+
 /* ELEMENTS */
-/* line 117, ../sass/base.scss */
+/* line 121, ../sass/base.scss */
 .back {
   margin-top: 30px;
 }
-/* line 119, ../sass/base.scss */
+/* line 123, ../sass/base.scss */
 .back a:hover {
   opacity: 0.6;
 }
-/* line 123, ../sass/base.scss */
+/* line 127, ../sass/base.scss */
 .back img {
   width: 35px;
 }
 
-/* line 128, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 133, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 137, ../sass/base.scss */
+/* line 141, ../sass/base.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
+}
+
+/* line 146, ../sass/base.scss */
+.pull-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
 }

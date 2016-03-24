@@ -24,6 +24,10 @@
     float: right;
 }
 
+#projects .tile-row .minor:last-of-type{
+    margin-top: 1em;
+}
+
 @media only screen and (min-width: $tabletPortrait) {
     .tile{
         -webkit-transition: width 0.8s, height 0.8s;
@@ -32,17 +36,16 @@
 } 
 .minor .tile{
     font-size: 80%;
-    height: 25em;
-    margin-bottom: 1.4em;
+    height: 23em;
     .tile-img{
-        height: 52% // ~11.45em;
+        height: 100% // ~11.45em;
     }
 }
 
 .major .tile{
     height: 40em; 
     .tile-img{
-        height: 75% // ~28em;
+        height: 100% // ~28em;
     }
 }
 
@@ -73,38 +76,25 @@
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: white;
+
+        position: absolute;
+        bottom: 0px;
+        margin-right: 15px;
+
     p{
         margin-bottom: 0;   
     }   
-}
-
-
-@media (min-width: $smartphone) and (max-width: $tabletPortrait) {
-
-    .major .tile{
-        .tile-img{
-            height: 70%;
-        }
-    }
-
 }
 
 /* Responsive stuff */
 @media only screen and (max-width: $smartphone) {
     .minor .tile{
         height: 25em;
-        margin: 2em 0;
-        .tile-img{
-            height: 60%;
-        }
     }
 
     .major .tile{
         height: 30em; 
         margin: 1.5em 0 2.5em;
-        .tile-img{
-            height: 67%;
-        }
         p{
             font-size: 1em;
         }
@@ -115,29 +105,23 @@
     }
 }
 
-
-@media only screen and (max-width: $tiny) {
-    .major .tile .tile-img{
-        height: 60%;
-    }
-}
-
 /* project specifics */
 
-.tile-img{
-    overflow: hidden;
+.major.tile-img .inner{
+    height: 70%;
 }
 
 .tile-img .inner{
-    height: 100%;
+    height: 52%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 10% 15%;
 }
-
 
 .tile-img {
   position: relative;
+  overflow: hidden;
 }
 
 .tile-img:after {

@@ -191,6 +191,19 @@ setInterval(function() {
     .appendTo('#nav-iterations');
 },  3000);
 
+
+var back = $(".back");
+
+$('body').on("scroll", function(e) {
+    console.log(this.scrollTop);
+	if (this.scrollTop > 147) {
+  		back.addClass("fix-top");
+  	} else {
+		back.removeClass("fix-top");
+	}
+  
+});
+
 </script>
 
 </body>

@@ -1,5 +1,37 @@
 @import 'variables';
 
+
+
+
+.back {
+    display: inline-block;
+    padding: 10px 15px;
+    top: 0px;
+    z-index: 1;
+    margin-top: 30px;
+
+    a:hover {
+        opacity: 0.6;
+    }
+
+    img {
+        width: 35px;
+    }
+}
+
+.fix-top {
+    margin-top: 0px;
+    position: fixed;
+}
+
+.intro-text {
+    margin-top: 16em;
+}
+
+.fix-top + .intro-text {
+    margin-top: 22em;
+}
+
 .video-wrapper {
     @include center-position;
     position: relative;
@@ -239,10 +271,6 @@
 }
 
 
-.intro-text {
-    margin-top: 18em;
-}
-
 @media (max-width: $smartphone) {
     .back {
         width: 30px;
@@ -262,6 +290,32 @@
 }
 
 /* PAGE-SPECIFIC */
+
+#smartcart .back {
+    background-color: $smartcart;
+}
+
+#discoveroute .back {
+    background-color: $discoveroute;
+}
+
+#etc .back {
+    background-color: $etc;
+}
+
+#sixdegree .back {
+    background-color: $sixdegree;
+}
+
+#dais .back {
+    background-color: $dais;
+}
+
+#dconstraints .back {
+    background-color: $dconstraints;
+}
+
+
 
 .hero {
     background-repeat: no-repeat;

@@ -25,8 +25,6 @@ function stickyMenu() {
 		var scrollTop     = $(window).scrollTop(),
     		distance      = (elementOffset - scrollTop);
 		
-			console.log(distance);
-			console.log(scrollTop);
 			if (scrollTop >= elementOffset && distance <= 0) {
 		  		back.addClass("fix-top");
 		  	} else {

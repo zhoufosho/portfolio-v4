@@ -111,7 +111,7 @@
 
 					<h1>Key Features</h1>
 					<div class="center table">
-						<ul class='video-menu inline-list hide-for-small'>
+						<ul class='gif-menu inline-list hide-for-small'>
 							<li>
 							<a href="#features" id="list">Existing List</a></li>
 							<li>
@@ -135,23 +135,19 @@
 				</div>
 
 				<figure class='large-12 columns'>
-					<div class="videos-list">
-						<video id="video-list" width="560" height="00" controls>
-							<source src="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/QRCodeClip.mp4" type="video/mp4">
-							Your browser does not support the video tag. <a href="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/QRCodeClip.mp4">Check out here instead.</a>
-						</video>
-						<video id="video-find" width="560" height="00" controls>
-							<source src="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/search.mp4" type="video/mp4">
-							Your browser does not support the video tag. <a href="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/search.mp4">Check out here instead.</a>
-						</video>
-						<video id="video-buy" width="560" height="00" controls>
-							<source src="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/buying.mp4" type="video/mp4"> 
-							Your browser does not support the video tag. <a href="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/buying.mp4">Check out here instead.</a>
-						</video>  
-						<video id="video-checkout" width="560" height="00" controls>
-							<source src="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/checkout.mp4" type="video/mp4">
-							Your browser does not support the video tag. <a href="https://raw.githubusercontent.com/zhoufosho/portfolio-v4/master/public/videos/smartcart/checkout.mp4">Check out here instead.</a>
-						</video>  
+					<div class="gif-list">
+						<div id="video-list" >
+							<img src="images/smartcart/QRCodeClip.gif" />
+						</div>
+						<div id="video-find" >
+							<img src="images/smartcart/search.gif"/>
+						</div>
+						<div id="video-buy" >
+							<img src="images/smartcart/buying.gif" />
+						</div>
+						<div id="video-checkout" >
+							<img src="images/smartcart/checkout.gif" />
+						</div>
 					</div>
 				</figure>
 
@@ -334,24 +330,30 @@
 <% include templates/footer %>
 <% include templates/scripts %>
 <script>
-$("#barcode-scanning > div:gt(0)").hide();
 
-setInterval(function() { 
-  $('#barcode-scanning > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#barcode-scanning');
-},  3000);
+$(document).ready(function(){
 
-$('ul.video-menu a').click(function() {
-	var link = this;
-	$('.videos-list video').hide();
 
-	var videoId = '#video-' + link.id;
-	var vid = $('.videos-list').find(videoId).first();
-	vid.show();
+	$("#barcode-scanning > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('#barcode-scanning > div:first')
+	    .fadeOut(1000)
+	    .next()
+	    .fadeIn(1000)
+	    .end()
+	    .appendTo('#barcode-scanning');
+	},  3000);
+
+	$('ul.gif-menu a').click(function() {
+		var link = this;
+		$('.gif-list div').hide();
+
+		var videoId = '#video-' + link.id;
+		var vid = $('.gif-list').find(videoId).first();
+		vid.show();
+
+	});
 
 });
 

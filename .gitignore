@@ -5,4 +5,4 @@ bower_components/
 config.rb
 scss/
 assets/
-old_images/
+public/old_images/

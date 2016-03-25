@@ -57,7 +57,7 @@
 			<section id='observations'>
 				<div class="large-8 large-centered columns">
 					<h1>Shopping Styles</h1>
-					<p>We observed a variety of shoppers at different Safeway locations in the surrounding Palo Alto. We found three common behaviors amongst shoppers: browsing, seeking, or (executing on) planning. These are not mutually exclusive, but rather shoppers frequently switch between modes.
+					<p>We observed a variety of shoppers at different Safeway locations in the surrounding Palo Alto. We found three common behaviors amongst shoppers: browsing, seeking, or (executing on) planning. These are not mutually exclusive, instead shoppers tend to frequently switch between styles even on any given trip.
 					</p>
 				</div>
 
@@ -113,17 +113,7 @@
 					<div class="center table">
 						<ul class='video-menu inline-list hide-for-small'>
 							<li>
-							<a href="#features" id="list">Shopping List</a></li>
-							<li>
-							<a href="#features" id="find">Find Items</a></li>
-							<li>
-							<a href="#features" id="buy">Buy</a></li>
-							<li>
-							<a href="#features" id="checkout">Checkout</a></li>
-						</ul>
-						<ul class='show-for-small'>
-							<li>
-							<a href="#features" id="list">Shopping List</a></li>
+							<a href="#features" id="list">Existing List</a></li>
 							<li>
 							<a href="#features" id="find">Find Items</a></li>
 							<li>
@@ -132,6 +122,16 @@
 							<a href="#features" id="checkout">Checkout</a></li>
 						</ul>
 					</div>
+					<ul class='no-bullet show-for-small'>
+						<li>
+						<a href="#features" id="list">Existing List</a></li>
+						<li>
+						<a href="#features" id="find">Find Items</a></li>
+						<li>
+						<a href="#features" id="buy">Buy</a></li>
+						<li>
+						<a href="#features" id="checkout">Checkout</a></li>
+					</ul>
 				</div>
 
 				<figure class='large-12 columns'>
@@ -165,49 +165,19 @@
 
 					<h1>Prototyping &amp; User Testing</h1>
 
-					<h3>Shopping Modes</h3>
+					<h3>Buying Items</h3>
 
-					<h3>Cart Mount</h3>
-
-					<p>User testing revealed the tablet was really difficult to use by itself. There was a lot of switching eye gaze down and up. We designed a hardware enclosure out of plexiglass to ease use and accessibility of the touchscreen. We laser cut and assembled the enclosure and added it to the cart.
-					</p>
-
-
-					<h3>Checkout</h3>
-
-
+					<p>Our intention in reducing wait times for check out was to collectively build up a list of items a shopper intended to buy. We thought about grocery items as (1) those with bar codes and (2) those without, like fruits and vegetables. We Wizard-of-Oz'd this interaction by asking participants to try scanning real-life items (like ramen) using the front and rear cameras on the tablet.</p>
 				</div>
-					
-				<figure class="large-12 columns">
-					<img src='images/smartcart/papercart.png' alt='Using paper to model a shopping cart and tablet'>
-					<figcaption>We created a paper version of a shopping cart and the tablet screen, but quickly learned that the screen should not be immediately vertical nor double the size of the actual cart.</figcaption>
-				</figure>
 
 				<figure class="large-12 columns">
-					<img src='images/smartcart/woz2.jpg' alt='Using a laundry hamper as a makeshift shopping cart'>
-					<figcaption>We used a laundry hamper as a makeshift shopping cart. </figcaption>
+					<img src='images/smartcart/barcode.png' alt='Visual feedback when scanning a barcoded item' />
+					<figcaption>Scanning a barcoded-item provides visual feedback once the scan is successful.</figcaption>
 				</figure>
 
-				<figure>
-					<img src='images/smartcart/test2.jpg' alt='Hardware enclosure for tablet, version 1'>
-					<img src='images/smartcart/case2.jpg' alt='Hardware enclosure for tablet, version 2'>
-					<figcaption>To make our SmartCart tablet and app feel more integrated with the shopping cart, we laser cut a hardware enclosure. We show two different versions above.</figcaption>
-				</figure>
-			</section>
-
-
-			<section id='prototyping1'>
 				<div class="large-8 large-centered columns">
+					<p>Produce became tricky. One concept used computer vision to determine the color of produce, wifi to narrow the list to produce within range, and then prompted the user to select from a shortlist the correctly scanned item by swiping through. Although we mocked this up, we ended up not persuing this idea due to time and technology constraints.</p>
 
-					<h1>Test</h1>
-
-					<p>I prototyped the item-purchasing experience. Processing bar-coded items intended to use the rear-view camera to indicate a complete purchase. Produce became tricky. One concept used computer vision to determine the color of produce, wifi to narrow the list to produce within range, and then prompted the user to select from a shortlist the correctly scanned item by swiping through.</p>
-
-
-					<figure>
-						<img src='images/smartcart/barcode.png' alt='Visual feedback when scanning a barcoded item' />
-						<figcaption>Scanning a barcoded-item provides visual feedback once the scan is successful.</figcaption>
-					</figure>
 
 					<figure>
 						<div class="slideshow" id="barcode-scanning">
@@ -221,85 +191,131 @@
 								<img src='images/smartcart/009.png' alt='Interface to confirm your selection'>
 							</div>
 						</div>
-						<figcaption>In this produce-buying concept, the camera determines  the color of the produce, then wifi narrows the list down to a few items in range. Finally, the user confirms from a short list.</figcaption>
+						<figcaption>In this produce-buying concept, the camera determines  the color of the produce, then wifi narrows the list down to a few items in range. Finally, the user confirms from a short list. Unfortunately, we did not persue this path.</figcaption>
 					</figure>
+				</div>
+
+				<div class="large-8 large-centered columns">
+
+					<p>Through user testing, we found that neither the front camera nor back camera was intuitive as a scanning mechanism. People also expressed worry about whether the camera was always on and always watching. We learned that lags created frustration, and lack of feedback in our Wizard of Oz demo was very confusing. For an action as critical as buying and scanning, it should be quick and reliable. More importantly, the purchasing decision should install a sense of confidence. 
+					</p>
+
+					<blockquote>
+						Scanning items, the core action, should be quick, reliable, and instill confidence.
+					</blockquote>
+
+					<p>We decided to try a handheld laser scanner. In our user testing, if we just left the barcode scanner by the tablet, people instinctively knew to pick it up and use it. Many of the problems we faced when using the camera (security, lag, awkwardness) did not exist.</p>
 
 				</div>
-			</section>
 
-			<section id='testing1'>
+				<figure class="large-12 columns">
+					<img src='images/smartcart/scanner.jpg' alt='Handheld laser scanner'>
+					<figcaption>No, this is not a hairdryer. We started prototyping with a handheld laser scanner, since the front and back cameras seemed either inaccurate or awkward. </figcaption>
+				</figure>
+
 				<div class="large-8 large-centered columns">
-					<h1>User Testing, Part I</h1>
-					<p> We Wizard-of-Oz'd two elements of SmartCart – the purchasing experience and the bookends of getting started with the cart and checking out. We held the Xoom tablet above a mock shopping cart (in this case, a laundry hamper) and observed participants interacting with our college groceries of ramen and oranges, the laundry basket, and our static mocks. </p>
 
+					<h3>Finding Items</h3>
+
+					<p>Our observations showed that people have widely different processes to go about grocery shopping. Some go into stores prepared with a list, some tend to buy impulsively, others span both behaviors. Because these habits are so personal, we stayed away micro-managing or optimizing people's shopping in a prescriptive way. Instead, we prioritized letting users find their own way around the store with some guidance, without being intrusive.</p>
+				</div>
+
+				<figure class="large-12 columns">
+					<div class="row">
+						<div class="small-4 columns">
+							<img src='images/smartcart/andy.png'>
+						</div>
+						<div class="small-4 columns">
+							<img src='images/smartcart/alan.png'>
+						</div>
+						<div class="small-4 columns">
+							<img src='images/smartcart/002.png'>
+						</div>
+					</div>
+					<figcaption>Our team mocked up the home screen in parallel. Our approaches varied, but they all emphasized the grocery store map, grocery list, and total amount. We took some of the best elements in subsequent iterations.
+					</figcaption>
+				</figure>
+
+				<div class="large-8 large-centered columns">
+
+					<p>One of the questions we attempted to answer with our prototype was "what fidelity do people search for their groceries?" Some items had strong brand associations. For window cleaner, half the participants started typing "windex," but the Minute Maid Orange Juice was generalized to orange juice. In our redesign, we resolved ambiguous items so users could search either "chips" or "Doritos" using autocomplete. </p>
+
+					<blockquote>
+					Items had different associations. Some had strong brand attachment, like Windex. Others, like Minute Maid Orange Juice, were just "orange juice."</blockquote>
+
+					<p>Our user testing also found that directions like "Aisle 5" were not entirely helpful. Upon arriving in the aisle, people would slow down dramatically and scan the rows in many directions. They might ask an employee again, and they would respond "check the middle of the aisle." We used this as a guiding point in providing more relevant directions. </p>
+				</div>
+
+				<figure class="large-12 columns">
+					<div class="row">
+						<img src='images/smartcart/screen.png' alt='Interface for showing directions and shopping list'>
+					</div>
+				</figure>
+
+				<div class="large-8 large-centered columns">
+
+					<h3>Cart Mount</h3>
+
+					<p>We started with paper prototypes and a laundry hamper as a makeshift shopping cart. In our user testing, if we weren't holding onto the tablet, participants continually moved their eye gaze up and down, and found it very difficult to use. </p>
+				</div>
+
+				<figure class="large-12 columns">
+					<div class="row">
+						<div class="small-6 columns">
+						<img src='images/smartcart/papercart1.jpg' alt='Using paper to model a shopping cart and tablet'>
+					</div>
+					<div class="small-6 columns">
+						<img src='images/smartcart/woz2.jpg' alt='Using a laundry hamper as a makeshift shopping cart'>
+					</div>
+						
+					</div>
+					<figcaption>We created a paper version of a cart and the tablet screen, but quickly moved to using a tablet and a laundry hamper as a makeshift shopping cart, to better understand what the experience would be like. </figcaption>
+				</figure>
+
+				<div class="large-8 large-centered columns">
+
+					<p>We asked people of various heights (from 5ft to 6.5ft) to test comfortable viewing angles while standing. Next, we designed a hardware enclosure out of plexiglass to ease use and accessibility of the touchscreen. We laser cut and assembled the enclosure and added it to the cart.
+					</p>
+				</div>
+				<figure class="large-12 columns">
+					<div class="row">
+						<div class="small-4 columns">
+							<img src='images/smartcart/mount1.jpg' alt='Hardware enclosure for tablet, version 1'>
+						</div>
+						<div class="small-4 columns">
+							<img src='images/smartcart/mount2.jpg' alt='Hardware enclosure for tablet, version 2'>
+						</div>
+						<div class="small-4 columns">
+							<img src='images/smartcart/mount3.jpg' alt='Hardware enclosure for tablet, version 2'>
+						</div>
+					</div>
+					<figcaption>To make our SmartCart tablet and app feel more integrated with the shopping cart, we laser cut a hardware enclosure. Above, we show testing viewing angles and, two different versions of the mount.</figcaption>
+				</figure>
+
+				<div class="large-8 large-centered columns">
+
+					<h3>Checkout</h3>
 
 					<h4>Checkout was different from other shopping experiences</h4>
 					<p>Since all the items would be scanned and placed into the cart, we prototyped an Uber-like invisible confirmation. You could simply leave the store with your cart, your credit card charged, and everything complete. However, most people had no idea what to do after they had collected their items. When asked, they responded that they were looking for a shopping cart icon or some further instructions to "walk out the store". </p>
 
-					<blockquote>
-						Although people were shopping in a physical store, SmartCart reminded them of an online experience. 
-					</blockquote>
-
-					<h4>Scanning items should instill confidence</h4>
-					<p>The common consensus was that the front camera was more intuitive of a scanning mechanism. We also heard people express worry about whether the camera was always on and always watching. We learned that lags created frustration, and lack of feedback in our Wizard of Oz skit was confusing. More importantly, the purchasing decision should install a sense of confidence. </p>
-
-
-
-				</div>
-			</section>
-
-			<section id="proto2">
-				<div class="large-8 large-centered columns">
-					<h1>Prototyping, Part II</h1>
-
-					<p>The first technical implementation focused on ease mapping shopping list items into the physical store, accommodating impulse buying, and scanning items with barcodes.</p>
-
-<!-- 					<p>We tried scanning barcodes with both front and back cameras. The back camera was an awkward gesture, but the front camera was not sensitive enough to pick up barcodes correctly. We decided to try a handheld laser scanner. We were unsure how the interaction might feel, but would give us more insight in testing other flows.</p> -->
-
-					<figure>
-						<img src='images/smartcart/scanner.jpg' alt='Handheld laser scanner'>
-						<figcaption>Since the front and back cameras seemed accurate or awkward, we started prototyping with a handheld laser scanner.</figcaption>
-					</figure>
-
-					<p>Our observations showed that people have widely different processes to go about grocery shopping. Some go into stores prepared with a list, but others are tend to buy impulsively. In order to accommodate those with mental lists, we used a QR code to reduce the friction from having a freeform list to getting the list onto SmartCart. </p>
-					
-					<!-- [qr code picture??] -->
-
-				</div>
-			</section>
-			<section id="testing2">
-				<div class="large-8 large-centered columns">
-					<h1>User Testing, Part II</h1>
-					<p>Prior to user testing, we added a handful of items to our item database and hard-coded their approximate locations in the Menlo Park Safeway. To simulate Wi-Fi localization, we set up a second tablet to control the cart's map position via Bluetooth. We came across two major issues, all related to the transition from the physical world to the digital SmartCart system. </p>
-
-					<h4>Items had different mental models; some by brand, some by type</h4>
-					<p>One of the questions we attempted to answer with our prototype was "what fidelity do people search for their groceries?" Some items had strong brand associations. For window cleaner, half the participants started typing "windex," but the Minute Maid Orange Juice was generalized to orange juice. In our redesign, we resolved ambiguous items so users could search either "chips" or "Doritos" using autocomplete. </p>
-
-					<blockquote>
-					Some items had strong brand attachment, like Windex. Others, like Minute Maid Orange Juice, were simply "orange juice."</blockquote>
-
-					<h4>Checkout was still confusing</h4>
-					<p>We added directions to tell participants to walk to the exit area, however people got there and still looked confused. Most surprising was that every single person expressed some sort of fear. These ranged from buying by accident, not paying for the right items, or the fear of being perceived as stealing something. Such a behavioral change was unnatural, and SmartCart should ease users through the journey. In our redesign, we acted out a receipt verification employee to check whether people's shopping carts matched their transactions.</p>
 
 					<blockquote>
 					    People were afraid of being perceived as stealing things.
 					</blockquote>
 
-				</div>
-			</section>
-			<section id="proto3">
-				<div class="large-8 large-centered columns">
-					<h1>Prototyping, Part III</h1>
 
-					<p>One of the conversations that constantly arose was whether SmartCart should be fully prescriptive and create an optimized grocery store route or maintain a casual attitude to let users find their own way around the store. Based on our initial observations around trust, we decided to let users find their own way around the store with some guidance without being intrusive.</p>
+					<h4>Checkout was still confusing</h4>
+					<p>We added directions to tell participants to walk to the exit area, however people got there and still looked confused. Most surprising was that every single person expressed some sort of fear. These ranged from buying by accident, not paying for the right items, or the fear of being perceived as stealing something. Such a behavioral change was unnatural, and SmartCart should ease users through the journey. In our redesign, we acted out a receipt verification employee to check whether people's shopping carts matched their transactions.</p>
 
-					<figure>
-						<img src='images/smartcart/smartcartHiDef.jpg' alt='Interface for showing directions and shopping list'>
-						<figcaption>Directions would start with the most important information: the aisle number. While going down the aisle, either the depth (early, middle, end) or left/right side are highlighted based on distance from the item. </figcaption>
-					</figure>
+					<h3>User Testing Methodology</h3>
+
+					<p>Prior to user testing, we added a handful of items to our item database and hard-coded their approximate locations in the Menlo Park Safeway. We created a map that was similar to the Safeway. To simulate Wi-Fi localization, we set up a second tablet to control the cart's map position via Bluetooth. Following a general script for everyone, we asked participants to scan a list containing three predetermined items (window cleaner, almond milk, and orange juice), then halfway through the test, asked them to pick up something they had forgotten (croutons). In our debrief, we asked about usability issues and whether the system would be intimidating to use.</p>
 
 				</div>
+				
 			</section>
+
 			<section id="takeaways">
 				<div class="large-8 large-centered columns">
 				<h1>Key Takeaways</h1>

@@ -106,13 +106,14 @@
         }
 
         figcaption{
+            width: inherit;
+            max-width: $content-min;
             @include center-position;
             margin-top: 1em;
             color: $dark-grey;
             font-size: 0.8em;
             font-style: italic;
             font-weight: 300;
-            width: 90%;
         }
     }
 
@@ -130,7 +131,7 @@
         margin-left: 100px;
     }
 
-    #stats ul{
+    ul.no-bullet {
         list-style-type: none; 
         margin-left: 0px;
         padding-top: 0.5rem; 
@@ -139,23 +140,23 @@
 
 
 .slideshow {
-    height: 450px; 
-    width: 580px;
+    height: 500px; 
+    width: $content-min;
     background-color: white;  
 }
 
 .slideshow > div { 
-    @include center-position;
+    
     position: absolute;
 
     img {
-        width: 580px;
+        width: $content-min;
     }
 }
 
 @media (max-width: $tabletPortrait) {
     .slideshow {
-        width: 580px;
+        width: $content-min;
         height: auto;
     }
     .slideshow > div img {

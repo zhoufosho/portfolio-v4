@@ -37,6 +37,11 @@ h1 {
 }
 
 /* line 42, ../sass/base.scss */
+h2 {
+  font-weight: 300;
+}
+
+/* line 46, ../sass/base.scss */
 h3 {
   font-family: 'Abel', 'Courier New', sans-serif;
   text-transform: uppercase;
@@ -45,7 +50,7 @@ h3 {
   line-height: 1.8;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 55, ../sass/base.scss */
 p {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
@@ -54,7 +59,7 @@ p {
   color: #696969;
 }
 
-/* line 59, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 a, a:visited {
   color: #aaa;
   transition: color .5s;
@@ -66,7 +71,7 @@ a, a:visited {
   transition: border-bottom .5s;
 }
 
-/* line 71, ../sass/base.scss */
+/* line 75, ../sass/base.scss */
 blockquote {
   border-left: 0;
   width: 66.7%;
@@ -81,72 +86,72 @@ blockquote {
   margin-right: auto;
   text-align: left;
 }
-/* line 86, ../sass/base.scss */
+/* line 90, ../sass/base.scss */
 blockquote footer {
   text-align: right;
   font-size: .85rem;
   color: #aaa;
   margin: 0;
 }
-/* line 93, ../sass/base.scss */
+/* line 97, ../sass/base.scss */
 blockquote p {
   display: inline;
 }
 
 /* LAYOUT */
-/* line 101, ../sass/base.scss */
+/* line 105, ../sass/base.scss */
 footer {
   margin-bottom: 30px;
 }
-/* line 103, ../sass/base.scss */
+/* line 107, ../sass/base.scss */
 footer p {
   margin-top: 30px;
 }
 
 /* UTILITIES */
-/* line 110, ../sass/base.scss */
+/* line 114, ../sass/base.scss */
 .center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 115, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .table {
   display: table;
 }
 
 /* ELEMENTS */
-/* line 121, ../sass/base.scss */
+/* line 125, ../sass/base.scss */
 .back {
   margin-top: 30px;
 }
-/* line 123, ../sass/base.scss */
+/* line 127, ../sass/base.scss */
 .back a:hover {
   opacity: 0.6;
 }
-/* line 127, ../sass/base.scss */
+/* line 131, ../sass/base.scss */
 .back img {
   width: 35px;
 }
 
-/* line 132, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 137, ../sass/base.scss */
+/* line 141, ../sass/base.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 141, ../sass/base.scss */
+/* line 145, ../sass/base.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
 }
 
-/* line 146, ../sass/base.scss */
+/* line 150, ../sass/base.scss */
 .pull-down {
   position: absolute;
   bottom: 0;

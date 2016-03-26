@@ -18,8 +18,11 @@
 /* sticky menu */
 function stickyMenu() {
 	var back = $(".intro .back");
-	var elementOffset = back.offset().top;
+	if(back.length === 0){
+		return;
+	}
 
+	var elementOffset = back.offset().top;
 	window.addEventListener('scroll', function(){
 		
 		var scrollTop     = $(window).scrollTop(),

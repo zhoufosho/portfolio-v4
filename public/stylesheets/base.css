@@ -98,60 +98,65 @@ blockquote p {
   display: inline;
 }
 
+/* line 102, ../sass/base.scss */
+.subtle {
+  color: #999;
+}
+
 /* LAYOUT */
-/* line 105, ../sass/base.scss */
+/* line 109, ../sass/base.scss */
 footer {
   margin-bottom: 30px;
 }
-/* line 107, ../sass/base.scss */
+/* line 111, ../sass/base.scss */
 footer p {
   margin-top: 30px;
 }
 
 /* UTILITIES */
-/* line 114, ../sass/base.scss */
+/* line 118, ../sass/base.scss */
 .center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 119, ../sass/base.scss */
+/* line 123, ../sass/base.scss */
 .table {
   display: table;
 }
 
 /* ELEMENTS */
-/* line 125, ../sass/base.scss */
+/* line 129, ../sass/base.scss */
 .back {
   margin-top: 30px;
 }
-/* line 127, ../sass/base.scss */
+/* line 131, ../sass/base.scss */
 .back a:hover {
   opacity: 0.6;
 }
-/* line 131, ../sass/base.scss */
+/* line 135, ../sass/base.scss */
 .back img {
   width: 35px;
 }
 
-/* line 136, ../sass/base.scss */
+/* line 140, ../sass/base.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 141, ../sass/base.scss */
+/* line 145, ../sass/base.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 145, ../sass/base.scss */
+/* line 149, ../sass/base.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
 }
 
-/* line 150, ../sass/base.scss */
+/* line 154, ../sass/base.scss */
 .pull-down {
   position: absolute;
   bottom: 0;

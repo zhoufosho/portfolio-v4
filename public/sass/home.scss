@@ -24,8 +24,12 @@
     float: right;
 }
 
+.tile-row:first-of-type {
+    margin-bottom: 1em;
+}
+
 #projects .tile-row .minor:last-of-type{
-    margin-top: 1em;
+    margin-top: 1.1em;
 }
 
 @media only screen and (min-width: $tabletPortrait) {
@@ -33,13 +37,17 @@
         -webkit-transition: width 0.8s, height 0.8s;
         transition: width 0.8s, height 0.8s;
     }
-} 
+}
 .minor .tile{
     font-size: 80%;
     height: 23em;
     .tile-img{
         height: 100% // ~11.45em;
     }
+}
+
+#work .minor .tile{
+    height: 27em;
 }
 
 .major .tile{
@@ -107,7 +115,7 @@
 
 /* project specifics */
 
-.major.tile-img .inner{
+.major .tile-img .inner{
     height: 70%;
 }
 

@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 var projects = [{name: "discoveroute", slug:"discoveroute", img:"images/discoveroute3.png", content: "discoveroute is a mobile web app for discovering path-based sites along routes."},
-				{name: "Dais Glass", slug:"dais", img:"images/dais.png", content: "Dais is a Glass presentation aid and analytics tool."},
 				{name: "d.constraints", slug:"research", img: "images/dconstraints.png", content: "My thesis researched the role of constraints in design processes."},
+				{name: "Dais Glass", slug:"dais", img:"images/dais.png", content: "Dais is a Glass presentation aid and analytics tool."},
 				{name: "SmartCart", slug:"smartcart", img:"images/smartcart3.png", content: "SmartCart is a tablet app that helps shoppers quickly locate items and purchase them."},
-				{name: "Etcetera", slug:"etc", img:"images/etc.png", content: "An assortment of physical products, visual designs, and art."},
 				{name: "SixDegree", slug:"sixdegree", img:"images/sixdegree.png", content: "SixDegree is a conceptual tool that weights your relationships."},
+				{name: "Etcetera", slug:"etc", img:"images/etc.png", content: "An assortment of physical products, visual designs, and art."}
 				];
 
 var works = [{name: "Uber", slug:"uber", img:"images/uber.png", content: "Facilitating conflict resolution between drivers and ops.", url: 'https://uber.com'},

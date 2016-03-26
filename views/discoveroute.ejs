@@ -55,21 +55,21 @@
 				</figure>
 
 			</section>
-			<section id='needfinding'>
+			<section id='travel-planning'>
 				<div class="medium-8 medium-centered columns">
 					<h1>Travel Planning</h1>
-					<p>Oftentimes, traveling ends up being less about the actual journey and more about just getting there. While observing people planning trips, we found that people tended to look for areas close to where they start or where they might end up. Need to pick up groceries? Yelp for places close to me now or close to me later. If you want to meet up with a friend for coffee, it's a conversation of "near your place or mine." We've lost the richness of exploring the space in between.
+					<p>Oftentimes, traveling ends up being less about the actual journey and more about just getting there. While observing people planning trips, we found that people tended to look for areas close to where they start or where they might end up. 
 					</p>
 				</div>
 				<figure class="large-12 columns">
 					<img src='images/discoveroute/StartEnd.png' alt='Travel paths are simplified to getting from start to end.'>
-					<figcaption>Through interviews and observing people planning trips, we found that people were usually only familiar with one of two places in a trip: the start or the end (destination). Exploring an area means getting around only one of those two points.</figcaption>
+					<figcaption>Through interviews and observing people planning trips, we found that people were usually only familiar with one of two places in a trip: the start or the end (destination). Exploring an area means getting around only one of those two points, and sometimes travel feels like a busied transaction between start and end.</figcaption>
 				</figure>
 			</section>
-			<section id='needfinding'>
+			<section id='approach'>
 				<div class="medium-8 medium-centered columns">
 					<h1>The Approach</h1>
-					<p></p>
+					<p>We focused  to help people work within their busy schedules to minimize excess travel time. We came up with the idea of exploring a travel path. A set of uses came up – I need to pick up groceries on my way home. I want to escape traffic but kill time somewhere. I'd like to meet a friend halfway. Discoveroute hopes to help commuters and travels explore the places beteween their destinations.</p>
 					<blockquote>Simone, busy but curious, needs to find interesting places along her travels in order to make the most of her time. </blockquote>
 				</div>
 			</section>
@@ -144,9 +144,10 @@
 				</div>
 
 				<figure class="large-12 columns">
-					<a href='images/discoveroute/ABTesting.png' class='no-effect'><img src='images/discoveroute/ABTesting.png' alt='High-fidelity mockups of other interactive pieces'></a>
-					<figcaption>A/B testing showed the original (left) resulted in more clicks. We thought this meant more categories were selected, but interviews showed this behavior was button mashing. </figcaption>
+					<a href='images/discoveroute/ABFull.png' class='no-effect'><img src='images/discoveroute/ABFull.png' alt='Results of A/B testing a chromatic and monochromatic version.'></a>
 				</figure>
+
+				<div class="clearfix"></div>
 
 				<div class="medium-8 medium-centered columns">
 
@@ -156,14 +157,14 @@
 					A/B testing alone cannot tell you how to interpret your data.</blockquote>
 
 					<p>
-					The monochrome version was incorporated into the final design, since it had clearer actions and resulted in less button mashing. Below you can see the full set of flows.</p>
+					The monochrome version was incorporated into the final design, since it had clearer actions and resulted in less button mashing. </p>
 					
 				</div>
 
-				<figure class="large-12">
+<!-- 				<figure class="large-12">
 					<img src='images/discoveroute/drHiFi.png' alt='High-fidelity mockups of other interactive pieces'>
 					<figcaption>After figuring out a navigation that worked, we fleshed out the other interactions.</figcaption>
-				</figure>
+				</figure> -->
 
 			</section>
 
@@ -171,10 +172,9 @@
 				<div class="medium-8 medium-centered columns">
 
 					<h1>Key Takeaways</h1>
-					<h4>Design with real data.</h4>
+					<h4>Design with real, not dummy, data.</h4>
 
-					<p>
-					</p>
+					<p>Some of our initial mockups used photos from Flickr and made assumptions about the data from the Yelp's API. The images aren't always appealing nor high quality, and some information like phone numbers are hidden. We had to take these considerations into account as we designed the detour card.</p>
 
 					<h4>Data is good, but context is better. </h4>
 
@@ -199,20 +199,6 @@ setInterval(function() {
     .end()
     .appendTo('#nav-iterations');
 },  3000);
-
-
-var back = $(".back");
-
-$('body').on("scroll", function(e) {
-    console.log(this.scrollTop);
-	if (this.scrollTop > 147) {
-  		back.addClass("fix-top");
-  	} else {
-		back.removeClass("fix-top");
-	}
-  
-});
-
 </script>
 
 </body>

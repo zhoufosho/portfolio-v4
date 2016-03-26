@@ -134,29 +134,36 @@ footer p {
 /* line 131, ../sass/base.scss */
 .back a:hover {
   opacity: 0.6;
+  transition: opacity .5s;
 }
-/* line 135, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 .back img {
   width: 35px;
 }
 
-/* line 140, ../sass/base.scss */
+@media (max-width: 640px) {
+  /* line 142, ../sass/base.scss */
+  .back {
+    width: 30px;
+  }
+}
+/* line 147, ../sass/base.scss */
 ul.inline-list {
   list-style-type: none;
   margin-left: 0px;
   padding-top: 0.5rem;
 }
-/* line 145, ../sass/base.scss */
+/* line 152, ../sass/base.scss */
 ul.inline-list li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 149, ../sass/base.scss */
+/* line 156, ../sass/base.scss */
 ul.inline-list li:first-of-type {
   margin-left: 1px;
 }
 
-/* line 154, ../sass/base.scss */
+/* line 161, ../sass/base.scss */
 .pull-down {
   position: absolute;
   bottom: 0;

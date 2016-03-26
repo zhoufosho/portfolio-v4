@@ -42,7 +42,7 @@
   overflow: hidden;
   margin-bottom: 30px;
   margin-top: 45px;
-  max-width: 970px;
+  max-width: 940px;
 }
 
 /* line 50, ../sass/case.scss */
@@ -136,7 +136,7 @@
 /* line 126, ../sass/case.scss */
 .error-page figure,
 .case-content figure {
-  max-width: 970px;
+  max-width: 940px;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   margin-left: auto;

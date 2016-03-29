@@ -3,9 +3,9 @@ var router = express.Router();
 
 var projects = [{name: "discoveroute", slug:"discoveroute", img:"images/discoveroute3.png", content: "discoveroute is a mobile web app for discovering path-based sites along routes."},
 				{name: "d.constraints", slug:"research", img: "images/dconstraints.png", content: "My thesis researched the role of constraints in design processes."},
-				{name: "Dais Glass", slug:"dais", img:"images/dais.png", content: "Dais is a Glass presentation aid and analytics tool."},
+				{name: "Emoshkas", slug:"emoshkas", img:"images/emoshkas.png", content: "Emoshkas is a learning toy that helps children process emotions."},
 				{name: "SmartCart", slug:"smartcart", img:"images/smartcart3.png", content: "SmartCart is a tablet app that helps shoppers quickly locate items and purchase them."},
-				{name: "SixDegree", slug:"sixdegree", img:"images/sixdegree.png", content: "SixDegree is a conceptual tool that weights your relationships."},
+				{name: "Dais Glass", slug:"dais", img:"images/dais.png", content: "Dais is a Glass presentation aid and analytics tool."},
 				{name: "Etcetera", slug:"etc", img:"images/etc.png", content: "An assortment of physical products, visual designs, and art."}
 				];
 

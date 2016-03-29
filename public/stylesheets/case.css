@@ -297,63 +297,63 @@
 }
 
 @media (max-width: 640px) {
-  /* line 282, ../sass/case.scss */
-  .back {
-    width: 30px;
-  }
-
-  /* line 287, ../sass/case.scss */
+  /* line 283, ../sass/case.scss */
   .intro h1 {
     font-size: 2em;
   }
-  /* line 290, ../sass/case.scss */
+  /* line 286, ../sass/case.scss */
   .intro h2 {
     font-size: 1.25em;
   }
-  /* line 293, ../sass/case.scss */
+  /* line 289, ../sass/case.scss */
   .intro h3 {
     font-size: 0.8em;
   }
 }
 /* PAGE-SPECIFIC */
-/* line 301, ../sass/case.scss */
+/* line 297, ../sass/case.scss */
 #smartcart .back {
   background-color: #2565AA;
 }
 
-/* line 305, ../sass/case.scss */
+/* line 301, ../sass/case.scss */
 #discoveroute .back {
   background-color: #FFA215;
 }
 
-/* line 309, ../sass/case.scss */
+/* line 305, ../sass/case.scss */
 #etc .back {
   background-color: #7B041C;
 }
 
-/* line 313, ../sass/case.scss */
+/* line 309, ../sass/case.scss */
 #sixdegree .back {
   background-color: #010425;
 }
 
-/* line 317, ../sass/case.scss */
+/* line 313, ../sass/case.scss */
 #dais .back {
   background-color: #007E7F;
 }
 
-/* line 321, ../sass/case.scss */
+/* line 317, ../sass/case.scss */
 #dconstraints .back {
   background-color: #184E11;
 }
 
-/* line 327, ../sass/case.scss */
+/* line 321, ../sass/case.scss */
+#emoshkas .back {
+  background-color: #6B0F5D;
+}
+
+/* line 328, ../sass/case.scss */
 .hero {
   background-repeat: no-repeat;
   height: 36em;
   margin-bottom: 1em;
 }
 
-/* line 334, ../sass/case.scss */
+/* line 335, ../sass/case.scss */
 .hero#smartcart {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
   background-position: 80% 0%;
@@ -361,7 +361,7 @@
   background-color: #2565AA;
 }
 
-/* line 342, ../sass/case.scss */
+/* line 343, ../sass/case.scss */
 .hero#discoveroute {
   background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
   background-position: 80% 25%;
@@ -369,7 +369,7 @@
   background-color: #FFA215;
 }
 
-/* line 351, ../sass/case.scss */
+/* line 352, ../sass/case.scss */
 .hero#dais {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), url("../images/dais.png");
   background-position: 80% 40%;
@@ -377,7 +377,7 @@
   background-color: #007E7F;
 }
 
-/* line 359, ../sass/case.scss */
+/* line 360, ../sass/case.scss */
 .hero#dconstraints {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/dconstraints.png");
   background-position: 80% 40%;
@@ -385,7 +385,7 @@
   background-color: #184E11;
 }
 
-/* line 367, ../sass/case.scss */
+/* line 368, ../sass/case.scss */
 .hero#sixdegree {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/sixdegree.png");
   background-position: 80% 40%;
@@ -393,7 +393,7 @@
   background-color: #010425;
 }
 
-/* line 375, ../sass/case.scss */
+/* line 376, ../sass/case.scss */
 .hero#etc {
   background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
   background-position: 80% 40%;
@@ -401,15 +401,23 @@
   background-color: #7B041C;
 }
 
+/* line 384, ../sass/case.scss */
+.hero#emoshkas {
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/emoshkas.png");
+  background-position: 80% 40%;
+  background-size: cover, auto 20em;
+  background-color: #6B0F5D;
+}
+
 @media (max-width: 640px) {
-  /* line 385, ../sass/case.scss */
+  /* line 393, ../sass/case.scss */
   .hero#discoveroute,
   .hero#smartcart {
     background-size: cover, 90% auto;
     background-position: 10% 100px;
   }
 
-  /* line 391, ../sass/case.scss */
+  /* line 399, ../sass/case.scss */
   .hero#etc,
   .hero#sixdegree,
   .hero#dconstraints,

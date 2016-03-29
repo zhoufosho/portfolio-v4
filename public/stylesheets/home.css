@@ -208,73 +208,79 @@
 }
 
 /* line 191, ../sass/home.scss */
+#emoshkas .tile-img:after,
+#emoshkas .tile-img {
+  background-color: #6B0F5D;
+}
+
+/* line 196, ../sass/home.scss */
 #discoveroute .tile-img:after,
 #discoveroute .tile-img {
   background-color: #FFA215;
 }
 
-/* line 196, ../sass/home.scss */
+/* line 201, ../sass/home.scss */
 #remind .tile-img:after,
 #remind .tile-img {
   background-color: #4a89dc;
 }
 
-/* line 201, ../sass/home.scss */
+/* line 206, ../sass/home.scss */
 #remind .tile-img {
   padding: 0% 22%;
 }
 
-/* line 205, ../sass/home.scss */
+/* line 210, ../sass/home.scss */
 #frog .tile-img:after,
 #frog .tile-img {
   background-color: #46bc01;
 }
 
-/* line 210, ../sass/home.scss */
+/* line 215, ../sass/home.scss */
 #frog .tile-img {
   padding: 0% 25%;
 }
 
-/* line 215, ../sass/home.scss */
+/* line 220, ../sass/home.scss */
 #uber .tile-img:after,
 #uber .tile-img {
   background-color: #000;
 }
 
-/* line 220, ../sass/home.scss */
+/* line 225, ../sass/home.scss */
 #uber .tile-img {
   padding: 0 15%;
 }
 
-/* line 224, ../sass/home.scss */
+/* line 229, ../sass/home.scss */
 #dais .tile-img:after,
 #dais .tile-img {
   background-color: #007E7F;
 }
 
-/* line 229, ../sass/home.scss */
+/* line 234, ../sass/home.scss */
 #sixdegree .tile-img:after,
 #sixdegree .tile-img {
   background-color: #010425;
 }
 
-/* line 234, ../sass/home.scss */
+/* line 239, ../sass/home.scss */
 #sixdegree .tile-img {
   padding: 0 18%;
 }
 
-/* line 238, ../sass/home.scss */
+/* line 243, ../sass/home.scss */
 #etc .tile-img:after,
 #etc .tile-img {
   background-color: #7B041C;
 }
 
-/* line 243, ../sass/home.scss */
+/* line 248, ../sass/home.scss */
 #etc .tile-img {
   padding: 0% 12%;
 }
 
-/* line 247, ../sass/home.scss */
+/* line 252, ../sass/home.scss */
 #frog .tile-img:hover,
 #frog .tile-text:hover,
 #remind .tile-img:hover,
@@ -285,60 +291,60 @@
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
-  /* line 258, ../sass/home.scss */
+  /* line 263, ../sass/home.scss */
   #etc .tile-img,
   #sixdegree .tile-img {
     padding: 0 20%;
   }
 
-  /* line 262, ../sass/home.scss */
+  /* line 267, ../sass/home.scss */
   #dconstraints .tile-img,
   #dais .tile-img {
     padding: 0 8%;
   }
 }
-/* line 277, ../sass/home.scss */
+/* line 282, ../sass/home.scss */
 li a:hover {
   color: #aaa;
 }
 
-/* line 281, ../sass/home.scss */
+/* line 286, ../sass/home.scss */
 i.fa:hover {
   transition: color .7s;
   -webkit-transition: color .7s;
 }
 
-/* line 286, ../sass/home.scss */
+/* line 291, ../sass/home.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 290, ../sass/home.scss */
+/* line 295, ../sass/home.scss */
 .fa-facebook:hover {
   color: #3b5998;
 }
 
-/* line 294, ../sass/home.scss */
+/* line 299, ../sass/home.scss */
 .fa-linkedin:hover {
   color: #007bb6;
 }
 
-/* line 297, ../sass/home.scss */
+/* line 302, ../sass/home.scss */
 .fa-instagram:hover {
   color: #517fa4;
 }
 
-/* line 301, ../sass/home.scss */
+/* line 306, ../sass/home.scss */
 .fa-github:hover {
   color: #000;
 }
 
-/* line 305, ../sass/home.scss */
+/* line 310, ../sass/home.scss */
 .fa-codepen:hover {
   color: #191919;
 }
 
-/* line 309, ../sass/home.scss */
+/* line 314, ../sass/home.scss */
 .fa-send:hover {
   color: #00C9D0;
 }

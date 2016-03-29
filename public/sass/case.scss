@@ -279,10 +279,6 @@
 
 
 @media (max-width: $smartphone) {
-    .back {
-        width: 30px;
-    }
-
     .intro {
         h1 {
             font-size: 2em;
@@ -321,6 +317,11 @@
 #dconstraints .back {
     background-color: $dconstraints;
 }
+
+#emoshkas .back {
+    background-color: $emoshkas;
+}
+
 
 
 
@@ -380,6 +381,13 @@
     background-color: $etc;
 }
 
+.hero#emoshkas {
+
+    background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/emoshkas.png");
+    background-position: 80% 40%;
+    background-size: cover, auto 20em;
+    background-color: $emoshkas;
+}
 
 @media (max-width: $smartphone) {
     .hero#discoveroute,

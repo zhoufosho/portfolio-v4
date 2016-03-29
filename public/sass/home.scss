@@ -188,6 +188,11 @@
     background-color: $dconstraints;
 }
 
+#emoshkas .tile-img:after,
+#emoshkas .tile-img{
+    background-color: $emoshkas;
+}
+
 #discoveroute .tile-img:after,
 #discoveroute .tile-img{
     background-color: $discoveroute;

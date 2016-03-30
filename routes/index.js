@@ -14,6 +14,8 @@ var works = [{name: "Uber", slug:"uber", img:"images/uber.png", content: "Facili
 			{name: "Remind", slug:"remind", img:"images/remind.png", content: "Accelerating teacher signup during back-to-school season.", url: 'http://remind.com'}
 			];
 
+var etc = [{name: "SixDegree", slug:"sixdegree"}];
+
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { 
@@ -30,9 +32,15 @@ for (var i=0; i<projects.length; i++){
 	renderPage(project);
 }
 
+for (var i=0; i< etc.length; i++){
+	var project = etc[i];
+	var endpoint = '/' + project.slug;
+	renderPage(project);
+}
+
 function renderPage(project){
 	router.get(endpoint, function(req, res) {
-		res.render(project.slug, {title: project.name, project: project});
+		res.render(project.slug, {title: project.name + ', Elaine Zhou', project: project});
 	});
 }
 

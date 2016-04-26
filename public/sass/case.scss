@@ -79,7 +79,6 @@
     a {
         display: inline-block;
         position: relative;
-        padding-bottom: -1px;
         font-weight: 300;
     }
 
@@ -191,6 +190,12 @@
     img {
         width: $content-min;
     }
+}
+
+.blocks div.columns > div{
+    background-color: #eaeaea;
+    padding: 10px;
+    display: inline-block;
 }
 
 @media (max-width: $tabletPortrait) {

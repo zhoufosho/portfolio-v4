@@ -57,46 +57,80 @@
 				<div class="medium-8 medium-centered columns">
 					<h1>Needfinding</h1>
 
-					<p>We observed and talked with novice speakers and interviewed two professional oral communicator lecturers - <a href='https://www.linkedin.com/pub/matt-vassar/28/196/798'>Matt Vassar</a> and <a href='http://vpuewh-public.stanford.edu/viewprofile.jsp?sunetid=sohui&usetype=P&userid=PWR'>Sohui Lee</a>. Students in public speaking courses mentioned problems with current solutions: (1) video debugging is incredibly awkward and is too far removed from the act of public speaking, whereas (2) immediate feedback is overwhelming in that there's too cognitive load to focus on any one bit of advice.</p>
+					<p>We observed and interviewed four novice speakers and two professional oral communicator lecturers. Students in public speaking courses mentioned problems with current solutions: (1) video debugging is incredibly awkward and is too far removed from the act of public speaking, whereas (2) immediate feedback is overwhelming in that there's too cognitive load to focus on any one bit of advice.</p>
 
-					<blockquote>There's too much stuff to fix; I can't focus on any of it! <footer>- Oral Communication Student</footer></blockquote>
-
-					<p>Thus, we learned that feedback is only helpful in small and immediate doses. We focused on two main pillars of good presentations: <em>balanced visual spread</em> and <em>consistent speaking volume</em>.
-					</p>
+					<blockquote>There's too much stuff to fix; I can't focus on any of it! <footer>- Student</footer></blockquote>
 				</div>
 
 			</section>
 
-			<section id='glass'>
+			<section id='context'>
 				<div class="medium-8 medium-centered columns">
-					<h1>Google Glass Prototyping</h1>
+					<h1>Defining Context</h1>
+					<p>From our interviews, we discovered that that feedback is only helpful in small and immediate doses. However, trends about the overall performance are useful towards the end. We focused on this insight narrowed in on two main pillars of good presentations: <em>balanced visual spread</em> and <em>consistent speaking volume</em>. We hope that these same design principles can be extended to other presentation benchmarks.
+					</p>
+				</div>
 
-					<p>By taking initial reference points from the accelerometer and microphone, Dais monitors where the user is looking and their volume. It then provides immediate feedback on eye-contact spread and volume. For example, if a user spends a disproportionate large amount of time looking at audience members to his/her left, Dais displays a subtle suggestion to look elsewhere. If the user looks far out of the range of the audience, Dais assumes the user has turned their head away from the audience to read off their own slides telling the user to face forward. We prototyped some screens for immediate visual and aural feedback. 
+				<figure class="large-12 columns">
+					<div class="row blocks">
+						<div class="large-6 columns">
+							<div>
+								<h4>User Scenario</h4>
+								<p>Novice public speakers. Used when either practicing or presenting speeches. </p>
+							</div>
+						</div>
+						<div class="large-6 columns">
+							<div>
+								<h4>Bits Now, Atoms Later</h4>
+								<p>Only give immediate, actionable feedback in real-time. Review general trends at leisure. </p>
+							</div>
+						</div>
+					</div>
+				</figure>
+				<div class="clearfix"></div>
+			</section>
+
+			<section id='instant'>
+				<div class="medium-8 medium-centered columns">
+					<h1>Instant, Actionable Feedback</h1>
+
+					<p>We focused on the smallest bits of action: when a user should look in a different direction or should speak up. If a user spends a disproportionate amount of time looking at the audience to his/her left, Dais suggests looking right. Because Glass is typically in one's periphery, we designed the cues to be distinct and immediately noticeable from other cues. In testing the effectiveness between directional and spatial cues, we found that directional cues yielded much faster reaction times. We prototyped text-based screens for audio feedback to differentiate between visual cues.
 					</p>
 				</div>
 				<figure class="large-12 columns">
-					<img src='images/dais/directionalView.png' alt='Interface for a directional view (using arrows to indicate direction)'/>
-					<img src='images/dais/spatialView.png' alt='Interface for a spatial view (using blocks to indicate space)'/>
-					<figcaption>We prototyped two different types of feedback cues for Glass – directional (top) and spatial (bottom).</figcaption>
+					<div class="row">
+						<div class="large-6 columns">
+							<img src='images/dais/directionalView.png' alt='Interface for a directional view (using arrows to indicate direction)'/>
+						</div>
+						<div class="large-6 columns">
+							<img src='images/dais/spatialView.png' alt='Interface for a spatial view (using blocks to indicate space)'/>
+						</div>
+					</div>
+					<figcaption>We tested two different types of visual feedback cues for Glass – directional (left) and spatial (right). If a user spends too much time looking in one direction, Glass shows a cue to look the other way. </figcaption>
 				</figure>
-				<div class="medium-8 medium-centered columns">
 
-					<p>We also prototyped some visualizations summarizing an entire presentation - heat map of head position to model visual spread and a line graph charting the progression of the speaker’s volume. However, it was immediately clear from user feedback that this information was too dense and unnecessary for Glass' intended use case.
+				<div class="clearfix"></div>
+
+			</section>
+
+			<section id='aggregate'>
+				<div class="medium-8 medium-centered columns">
+					<h1>Synthesizing Aggregates</h1>
+
+					<p>We also prototyped some visualizations summarizing an entire presentation - heat map of head position to model visual spread and a line graph charting the progression of the speaker’s volume. However, it was immediately clear from user feedback that this information was too dense and overwhelming for Glass.
 					</p>
 				</div>
 
 				<figure class="large-12 columns">
 					<!-- <img src='images/dais/glassAural.png' /> -->
 					<img src='images/dais/glassVisual.png' alt='Speech analytics on Glass interface' />
-					<figcaption>We tried displaying these analytics on Glass, but they were incomprehensible.</figcaption>
+					<figcaption>Displaying these analytics on Glass was entirely incomprehensible.</figcaption>
 				</figure>
+				<div class="clearfix"></div>
 
-			</section>
-
-			<section id='web'>
 				<div class="medium-8 medium-centered columns">
-					<h1>Web App Component</h1>
-					<p>Taking these insights into account, we built a real-time app platform on which the presenter can view important metrics from any previously given presentationa. Since the goal of post-presentation evaluation is pinpointing and correcting errors made during the presentation, the analytics were designed with the intention of highlighting errors made. The heat map highlights the user's tendency to stare at any single point, and the volume line graph indicates the user's volume relative to a desired speaking level. The web app also aggregate all presentations over time in one dashboard.
+
+					<p>Taking these insights into account, we built a real-time app platform on which the presenter can view important metrics from any previously given presentationa. Since the goal of post-presentation evaluation is pinpointing and correcting errors made during the presentation, the analytics were designed with the intention of showing errors. The heat map highlights the user's tendency to stare at any single point, and the volume line graph indicates the user's volume relative to a desired speaking level. The web app also aggregate all presentations over time in one dashboard.
 					</p>
 				</div>
 
@@ -105,14 +139,19 @@
 					<figcaption>The web app displays aggregate analytics after the presentation has ended.</figcaption>
 				</figure>
 
+				<div class="clearfix"></div>
+
 			</section>
 
 
 			<section id='takeaways'>
 				<div class="medium-8 medium-centered columns">
 					<h1>Key Takeaways</h1>
-					<h4>Complexity might lead to simplify</h4>
+					<h4>Adding complexity might simplify</h4>
 					<p>Initially, Dais was designed to only give immediate, actionable feedback on Glass. When we heard users needed aggregate trends, we added the visuals on Glass, thinking we were reducing complexity by keeping everything on one platform. However once we tested this, users immediately recoiled at the form of such complex data on a tiny peripheral screen, so we added a web app component. Although it seems more complex to have two platforms, it ends up much easier to navigate from a user's perspective. </p>
+
+					<h4>Talk with non-users</h4>
+					<p>Our target users are novice speakers, but most students complained about having problems memorizing their speeches or fiddling with project technology. Only by talking with experts, not our target users, were we able to get to the core principles of good public speaking: visual spread and speaking volume. </p>
 				</div>
 			</section>
 		</div>

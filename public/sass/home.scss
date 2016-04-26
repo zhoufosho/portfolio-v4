@@ -4,10 +4,10 @@
 /* HOMEPAGE */
 
 #landing h4, h5 {
-    font-family: 'Abel', 'Courier New', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 6px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     display: inline-block;
+    font-size: 1.6em;
 }
 
 #work .tiles .tile:hover,
@@ -39,6 +39,7 @@
     }
 }
 .minor .tile{
+    
     font-size: 80%;
     height: 23em;
     .tile-img{
@@ -73,14 +74,14 @@
 
 
 .title-underline {
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
     border-bottom: 3px solid #ddd;
     display: inline-block;
     padding-bottom: 0.5em;
 }
 
 .tile-text{
-    padding: 1.75em 2.2em 2em;
+    padding: 1.5em 2.2em 1.7em;
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: white;

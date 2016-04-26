@@ -238,50 +238,72 @@
 }
 
 /* line 218, ../sass/case.scss */
-#dconstraints-case .slideshow {
-  height: 320px;
-  width: auto;
+#dconstraints-case .slideshow#research-results {
+  width: 100%;
+  height: 650px;
+}
+/* line 223, ../sass/case.scss */
+#dconstraints-case .slideshow#study-overview {
+  width: 100%;
+  height: 350px;
+}
+/* line 228, ../sass/case.scss */
+#dconstraints-case .slideshow#research-results div img,
+#dconstraints-case .slideshow#study-overview div img {
+  width: 940px;
 }
 @media (max-width: 800px) {
-  /* line 225, ../sass/case.scss */
-  #dconstraints-case .slideshow {
+  /* line 235, ../sass/case.scss */
+  #dconstraints-case .slideshow#study-overview {
+    width: auto;
     height: 200px;
   }
-  /* line 228, ../sass/case.scss */
-  #dconstraints-case .slideshow > div img {
-    height: 200px;
+  /* line 240, ../sass/case.scss */
+  #dconstraints-case .slideshow#study-overview > div img {
+    max-height: 200px;
+    width: 100%;
+  }
+  /* line 245, ../sass/case.scss */
+  #dconstraints-case .slideshow#research-results {
+    width: auto;
+    height: 300px;
+  }
+  /* line 250, ../sass/case.scss */
+  #dconstraints-case .slideshow#research-results > div img {
+    max-height: 300px;
+    width: 100%;
   }
 }
 
-/* line 236, ../sass/case.scss */
+/* line 259, ../sass/case.scss */
 #discoveroute-case .slideshow {
   height: 450px;
 }
 @media (max-width: 800px) {
-  /* line 241, ../sass/case.scss */
+  /* line 264, ../sass/case.scss */
   #discoveroute-case .slideshow {
     width: auto;
     min-height: 200px;
   }
-  /* line 245, ../sass/case.scss */
+  /* line 268, ../sass/case.scss */
   #discoveroute-case .slideshow > div img {
     width: 100%;
     height: auto;
   }
 }
 @media (min-width: 380px) and (max-width: 640px) {
-  /* line 235, ../sass/case.scss */
+  /* line 258, ../sass/case.scss */
   #discoveroute-case {
     height: 200px;
   }
 }
 
-/* line 259, ../sass/case.scss */
+/* line 282, ../sass/case.scss */
 .intro {
   text-align: left;
   padding-left: 15px;
 }
-/* line 263, ../sass/case.scss */
+/* line 286, ../sass/case.scss */
 .intro h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
@@ -289,13 +311,13 @@
   color: white;
   text-rendering: geometricPrecision;
 }
-/* line 272, ../sass/case.scss */
+/* line 295, ../sass/case.scss */
 .intro h2 {
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5rem;
   color: #f4f4f4;
 }
-/* line 278, ../sass/case.scss */
+/* line 301, ../sass/case.scss */
 .intro h3 {
   font-size: 1rem;
   margin-right: -8px;
@@ -303,63 +325,63 @@
 }
 
 @media (max-width: 640px) {
-  /* line 288, ../sass/case.scss */
+  /* line 311, ../sass/case.scss */
   .intro h1 {
     font-size: 2em;
   }
-  /* line 291, ../sass/case.scss */
+  /* line 314, ../sass/case.scss */
   .intro h2 {
     font-size: 1.25em;
   }
-  /* line 294, ../sass/case.scss */
+  /* line 317, ../sass/case.scss */
   .intro h3 {
     font-size: 0.8em;
   }
 }
 /* PAGE-SPECIFIC */
-/* line 302, ../sass/case.scss */
+/* line 325, ../sass/case.scss */
 #smartcart .back {
   background-color: #2565AA;
 }
 
-/* line 306, ../sass/case.scss */
+/* line 329, ../sass/case.scss */
 #discoveroute .back {
   background-color: #FFA215;
 }
 
-/* line 310, ../sass/case.scss */
+/* line 333, ../sass/case.scss */
 #etc .back {
   background-color: #7B041C;
 }
 
-/* line 314, ../sass/case.scss */
+/* line 337, ../sass/case.scss */
 #sixdegree .back {
   background-color: #010425;
 }
 
-/* line 318, ../sass/case.scss */
+/* line 341, ../sass/case.scss */
 #dais .back {
   background-color: #007E7F;
 }
 
-/* line 322, ../sass/case.scss */
+/* line 345, ../sass/case.scss */
 #dconstraints .back {
   background-color: #184E11;
 }
 
-/* line 326, ../sass/case.scss */
+/* line 349, ../sass/case.scss */
 #emoshkas .back {
   background-color: #6B0F5D;
 }
 
-/* line 333, ../sass/case.scss */
+/* line 356, ../sass/case.scss */
 .hero {
   background-repeat: no-repeat;
   height: 36em;
   margin-bottom: 1em;
 }
 
-/* line 340, ../sass/case.scss */
+/* line 363, ../sass/case.scss */
 .hero#smartcart {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/smartcart3.png");
   background-position: 80% 0%;
@@ -367,7 +389,7 @@
   background-color: #2565AA;
 }
 
-/* line 348, ../sass/case.scss */
+/* line 371, ../sass/case.scss */
 .hero#discoveroute {
   background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 130, 5, 0.3) 50%), url("../images/discoveroute3.png");
   background-position: 80% 25%;
@@ -375,7 +397,7 @@
   background-color: #FFA215;
 }
 
-/* line 357, ../sass/case.scss */
+/* line 380, ../sass/case.scss */
 .hero#dais {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.1) 80%), url("../images/dais.png");
   background-position: 80% 40%;
@@ -383,7 +405,7 @@
   background-color: #007E7F;
 }
 
-/* line 365, ../sass/case.scss */
+/* line 388, ../sass/case.scss */
 .hero#dconstraints {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/dconstraints.png");
   background-position: 80% 40%;
@@ -391,7 +413,7 @@
   background-color: #184E11;
 }
 
-/* line 373, ../sass/case.scss */
+/* line 396, ../sass/case.scss */
 .hero#sixdegree {
   background-image: linear-gradient(to bottom, transparent 3%, rgba(0, 0, 0, 0.15) 80%), url("../images/sixdegree.png");
   background-position: 80% 40%;
@@ -399,7 +421,7 @@
   background-color: #010425;
 }
 
-/* line 381, ../sass/case.scss */
+/* line 404, ../sass/case.scss */
 .hero#etc {
   background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/etc.png");
   background-position: 80% 40%;
@@ -407,7 +429,7 @@
   background-color: #7B041C;
 }
 
-/* line 389, ../sass/case.scss */
+/* line 412, ../sass/case.scss */
 .hero#emoshkas {
   background-image: linear-gradient(to bottom, transparent 10%, rgba(255, 250, 255, 0.1) 90%), url("../images/emoshkas.png");
   background-position: 80% 40%;
@@ -416,14 +438,14 @@
 }
 
 @media (max-width: 640px) {
-  /* line 398, ../sass/case.scss */
+  /* line 421, ../sass/case.scss */
   .hero#discoveroute,
   .hero#smartcart {
     background-size: cover, 90% auto;
     background-position: 10% 100px;
   }
 
-  /* line 404, ../sass/case.scss */
+  /* line 427, ../sass/case.scss */
   .hero#etc,
   .hero#sixdegree,
   .hero#dconstraints,

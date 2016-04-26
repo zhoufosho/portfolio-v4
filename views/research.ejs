@@ -71,42 +71,63 @@
 
 			<section id='process'>
 				<div class="medium-8 medium-centered columns">
-					<h1>Process</h1>
+					<h1>Overview</h1>
 
 					<p>In this experiment, participants were led through a design process modeled off the d.school. They were asked to create a web ad for Stanford. The process started by brainstorming many ideas, prototyping a few, getting feedback, and iterating on 1 final design. 
+				</div>
+			</section>
 
-					I tested three conditions to figure out when the best time to introduce a constraint was – either from the beginning, after brainstorming, or after prototyping. 
+			<section id='experiment1'>
+				<div class="medium-8 medium-centered columns">
+					<h1>Constraint Timing</h1>
 
-					The constraint I added was that the images had to be tall banner ads targeted towards those interested in medicine. In the initial prompt, the task was to design a static web ad for Stanford University. The narrowed constraint was: the ad must be 160 x 600 pixels (2.6 inches x 10 inches) and targeted towards those interested in medicine. 
+					<p>
+						In this experiment, I hoped to understand whether the timing of narrowed constraints would affect the creativity of the final result. I tested three conditions to figure out when the best time to introduce a constraint was – either early, middle, or late. 
+					</p>
+					<p>
+						The constraint I added was that the images had to be tall banner ads targeted towards those interested in medicine. In the initial, or broad prompt, the task was to design a static web ad for Stanford University. The narrowed constraint was: the ad must be 160 x 600 pixels (2.6 inches x 10 inches) and targeted towards those interested in medicine. 
 					</p>
 				</div>
 
 				<figure class="large-12 columns">
-					<img src='images/studyOverview.png' alt='Graphic showing overview of creativity study'>
-					<figcaption>The experiment led participants through a four-step design process. I tested three conditions to see when the best time to introduce a constraint was – from the beginning, after brainstorming, or after prototyping. </figcaption>
+					<div class="slideshow" id="study-overview">
+						<div>
+							<img src='images/dconstraints/early.png' alt='overview of creativity study, early constraint group'>
+						</div>
+						<div>
+							<img src='images/dconstraints/middle.png' alt='overview of creativity study, middle constraint group'>
+						</div>
+						<div>
+							<img src='images/dconstraints/late.png' alt='overview of creativity study, late constraint group'>
+						</div>
+					</div>
+					<figcaption>The experiment led participants through a four-step design process. I tested three conditions to see when the best time to introduce a constraint was – early, middle, or late. </figcaption>
 				</figure>
+
+				<div class="clearfix"></div>
 			</section>
 
 			<section id='results'>
 				<div class="medium-8 medium-centered columns">
 					<h1>Results</h1>
 
-					<p>Results indicate that those received the narrow constraints after prototyping yielded the most novel results, as rated by a panel of experts.
+					<p>Results indicate that those received the narrow constraints after prototyping yielded the most novel results, as rated by a panel of experts. Contrary to popular belief, this means that late constraints yield more novel results.
 					</p>
-
-					<figure>
-						<div class="slideshow" id="research-results">
-							<div>
-								<img src='images/dconstraints/app_nov.png' alt='Results of appropriateness and novelty scores'>
-							</div>
-							<div>
-								<img src='images/dconstraints/n.png' alt='Increase in novelty scores across groups was found to be significant'>
-							</div>
-						</div>
-						<figcaption>The group that received late constraints had highest novelty and appropriateness ratings, although only the increase in novelty was found to be significant (p &lt; 0.05).  
-						</figcaption>
-					</figure>
 				</div>
+				<figure class="large-12 columns">
+					<div class="slideshow" id="research-results">
+						<div>
+							<img src='images/dconstraints/app_nov.png' alt='Results of appropriateness and novelty scores'>
+						</div>
+						<div>
+							<img src='images/dconstraints/n.png' alt='Increase in novelty scores across groups was found to be significant'>
+						</div>
+					</div>
+					<figcaption>The group that received late constraints had highest novelty and appropriateness ratings, although only the increase in novelty was found to be significant (p &lt; 0.05).  
+					</figcaption>
+				</figure>
+
+				<div class="clearfix"></div>
 
 				<div class="medium-8 medium-centered columns">
 					<p>
@@ -139,6 +160,17 @@
 	<% include templates/footer %>
 	<% include templates/scripts %>
 	<script>
+		$("#study-overview > div:gt(0)").hide();
+
+		setInterval(function() { 
+		  $('#study-overview > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#study-overview');
+		},  3000);
+
 		$("#research-results > div:gt(0)").hide();
 
 		setInterval(function() { 
@@ -149,6 +181,7 @@
 		    .end()
 		    .appendTo('#research-results');
 		},  3000);
+
 
 	</script>
 

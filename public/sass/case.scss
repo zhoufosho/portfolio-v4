@@ -215,18 +215,41 @@
 
 
 #dconstraints-case {
-    .slideshow {
-        height: 320px;
-        width: auto;
+    .slideshow#research-results  {
+        width: 100%;
+        height: 650px;
     }
 
+    .slideshow#study-overview {
+        width: 100%;
+        height: 350px;
+    }
+
+    .slideshow#research-results div img, 
+    .slideshow#study-overview div img {
+        width: $content-line;
+    }
 
     @media (max-width: $tabletPortrait) {
-        .slideshow {
+
+        .slideshow#study-overview {
+            width: auto;
             height: 200px;
         }
-        .slideshow > div img {
-            height: 200px;
+
+        .slideshow#study-overview > div img {
+            max-height: 200px;
+            width: 100%;
+        }
+
+        .slideshow#research-results{
+            width: auto;
+            height: 300px;
+        }
+
+        .slideshow#research-results > div img{
+            max-height: 300px;
+            width: 100%;
         }
     }
 }

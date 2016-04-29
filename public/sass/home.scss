@@ -278,6 +278,32 @@ $github: #000;
 $codepen: #191919;
 $sendo: $teal;
 
+.about a{
+    @include underlineLinkAnimation;
+
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+    color: $carbon;
+
+
+    &:hover {
+        color: #aaa;
+    }
+    
+    &:hover:before {
+        width: 0%;
+        background: #ccc;
+        transition: width .5s ease;
+    }
+    &:hover:after {
+        width: 0%;
+        background: transparent;
+        transition: width 0s ease;
+    }
+}
+
+
 li a:hover {
     color: $medium-grey;
 }

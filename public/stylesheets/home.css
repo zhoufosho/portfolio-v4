@@ -304,47 +304,94 @@
   }
 }
 /* line 281, ../sass/home.scss */
+.about a {
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  color: #3D3D3D;
+}
+/* line 66, ../sass/variables.scss */
+.about a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  transition: width 0s ease;
+}
+/* line 76, ../sass/variables.scss */
+.about a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  transition: width .5s ease;
+}
+/* line 290, ../sass/home.scss */
+.about a:hover {
+  color: #aaa;
+}
+/* line 294, ../sass/home.scss */
+.about a:hover:before {
+  width: 0%;
+  background: #ccc;
+  transition: width .5s ease;
+}
+/* line 299, ../sass/home.scss */
+.about a:hover:after {
+  width: 0%;
+  background: transparent;
+  transition: width 0s ease;
+}
+
+/* line 307, ../sass/home.scss */
 li a:hover {
   color: #aaa;
 }
 
-/* line 285, ../sass/home.scss */
+/* line 311, ../sass/home.scss */
 i.fa:hover {
   transition: color .7s;
   -webkit-transition: color .7s;
 }
 
-/* line 290, ../sass/home.scss */
+/* line 316, ../sass/home.scss */
 .fa-twitter:hover {
   color: #00aced;
 }
 
-/* line 294, ../sass/home.scss */
+/* line 320, ../sass/home.scss */
 .fa-facebook:hover {
   color: #3b5998;
 }
 
-/* line 298, ../sass/home.scss */
+/* line 324, ../sass/home.scss */
 .fa-linkedin:hover {
   color: #007bb6;
 }
 
-/* line 301, ../sass/home.scss */
+/* line 327, ../sass/home.scss */
 .fa-instagram:hover {
   color: #517fa4;
 }
 
-/* line 305, ../sass/home.scss */
+/* line 331, ../sass/home.scss */
 .fa-github:hover {
   color: #000;
 }
 
-/* line 309, ../sass/home.scss */
+/* line 335, ../sass/home.scss */
 .fa-codepen:hover {
   color: #191919;
 }
 
-/* line 313, ../sass/home.scss */
+/* line 339, ../sass/home.scss */
 .fa-send:hover {
   color: #00C9D0;
 }

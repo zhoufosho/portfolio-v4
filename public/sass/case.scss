@@ -90,27 +90,10 @@
         color: #aaa;
     }
 
-    a:not(.no-effect):before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 1px;
-        width: 100%;
-        transition: width 0s ease;
+    a:not(.no-effect) {
+        @include underlineLinkAnimation;
     }
-    a:not(.no-effect):after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 1px;
-        width: 100%;
-        background: #ccc;
-        transition: width .5s ease;
-    }
+    
     a:hover:before {
         width: 0%;
         background: #ccc;

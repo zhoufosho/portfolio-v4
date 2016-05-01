@@ -101,6 +101,53 @@
 				<div class="clearfix"></div>
 			</section>
 
+			<section id='features'>
+				<div class="medium-8 medium-centered columns">
+
+					<h1>Key Features</h1>
+					<div class="center table">
+						<ul class='gif-menu inline-list hide-for-small'>
+							<li>
+							<a href="#features" id="stacking">Layer Emoshkas</a></li>
+							<li>
+							<a href="#features" id="face">Vary Expressions</a></li>
+							<li>
+							<a href="#features" id="unlocking">Revealing Layers</a></li>
+						</ul>
+					</div>
+					<ul class='no-bullet show-for-small gif-menu'>
+						<li>
+						<a href="#features" id="stacking">Layer Emoshkas</a></li>
+						<li>
+						<a href="#features" id="face">Vary Expressions</a></li>
+						<li>
+						<a href="#features" id="unlocking">Revealing Layers</a></li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<figure class='large-12 columns'>
+					<div class="gif-list">
+						<div id="gif-stacking" >
+							<img src="images/emoshkas/lightschange.gif" />
+						</div>
+						<div id="gif-face" >
+							<img src="images/emoshkas/changingface.gif"/>
+						</div>
+						<div id="gif-choosing" >
+							<img src="images/emoshkas/ChoosingEmotions.gif"/>
+						</div>
+						<div id="gif-unlocking" >
+							<img src="images/emoshkas/UnlockingEmotions.gif"/>
+						</div>
+					</div>
+				</figure>
+
+				<div class="clearfix"></div>
+
+			</section>
+
 			<section id='lowfi'>
 				<div class="medium-8 medium-centered columns">
 					<h1>Prototyping Assumptions</h1>
@@ -148,10 +195,10 @@
 				<div class="medium-8 medium-centered columns">
 					<h1>Key Takeaways</h1>
 					<h4>Don't be afraid to re-engineer the system</h4>
-					<p>Our first fully functional prototype was tough. Although it expressed the core idea, it was finnicky, unreliable, and frustrating at best. We decided to completely redesign the connection points on both the base and the doll. The affordances of the new system using nails and magnets made the interactions much more enjoyable and fun to use. We reduced so many levels of user frustration, that the product itself was much more compelling.
+					<p>Our first fully functional prototype was tough. Although it expressed the core idea, it was finnicky, unreliable, and frustrating at best. We decided to completely redesign the connection points on both the base and the doll. The affordances of the new system made the interactions much more enjoyable and fun to use. We reduced so many levels of user frustration, that the product itself was much more compelling.
 					</p>
-					<h4>Beautiful craft can be compelling in itself</h4>
-					<p>At our final presentation expo, one of our visitors was a 6-year-old boy dragged along by his parents. When he came to our booth, he spent the whole hour just stacking, restacking the dolls, adding and removing the faces. It is unclear if Emoshkas met the problem we were designing for, but the craft of the product seemed compelling enough to play for hours. 
+					<h4>There's a minimum level of craft to an idea</h4>
+					<p>At our final presentation expo, one of our visitors was a 6-year-old boy dragged along by his parents. When he came to our booth, he spent the whole hour just stacking, restacking the dolls, adding and removing the faces. It is unclear if Emoshkas met the problem we were designing for, but the craft of the product was exciting enough to play for hours. 
 					</p>
 				</div>
 
@@ -178,6 +225,18 @@
 	</div>
 
 <% include templates/scripts %>
+<script>
+	$('ul.gif-menu a').click(function() {
+		var link = this;
+		$('.gif-list div').hide();
+
+		var videoId = '#gif-' + link.id;
+		var vid = $('.gif-list').find(videoId).first();
+		vid.show();
+
+	});
+
+</script>
 
 </body>
 </html>

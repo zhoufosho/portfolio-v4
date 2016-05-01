@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var projects = [{name: "discoveroute", slug:"discoveroute", img:"images/discoveroute3.png", content: "discoveroute is a mobile web app for discovering path-based sites along routes."},
+var projects = [{name: "Discoveroute", slug:"discoveroute", img:"images/discoveroute3.png", content: "Discoveroute is a mobile web app for discovering path-based sites along routes."},
 				{name: "d.constraints", slug:"research", img: "images/dconstraints.png", content: "My thesis researched the role of constraints in design processes."},
 				{name: "Emoshkas", slug:"emoshkas", img:"images/emoshkas.png", content: "Emoshkas is a learning toy that helps children process emotions."},
 				{name: "SmartCart", slug:"smartcart", img:"images/smartcart3.png", content: "SmartCart is a tablet app that helps shoppers quickly locate items and purchase them."},

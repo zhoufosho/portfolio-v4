@@ -10,6 +10,23 @@
     font-size: 1.6em;
 }
 
+#landing h6 {
+    font-family: 'Abel', 'Courier New', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: inline-block;
+    line-height: 1;
+}
+
+#landing h6 + p {
+    display: inline;
+    line-height: 1.825;
+}
+
+.about {
+    margin-bottom: 2em;
+}
+
 #work .tiles .tile:hover,
 #projects .tiles .tile:hover{
     cursor: pointer;
@@ -24,42 +41,60 @@
     float: right;
 }
 
-.tile-row:first-of-type {
-    margin-bottom: 1em;
-}
-
-#projects .tile-row .minor:last-of-type{
-    margin-top: 1.2em;
-}
 
 @media only screen and (min-width: $tabletPortrait) {
     .tile{
         -webkit-transition: width 0.8s, height 0.8s;
         transition: width 0.8s, height 0.8s;
     }
+
+    .tile-row:first-of-type {
+        margin-bottom: 2em;
+    }
+
+    #projects .tile-row .minor:last-of-type{
+        margin-top: 2.5em;
+    }
+
 }
 .minor .tile{
     font-size: 80%;
     height: 23em;
     .tile-img{
-        height: 100% // ~11.45em;
+        height: 53%;
     }
-}
-
-#work .minor .tile{
-    height: 27em;
 }
 
 .major .tile{
     height: 40em; 
     .tile-img{
-        height: 100% // ~28em;
+        height: 71%;
     }
 }
 
 .tile{
-    margin: 1rem 0;
+    box-shadow: 0 1px 2px rgba(25,25,25,0.15);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
 }
+
+.tile::after {
+    box-shadow: 0 5px 15px rgba(25,25,25,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tile:hover {
+    transform: scale(1.02, 1.02);
+
+    .tile-text {
+        width: 100%;
+    }
+}
+
+.tile:hover::after {
+    opacity: 1;
+}
+
 
 .tile-img{
     height: auto;
@@ -84,10 +119,8 @@
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: white;
-
-        position: absolute;
-        bottom: 0px;
-        margin-right: 15px;
+    bottom: 0px;
+    position: static;
 
     p{
         margin-bottom: 0;   
@@ -95,32 +128,30 @@
 }
 
 /* Responsive stuff */
-@media only screen and (max-width: $smartphone) {
+@media only screen and (max-width: $tabletPortrait) {
     .minor .tile{
-        height: 25em;
+        height: 20em;
     }
 
     .major .tile{
         height: 30em; 
-        margin: 1.5em 0 2.5em;
+        margin: 3em 0 3em;
         p{
             font-size: 1em;
         }
     }
 
-    .minor:first-of-type .tile:first-of-type{
-        margin-top: -30px;
+    .tile {
+        margin-top: 4em;
     }
+
+
 }
 
 /* project specifics */
 
-.major .tile-img .inner{
-    height: 70%;
-}
-
 .tile-img .inner{
-    height: 52%;
+    height: 100%;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,13 +175,13 @@
   -moz-transition: opacity .7s ease;
 }
 
-#projects .tile:hover .tile-img:after  {
-  opacity: .7;
-}
+// #projects .tile:hover .tile-img:after  {
+//   opacity: .7;
+// }
 
-.tile-img:hover:after  {
-  opacity: .7;
-}
+// .tile-img:hover:after  {
+//   opacity: .7;
+// }
 
 .tile-img:after {
   background-color: red;
@@ -285,7 +316,6 @@ $sendo: $teal;
     position: relative;
     font-weight: 300;
     color: $carbon;
-
 
     &:hover {
         color: #aaa;
